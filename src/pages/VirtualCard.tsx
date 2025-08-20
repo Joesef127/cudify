@@ -4,6 +4,7 @@ import SecuritySection from "../components/SecuritySection";
 import bunny_girl from "../assets/images/bunny_girl.jpg";
 import WhyChose from "../components/WhyChose";
 import { virtualWhyChoseData } from "../DataArrays";
+import VirtualSection from "../components/VirtualSection";
 
 export default function VirtualCard() {
   return (
@@ -19,6 +20,7 @@ export default function VirtualCard() {
         subHeader="It only takes a few taps to move your money home. Here's how."
         whyChoseData={virtualWhyChoseData}
       />
+      <VirtualSection />
       <SecuritySection />
       <CTASection />
     </div>

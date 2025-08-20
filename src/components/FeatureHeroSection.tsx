@@ -3,7 +3,7 @@ import { type FeatureHeroSectionProps } from "../Types";
 
 const FeatureHeroSection = ({backgroundImage, heading, desc, contentClass }: FeatureHeroSectionProps) => {
   return (
-    <section className="bg-white pt-44 pb-10 w-full">
+    <section className="bg-[#FAFCFF] pt-44 pb-10 w-full">
       <div
         className={`container mx-auto w-full h-full py-20 px-16 relative flex flex-col items-start justify-center text-white gap-8 min-h-[720px] rounded-2xl overflow-hidden`}
         style={{

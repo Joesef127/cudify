@@ -4,7 +4,7 @@ import { securityCardData } from "../DataArrays";
 
 const SecuritySection = () => {
   return (
-    <section className="py-16 bg-white w-full">
+    <section className="py-16 bg-[#FAFCFF] w-full">
       <div className="container mx-auto px-4 flex flex-col gap-12">
         <div className="flex justify-between items-center">
           <div className="flex flex-col gap-8">

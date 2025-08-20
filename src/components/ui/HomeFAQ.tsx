@@ -10,7 +10,7 @@ const HomeFAQ = () => {
   };
 
   return (
-    <div className="bg-white p-6 max-w-2xl mx-auto">
+    <div className="p-6 w-full max-w-2xl rounded-lg">
       <div className="space-y-0">
         {faqData.map((item, index) => (
           <div key={index} className="border-b border-gray-200 last:border-b-0">

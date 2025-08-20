@@ -2,7 +2,7 @@ import type { SecurityCardProps } from "../../Types";
 
 const SecurityCard = ({ icon, heading, desc }: SecurityCardProps) => {
   return (
-    <div className="flex items-start justify-start gap-4 w-max bg-white transition-colors rounded-2xl py-3 max-w-96">
+    <div className="flex items-start justify-start gap-4 w-max transition-colors rounded-2xl py-3 max-w-96">
       <div className=" rounded-full bg-[#E7ECFC] w-10 h-10 flex justify-center items-center">
         <img src={icon} alt={icon} className="w-5 h-5" />
       </div>

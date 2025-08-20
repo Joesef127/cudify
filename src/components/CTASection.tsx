@@ -6,7 +6,7 @@ import ThreePhones from "./ui/ThreePhones";
 
 export default function CTASection() {
   return (
-    <section className="py-24  w-full relative overflow-hidden bg-white">
+    <section className="py-24  w-full relative overflow-hidden bg-[#FAFCFF]">
       <div className="container bg-[#0D41E1] mx-auto px-4 relative z-10 flex flex-col items-center text-center text-white overflow-hidden rounded-2xl">
         <div className="flex flex-col items-center justify-center gap-8 mt-16 max-w-2xl mx-auto z-10">
           <div className="flex flex-col gap-6">
