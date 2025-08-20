@@ -24,34 +24,34 @@ export default function SendMoneyHome() {
         whyChoseData={sendWhyChoseData}
       />
       <ProcessSection
-      header="How to Send Money Home from Anywhere in the World"
-      subHeader="It only takes a few taps to move your money home. Here's how."
-      steps={[
-        {
-          title: "Enter Amount",
-          description:
-            "Pay in GBP with your debit card or credit card, or send the money from your online banking.",
-          bgColor: "#E7ECFC",
-          component: <CurrencyExchange />,
-          colSpan: 5, // full width
-        },
-        {
-          title: "Add Recipient",
-          description:
-            "Select who you want to send money to and which pay-out method to use.",
-          bgColor: "#E6FAFE",
-          component: <BankForm />,
-          colSpan: 3,
-        },
-        {
-          title: "Send Securely",
-          description: "Confirm and track it instantly.",
-          bgColor: "#FEF4E6",
-          component: <ProcessCard />,
-          colSpan: 2,
-        },
-      ]}
-    />
+        header="How to Send Money Home from Anywhere in the World"
+        subHeader="It only takes a few taps to move your money home. Here's how."
+        steps={[
+          {
+            title: "Enter Amount",
+            description:
+              "Pay in GBP with your debit card or credit card, or send the money from your online banking.",
+            bgColor: "#E7ECFC",
+            component: <CurrencyExchange />,
+            colSpan: 5,
+          },
+          {
+            title: "Add Recipient",
+            description:
+              "Select who you want to send money to and which pay-out method to use.",
+            bgColor: "#E6FAFE",
+            component: <BankForm />,
+            colSpan: 3,
+          },
+          {
+            title: "Send Securely",
+            description: "Confirm and track it instantly.",
+            bgColor: "#FEF4E6",
+            component: <ProcessCard />,
+            colSpan: 2,
+          },
+        ]}
+      />
       <SecuritySection />
       <CTASection />
     </div>

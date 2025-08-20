@@ -51,6 +51,13 @@ export interface SecurityCardProps {
   desc: string;
 }
 
+export interface HowItWorksCardType {
+  icon: string;
+  heading: string;
+  desc: string;
+  isImage?: boolean;
+}
+
 export interface HeroStickyCardProps {
   image: string;
   name: string;
@@ -119,4 +126,10 @@ export interface ProcessSectionProps {
   header: string;
   subHeader: string;
   steps: Step[];
+}
+
+export interface TeamMembersType {
+  image: string;
+  name: string;
+  position: string;
 }

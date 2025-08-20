@@ -10,7 +10,7 @@ const ProcessSection = ({ header, subHeader, steps }: ProcessSectionProps) => {
         <div className="w-full grid grid-cols-1 gap-5">
           {steps.length > 0 && (
             <div
-              className={`flex justify-between items-center gap-10 rounded-2xl pt-10 px-16 overflow-hidden`}
+              className={`flex justify-between items-center gap-10 rounded-2xl py-10 px-16 overflow-hidden`}
               style={{ backgroundColor: steps[0].bgColor }}
             >
               <div className="flex flex-col gap-4">

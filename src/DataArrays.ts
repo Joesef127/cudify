@@ -3,6 +3,7 @@ import type {
   Currency,
   FeatureType,
   HomeFAQProps,
+  TeamMembersType,
   WhyChoseDataProps,
 } from "./Types";
 import moneys from "./assets/icons/moneys.png";
@@ -26,6 +27,9 @@ import old_couple from "./assets/images/old_couple.png";
 import silver_globe from "./assets/images/silver_globe.jpg";
 import guy_cudify_card from "./assets/images/guy_cudify_card.png";
 import calling from "./assets/icons/calling.png";
+import leslie_alexander from "./assets/images/leslie_alexander.jpg";
+import brooklyn_simmons from "./assets/images/brooklyn_simmons.jpg";
+import cameron_williamson from "./assets/images/Cameron_williamson.jpg";
 
 export const countries: CountriesType[] = [
   {
@@ -84,6 +88,12 @@ export const features: FeatureType[] = [
     bgPosition: "right",
   },
 ];
+
+export const teamMembers: TeamMembersType[] = [
+    {image: leslie_alexander, name: "Leslie Alexander", position: "Founder/CEO"},
+    {image: brooklyn_simmons, name: "Brooklyn Simmons", position: "Founder/CEO"},
+    {image: cameron_williamson, name: "Cameron Williamson", position: "Founder/CEO"}
+]
 
 export const sendWhyChoseData: WhyChoseDataProps[] = [
   {
@@ -151,6 +161,29 @@ export const virtualWhyChoseData: WhyChoseDataProps[] = [
     icon: flash,
     heading: "Pay for International Subscriptions",
     desc: "Eg Netflix, Spotify, Apple Music, YouTube Premium. Enroll in Online Courses or Exams",
+  },
+];
+
+export const cudifyWhyChoseData: WhyChoseDataProps[] = [
+  {
+    icon: moneys,
+    heading: "Cheap transfers abroad",
+    desc: "Make local-to-local payments through various channels like bank transfer, card, mobile money (MoMo), USSD, and more.",
+  },
+  {
+    icon: convert,
+    heading: "Best exchange rates",
+    desc: "Get access to real-time currency exchange services to stay ahead of rate changes.",
+  },
+  {
+    icon: refresh_circle,
+    heading: "Competitive FX Rates",
+    desc: "Benefit from great exchange rates, quick settlements, and smooth transactions via our dashboard, APIs, or OTC desk.",
+  },
+  {
+    icon: flash,
+    heading: "Fast Tansfer notifications",
+    desc: "Need help? Our support team is available 24/7 — real people, ready to assist anytime.",
   },
 ];
 

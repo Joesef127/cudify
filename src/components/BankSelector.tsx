@@ -3,7 +3,7 @@ import { countries } from "../DataArrays";
 
 const BankSelector = () => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 w-4/8 -mb-10">
+    <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 w-4/8 -mb-15">
       <div className="mb-6">
         <h2 className="text-lg font-medium text-gray-900">
           Open an account with full bank details.

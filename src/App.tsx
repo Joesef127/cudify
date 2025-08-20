@@ -7,6 +7,7 @@ import RecieveMoney from "./pages/RecieveMoney";
 import VirtualCard from "./pages/VirtualCard";
 import CudifyMe from "./pages/CudifyMe";
 import NotFound from "./pages/NotFound";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/recieve_money" element={<RecieveMoney />} />
           <Route path="/virtual_card" element={<VirtualCard />} />
           <Route path="/cudify_me" element={<CudifyMe />} />
+          <Route path="/about" element={<About />} />
           <Route path="/*" element={<NotFound />} />
           {/* Add other routes here as needed */}
         </Routes>
