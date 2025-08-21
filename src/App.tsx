@@ -11,11 +11,13 @@ import About from "./pages/About";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import FAQ from "./pages/FAQ";
 import TermsConditions from "./pages/Terms&Conditions";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <div className="flex flex-col justify-between min-h-screen">
       <Router>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
