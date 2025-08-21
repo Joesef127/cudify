@@ -8,6 +8,9 @@ import VirtualCard from "./pages/VirtualCard";
 import CudifyMe from "./pages/CudifyMe";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import FAQ from "./pages/FAQ";
+import TermsConditions from "./pages/Terms&Conditions";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
           <Route path="/virtual_card" element={<VirtualCard />} />
           <Route path="/cudify_me" element={<CudifyMe />} />
           <Route path="/about" element={<About />} />
+          <Route path="/privacy_policy" element={<PrivacyPolicy />} />
+          <Route path="/terms_conditions" element={<TermsConditions />} />
+          <Route path="/faq" element={<FAQ />} />
           <Route path="/*" element={<NotFound />} />
           {/* Add other routes here as needed */}
         </Routes>

@@ -133,3 +133,13 @@ export interface TeamMembersType {
   name: string;
   position: string;
 }
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export interface FAQCategory {
+  title: string;
+  items: FAQItem[];
+}

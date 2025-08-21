@@ -1,5 +1,7 @@
 import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
 import cudify from "../assets/images/Cudify.png";
+import { Link } from "react-router-dom";
+import { footerNav, footerNav2, footerNav3 } from "../DataArrays";
 
 const Footer = () => {
   return (
@@ -10,26 +12,16 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-white font-semibold text-lg">Company</h3>
             <ul className="space-y-3">
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  About us
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  FAQs
-                </a>
-              </li>
+              {footerNav.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    to={item.route}
+                    className="hover:text-white transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -37,21 +29,16 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-white font-semibold text-lg">Legal</h3>
             <ul className="space-y-3">
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Terms & Conditions
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Cookie Policy
-                </a>
-              </li>
+              {footerNav2.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    to={item.route}
+                    className="hover:text-white transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -59,8 +46,9 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-white font-semibold text-lg">Contact Us</h3>
             <ul className="space-y-3">
-              <li>+234801CUDIFY60</li>
-              <li>hello@cudify.com</li>
+              {footerNav3.map((item) => (
+                <li key={item.name}>{item.name}</li>
+              ))}
             </ul>
           </div>
 
@@ -125,7 +113,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <img src={cudify} alt="cudify logo" />
+      <img src={cudify} alt="cudify logo" className="w-full" />
     </footer>
   );
 };
