@@ -157,7 +157,7 @@ export default function CurrencyExchange() {
   //   };
 
   return (
-    <div className="relative z-10 min-w-4/9 bg-white overflow-hidden text-[#667085] rounded-2xl p-4 shadow-lg flex flex-col gap-4 mx-2.5">
+    <div className="relative z-10 min-w-4/9 bg-white overflow-hidden text-[#667085] rounded-2xl p-2 sm:p-4 shadow-lg flex flex-col gap-4 sm:mx-2.5">
       <CurrencySelector
         isOpen={showSendSelector}
         onClose={() => setShowSendSelector(false)}
@@ -177,9 +177,9 @@ export default function CurrencyExchange() {
       {/* <div className="w-full max-w-md mx-auto space-y-4"> */}
       {/* Send Section */}
       <Card className="bg-exchange-send border-0">
-        <div className="flex items-center justify-between gap-2 bg-[#F3F4F8] rounded-lg pr-4">
+        <div className="flex items-center justify-between gap-2 bg-[#F3F4F8] rounded-lg pr-2 sm:pr-4">
           <div className="flex flex-col justify-start items-start gap-2">
-            <label htmlFor="sendAmount" className="text-xs pt-4 pl-3">
+            <label htmlFor="sendAmount" className="text-xs pt-4 pl-1.5 sm:pl-3">
               You Send
             </label>
             <Input
@@ -187,7 +187,7 @@ export default function CurrencyExchange() {
               id="sendAmount"
               value={sendAmount}
               onChange={(e) => setSendAmount(e.target.value)}
-              className="text-2xl leading-8 text-[#101828] font-bold border border-transparent focus:border-[#0D41E1] p-0 outline-none"
+              className="text-sm sm:text-base lg:text-2xl leading-auto text-[#101828] font-bold border border-transparent focus:border-[#0D41E1] p-0 outline-none"
               placeholder="0"
             />
           </div>
@@ -197,22 +197,22 @@ export default function CurrencyExchange() {
             onClick={() => setShowSendSelector(true)}
             className="flex items-center gap-2 text-sm font-semibold hover:bg-muted/50 bg-white rounded-3xl"
           >
-            <span className="text-2xl">{sendCurrency.flag}</span>
+            <span className="text-sm lg:text-2xl">{sendCurrency.flag}</span>
             {sendCurrency.code}
             <ChevronDown className="h-4 w-4" />
           </Button>
         </div>
       </Card>
 
-      <div className="space-y-2 text-sm flex flex-col gap-5 border-y border-black/10 py-2">
+      <div className="space-y-2 text-sm flex flex-col gap-2.5 lg:gap-5 border-y border-black/10 sm:py-2">
         <div className="flex justify-between">
-          <span className="text-xs leading-[18px] font-normal">
+          <span className="text-xs leading-auto font-normal">
             Bank Transfer Fee
           </span>
           <span className="text-[#101828] text-xs">0 {sendCurrency.code}</span>
         </div>
         <div className="flex justify-between">
-          <span className="text-mxs leading-[18px] font-normal">
+          <span className="text-xs leading-auto font-normal">
             Exchange rate
           </span>
           <span className="text-[#0D41E1] text-xs font-normal">
@@ -220,41 +220,29 @@ export default function CurrencyExchange() {
           </span>
         </div>
         <div className="flex justify-between">
-          <span className="text-xs leading-[18px] font-normal">Duration</span>
-          <span className="text-xs leading-[18px] font-normal">
+          <span className="text-xs leading-auto font-normal">Duration</span>
+          <span className="text-xs leading-auto font-normal">
             Usually seconds
           </span>
         </div>
       </div>
 
-      {/* Swap Button */}
-      {/* <div className="flex justify-center">
-          <Button
-            onClick={swapCurrencies}
-            variant="outline"
-            size="icon"
-            className="rounded-full border-2 bg-background hover:bg-muted"
-          >
-            <ArrowUpDown className="h-4 w-4" />
-          </Button>
-        </div> */}
-
       {/* Receive Section */}
       <Card className="bg-exchange-receive-light border-0">
-        <div className="flex items-center justify-between bg-[#F3F4F8] rounded-lg p-4">
+        <div className="flex items-center justify-between bg-[#F3F4F8] rounded-lg p-2 lg:p-4">
           <div className="flex flex-col justify-start items-start gap-2">
             <label htmlFor="sendAmount" className="text-xs">
               Reciever get
             </label>
-            <div className="text-xl font-bold">{calculateReceiveAmount()}</div>
+            <div className="text-base lg:text-xl font-bold">{calculateReceiveAmount()}</div>
           </div>
 
           <Button
             variant="ghost"
-            onClick={() => setShowReceiveSelector(true)}
+            onClick={() => setShowSendSelector(true)}
             className="flex items-center gap-2 text-sm font-semibold hover:bg-muted/50 bg-white rounded-3xl"
           >
-            <span className="text-2xl">{receiveCurrency.flag}</span>
+            <span className="text-sm lg:text-2xl">{receiveCurrency.flag}</span>
             {receiveCurrency.code}
             <ChevronDown className="h-4 w-4" />
           </Button>

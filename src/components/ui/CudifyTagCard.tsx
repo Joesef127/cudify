@@ -7,7 +7,7 @@ const CudifyTagCard = () => {
       className="
         bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-200 
         w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg 
-        -mb-3
+        lg:-mb-12
       "
     >
       <div className="flex flex-col gap-4 justify-center items-center mb-6 sm:mb-8">

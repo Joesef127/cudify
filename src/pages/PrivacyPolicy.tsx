@@ -3,7 +3,7 @@ import CTASection from "../components/CTASection";
 
 const PrivacyPolicy = () => {
   return (
-    <section className="pt-32 md:pt-40 lg:pt-44 pb-16 md:pb-20 lg:pb-24 w-full relative overflow-hidden">
+    <section className="pt-32 md:pt-40 lg:pt-44 w-full relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 gap-12 text-[#101828]">
         {/* Header */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-[56px] lg:leading-[72px] font-bold mb-2 text-black">

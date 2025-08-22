@@ -15,7 +15,7 @@ import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
-    <div className="flex flex-col justify-between min-h-screen">
+    <div className="flex flex-col justify-between min-h-screen sora">
       <Router>
         <ScrollToTop />
         <Header />

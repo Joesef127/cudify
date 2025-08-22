@@ -17,10 +17,10 @@ const Herofeature = ({
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 w-full items-center">
       {/* Text Content */}
-      <div className="my-auto flex flex-col gap-6 md:gap-8 text-center lg:text-left">
-        <div className="relative flex flex-col lg:grid lg:grid-cols-4 items-center lg:items-start gap-2">
+      <div className="my-auto flex flex-col gap-6 md:gap-8 lg:text-left">
+        <div className="relative flex lg:grid lg:grid-cols-4 items-center lg:items-start gap-2">
           <h1
-            className={`w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-snug font-semibold text-[#101828] ${
+            className={`w-fit text-2xl sm:text-3xl lg:text-4xl leading-snug font-semibold text-[#101828] ${
               col_span ? `col-span-${col_span}` : "col-span-3"
             }`}
           >
@@ -32,12 +32,12 @@ const Herofeature = ({
             </span>
           )}
         </div>
-        <p className="font-normal text-base sm:text-lg md:text-xl leading-relaxed max-w-lg mx-auto lg:mx-0">
+        <p className="font-normal text-base sm:text-lg md:text-xl leading-relaxed max-w-lg lg:mx-0">
           {desc}
         </p>
-        <div className="flex justify-center lg:justify-start w-full">
+        <div className="flex justify-start w-full">
           <Button
-            className="text-[#0D41E1] text-sm md:text-base leading-5 flex flex-row-reverse gap-2.5 py-2.5 px-6 border rounded-3xl hover:bg-[#E7ECFC] transition-colors duration-300"
+            className="text-[#0D41E1] hover:text-white text-sm md:text-base leading-5 flex flex-row-reverse gap-2.5 py-2.5 px-6 border rounded-3xl hover:bg-[#0D41E1] transition-colors duration-300"
             children={"Learn More "}
             icon="&rarr;"
             isImage={false}
@@ -47,7 +47,7 @@ const Herofeature = ({
 
       {/* Image Block */}
       <div
-        className="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[660px] w-full rounded-2xl relative flex items-end px-4 md:px-5 pb-6 md:pb-8"
+        className="h-[400px] md:h-[500px] lg:h-[660px] w-full rounded-2xl relative flex items-end px-4 md:px-5 pb-6 md:pb-8"
         style={{
           backgroundImage: `url(${image})`,
           backgroundSize: "cover",
@@ -62,13 +62,13 @@ const Herofeature = ({
               </div>
             )}
             {picture_tag && (
-              <div className="rounded-full text-sm sm:text-base font-semibold text-[#2B2F38]">
+              <div className="rounded-full text-xs sm:text-base md:text-lg font-semibold text-[#2B2F38]">
                 {picture_tag}
               </div>
             )}
           </div>
           {price && currency && (
-            <div className="text-sm sm:text-lg font-semibold text-gray-900">
+            <div className="text-xs sm:text-base md:text-lg font-semibold text-gray-900">
               {price} {currency}
             </div>
           )}

@@ -17,7 +17,7 @@ const SectionIntro = ({ header, subHeader }: SectionIntroProps) => {
       <p
         className="
           text-[#48505E] 
-          text-base sm:text-lg md:text-xl 
+          text-sm sm:text-base md:text-lg 
           leading-6 sm:leading-7 
           font-normal
         "

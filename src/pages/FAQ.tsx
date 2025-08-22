@@ -118,9 +118,8 @@ const FAQ = () => {
             )}
           </div>
         )}
-
-        <CTASection />
       </div>
+      <CTASection />
     </div>
   );
 };

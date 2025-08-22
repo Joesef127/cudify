@@ -16,7 +16,7 @@ const WhyChoseCard = ({ icon, heading, desc }: SecurityCardProps) => {
       </div>
 
       <div className="flex flex-col gap-2 sm:gap-3">
-        <h3 className="text-base sm:text-lg md:text-xl leading-6 sm:leading-7 text-[#101828] font-semibold">
+        <h3 className="text-sm sm:text-base md:text-lg leading-6 sm:leading-7 text-[#101828] font-semibold">
           {heading}
         </h3>
         <p className="text-sm sm:text-base leading-5 sm:leading-6 text-[#667085] font-normal">

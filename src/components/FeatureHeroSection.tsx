@@ -9,10 +9,10 @@ const FeatureHeroSection = ({
   contentClass,
 }: FeatureHeroSectionProps) => {
   return (
-    <section className="bg-[#FAFCFF] pt-24 sm:pt-32 lg:pt-44 pb-10 w-full">
+    <section className="bg-[#FAFCFF] flex justify-center items-center pt-24 sm:pt-32 lg:pt-44 pb-10 w-full">
       <div
         className="
-          container mx-auto w-full h-full 
+          container mx-2.5 sm:mx-5 md:mx-auto w-full h-full 
           py-12 sm:py-16 lg:py-20 
           px-4 sm:px-8 lg:px-16 
           relative flex flex-col items-start justify-center 

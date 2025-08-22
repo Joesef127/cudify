@@ -3,15 +3,15 @@ import SectionIntro from "./ui/SectionIntro";
 
 const ProcessSection = ({ header, subHeader, steps }: ProcessSectionProps) => {
   return (
-    <section className="py-12 sm:py-16 lg:py-24 bg-[#FAFCFF] w-full">
-      <div className="container mx-auto flex flex-col justify-center items-center gap-10 sm:gap-12">
+    <section className="py-12 sm:py-16 lg:py-24 bg-[#FAFCFF] w-full flex justify-center items-center">
+      <div className="container w-[90%] md:w-[80%] mx-auto flex flex-col justify-center items-center gap-10 overflow-hidden">
         <SectionIntro header={header} subHeader={subHeader} />
 
-        <div className="w-full flex flex-col gap-6 sm:gap-8 lg:gap-10">
+        <div className="w-full flex flex-col gap-6 justify-center items-center">
           {/* --- First Step (highlight) --- */}
           {steps.length > 0 && (
             <div
-              className="
+              className="w-full
                 flex flex-col lg:flex-row 
                 justify-between items-center 
                 gap-6 lg:gap-10 
@@ -28,7 +28,7 @@ const ProcessSection = ({ header, subHeader, steps }: ProcessSectionProps) => {
                   {steps[0].description}
                 </p>
               </div>
-              <div className="flex justify-center items-center w-full">
+              <div className="flex justify-center lg:justify-end items-center w-full">
                 {steps[0].component}
               </div>
             </div>
@@ -38,15 +38,14 @@ const ProcessSection = ({ header, subHeader, steps }: ProcessSectionProps) => {
           {steps.length > 1 && (
             <div
               className="
-                grid 
-                grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 
-                gap-6 sm:gap-8 lg:gap-10
+               flex flex-wrap md:flex-nowrap justify-center items-start w-full
+                gap-6
               "
             >
               {steps.slice(1).map((step, idx) => (
                 <div
                   key={idx}
-                  className={`
+                  className={`w-full
                     rounded-2xl overflow-hidden 
                     p-6 sm:p-8 lg:pt-10 
                     flex flex-col gap-8 
