@@ -1,56 +1,20 @@
 import { ArrowRight } from "lucide-react";
 import CTASection from "../components/CTASection";
 
-// const iconMap = {
-//   "Account Information": (
-//     <User className="inline-block mr-2 text-blue-500 w-4 h-4" />
-//   ),
-//   "Personal Details": (
-//     <User className="inline-block mr-2 text-blue-500 w-4 h-4" />
-//   ),
-//   "Identity Verification": (
-//     <ShieldCheck className="inline-block mr-2 text-green-500 w-4 h-4" />
-//   ),
-//   "Financial Information": (
-//     <FileText className="inline-block mr-2 text-purple-500 w-4 h-4" />
-//   ),
-//   "Transaction Data": (
-//     <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-//   ),
-//   Communication: <Mail className="inline-block mr-2 text-pink-500 w-4 h-4" />,
-//   "Survey Data": <Info className="inline-block mr-2 text-indigo-500 w-4 h-4" />,
-//   "Marketing and Communications": (
-//     <Globe className="inline-block mr-2 text-orange-500 w-4 h-4" />
-//   ),
-//   "Other Information": (
-//     <CheckCircle className="inline-block mr-2 text-gray-500 w-4 h-4" />
-//   ),
-//   "Device Information": (
-//     <FileText className="inline-block mr-2 text-blue-500 w-4 h-4" />
-//   ),
-//   "Usage Data": (
-//     <ListChecks className="inline-block mr-2 text-green-500 w-4 h-4" />
-//   ),
-//   "Location Information": (
-//     <Globe className="inline-block mr-2 text-purple-500 w-4 h-4" />
-//   ),
-//   "Cookies and Similar Technologies": (
-//     <Lock className="inline-block mr-2 text-yellow-500 w-4 h-4" />
-//   ),
-// };
-
 const PrivacyPolicy = () => {
   return (
-    <section className="pt-44 pb-24 w-full relative overflow-hidden">
-      <div className="container mx-auto px-4 relative z-10 text-[#101828] ">
-        <h1 className="text-6xl leading-[72px] font-bold mb-2 text-black">
+    <section className="pt-32 md:pt-40 lg:pt-44 pb-16 md:pb-20 lg:pb-24 w-full relative overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 gap-12 text-[#101828]">
+        {/* Header */}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-[56px] lg:leading-[72px] font-bold mb-2 text-black">
           Privacy Policy
         </h1>
-        <p className="text-muted-foreground mb-8 text-[#48505E]">
+        <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-8 text-[#48505E]">
           Last updated: January 2024
         </p>
 
-        <div className="prose prose-gray max-w-none text-lg leading-7">
+        {/* Content */}
+        <div className="prose prose-gray max-w-none text-base sm:text-lg leading-6 sm:leading-7">
           <p className="mb-6 text-foreground">
             At Cudify, we are committed to protecting your privacy and
             safeguarding your personal data. This Privacy Policy explains how we
@@ -58,7 +22,8 @@ const PrivacyPolicy = () => {
             our services.
           </p>
 
-          <h2 className="text-xl leading-7 font-semibold mb-4 text-foreground">
+          {/* Information You Provide */}
+          <h2 className="text-lg sm:text-xl md:text-2xl leading-6 sm:leading-7 font-semibold mb-4 text-foreground">
             Information You Provide to Us
           </h2>
           <ul className="mb-6 space-y-2 text-foreground">
@@ -117,7 +82,8 @@ const PrivacyPolicy = () => {
             </li>
           </ul>
 
-          <h2 className="text-xl leading-7 font-semibold mb-4 text-foreground">
+          {/* How We Use Your Info */}
+          <h2 className="text-lg sm:text-xl md:text-2xl leading-6 sm:leading-7 font-semibold mb-4 text-foreground">
             How We Use Your Information
           </h2>
           <ul className="mb-6 space-y-2 text-foreground">
@@ -143,9 +109,7 @@ const PrivacyPolicy = () => {
               <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
               <strong>Transaction Processing:</strong> conduct and/or
               facilitate your transactions including facilitating payment or
-              other specified functions to process transactions to perform
-              credit-related activities or services requested by you and as may
-              be specified within the relevant terms and conditions.
+              other specified functions.
             </li>
             <li>
               <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
@@ -159,28 +123,24 @@ const PrivacyPolicy = () => {
             </li>
             <li>
               <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              <strong>Fraud Prevention:</strong> identify and prevent the
-              amount of suspected data or the use of transaction and transaction
-              that prevent data or suspected data to any third or third parties.
+              <strong>Fraud Prevention:</strong> identify and prevent suspected
+              fraud or misuse of transaction data.
             </li>
             <li>
               <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
               <strong>Marketing:</strong> with your consent, send you
-              promotional and marketing materials about products and services
-              that we think may be of interest to you, unless you have indicated
-              that you do not wish to receive such communications. You can
-              opt-out of receiving these communications at any time.
+              promotional and marketing materials about products and services.
             </li>
             <li>
               <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              <strong>Security:</strong> protect, enhance, and boost cyber
-              fraud, security breaches and potentially prohibited or illegal
+              <strong>Security:</strong> protect, enhance, and prevent fraud,
+              security breaches and potentially prohibited or illegal
               activities.
             </li>
             <li>
               <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              <strong>Analytics:</strong> analyze the use of our cyber fraud,
-              security research and protecting integrity illegal activities.
+              <strong>Analytics:</strong> analyze usage, security and system
+              performance to improve our services.
             </li>
             <li>
               <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
@@ -189,82 +149,77 @@ const PrivacyPolicy = () => {
             </li>
             <li>
               <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              <strong>Business Operations:</strong> for other business
-              purposes that are compatible with this Policy as disclosed to you
-              and purposes that improve our services.
+              <strong>Business Operations:</strong> for other business purposes
+              that are compatible with this Policy.
             </li>
           </ul>
 
-          <h2 className="text-2xl font-semibold mb-4 text-foreground">
+          {/* Auto Collected */}
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 text-foreground">
             Information We Collect Automatically
           </h2>
           <ul className="mb-6 space-y-2 text-foreground">
             <li>
               <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
               <strong>Device Information:</strong> information about your mobile
-              device, including the hardware model, operating system and
-              version, unique device identifiers, mobile network information.
+              device, including the hardware model, OS version, unique device
+              identifiers, and network info.
             </li>
             <li>
               <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              <strong>Usage Data:</strong> information about your use of the
-              App, including the areas of the App you visit, the time you spend
-              on those areas, the actions you take while using the App, and how
-              often and for how long you use the App.
+              <strong>Usage Data:</strong> information about how you use the
+              App, including areas visited, time spent, and actions taken.
             </li>
             <li>
               <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
               <strong>Location Information:</strong> with your consent, we may
-              collect information about your actual location when you use our
-              mobile applications.
+              collect location data when you use our apps.
             </li>
             <li>
               <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              <strong>Cookies and Similar Technologies:</strong> we use cookies
-              and similar tracking technologies to track the activity on our
-              service and hold certain information.
+              <strong>Cookies:</strong> we use cookies and tracking tech to
+              store preferences and track activity.
             </li>
           </ul>
 
-          <h2 className="text-2xl font-semibold mb-4 text-foreground">
+          {/* Sharing */}
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 text-foreground">
             How We Share Your Information
           </h2>
           <ul className="mb-6 space-y-2 text-foreground">
             <li>
               <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              <strong>Service Providers:</strong> we may share your personal
-              information with third party service providers who perform
-              services for us.
+              <strong>Service Providers:</strong> third-party providers who help
+              us deliver services.
             </li>
             <li>
               <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              <strong>Business Partners:</strong> we may share information
-              with our business partners to offer you certain products, services
-              or promotions.
+              <strong>Business Partners:</strong> to offer products or
+              promotions with partners.
             </li>
             <li>
               <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              <strong>Legal Requirements:</strong> we may disclose your
-              information if required to do so by law or in good faith belief
-              that such action is necessary.
+              <strong>Legal Requirements:</strong> if required by law or valid
+              request.
             </li>
             <li>
               <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              <strong>Business Transfers:</strong> in connection with any
-              merger, sale of company assets, financing, or acquisition.
+              <strong>Business Transfers:</strong> in case of mergers or
+              acquisitions.
             </li>
           </ul>
 
-          <h2 className="text-2xl font-semibold mb-4 text-foreground">
+          {/* Security */}
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 text-foreground">
             Data Security
           </h2>
           <p className="mb-6 text-foreground">
-            We implement appropriate technical and organizational measures to
-            protect your personal information against unauthorized access,
-            alteration, disclosure, or destruction.
+            We implement technical and organizational measures to protect your
+            personal data against unauthorized access, alteration, or misuse.
           </p>
 
-          <h2 className="text-2xl font-semibold mb-4 text-foreground">
+          {/* Rights */}
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 text-foreground">
             Your Rights
           </h2>
           <ul className="mb-6 space-y-2 text-foreground">
@@ -290,15 +245,20 @@ const PrivacyPolicy = () => {
             </li>
           </ul>
 
-          <h2 className="text-2xl font-semibold mb-4 text-foreground">
+          {/* Contact */}
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 text-foreground">
             Contact Us
           </h2>
           <p className="text-foreground">
             If you have any questions about this Privacy Policy, please contact
-            us at privacy@cudify.com
+            us at <a href="mailto:privacy@cudify.com">privacy@cudify.com</a>.
           </p>
         </div>
-        <CTASection />
+
+        {/* CTA */}
+        <div className="mt-12">
+          <CTASection />
+        </div>
       </div>
     </section>
   );

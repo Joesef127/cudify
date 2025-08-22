@@ -4,6 +4,7 @@ import type {
   FAQCategory,
   FeatureType,
   HomeFAQProps,
+  HowItWorksCardType,
   TeamMembersType,
   WhyChoseDataProps,
 } from "./Types";
@@ -109,10 +110,31 @@ export const features: FeatureType[] = [
 ];
 
 export const teamMembers: TeamMembersType[] = [
-    {image: leslie_alexander, name: "Leslie Alexander", position: "Founder/CEO"},
-    {image: brooklyn_simmons, name: "Brooklyn Simmons", position: "Founder/CEO"},
-    {image: cameron_williamson, name: "Cameron Williamson", position: "Founder/CEO"}
+    {image: leslie_alexander, name: "Leslie Alexander", position: "Founder/CEO", linkedin: "https://linkedin.com/in/lesliealexander"},
+    {image: brooklyn_simmons, name: "Brooklyn Simmons", position: "Founder/CEO", linkedin: "https://linkedin.com/in/lesliealexander"},
+    {image: cameron_williamson, name: "Cameron Williamson", position: "Founder/CEO", linkedin: "https://linkedin.com/in/lesliealexander"}
 ]
+
+export const howItWorksData: HowItWorksCardType[] = [
+    {
+      icon: "1",
+      isImage: false,
+      heading: "Create Your Account",
+      desc: "Sign up in minutes with your email or phone number. No paperwork needed.",
+    },
+    {
+      icon: "2",
+      isImage: false,
+      heading: "Activate Your Virtual Card",
+      desc: "Get your virtual card instantly. Use it for online purchases, subscriptions, and more.",
+    },
+    {
+      icon: "3",
+      isImage: false,
+      heading: "Top Up & Spend",
+      desc: "Fund your wallet and start spending online anywhere major cards are accepted.",
+    },
+  ];
 
 export const sendWhyChoseData: WhyChoseDataProps[] = [
   {

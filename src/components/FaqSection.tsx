@@ -1,14 +1,22 @@
+// FaqSection.tsx
 import HomeFAQ from "./ui/HomeFAQ";
 
 const FaqSection = () => {
   return (
-    <section className="py-16 bg-[#FAFCFF] w-full">
-      <div className="container mx-auto flex flex-wrap justify-center lg:justify-between items-center gap-10">
-        <div className="flex flex-col gap-8 max-w-md">
-            <p className="text-xl leading-7 font-normal text-[#2B2F38]">FAQ</p>
-            <h1 className="text-[#101828] text-4xl leading-11 font-semibold">Got questions? We’re here with the answers.</h1>
+    <section className="py-12 md:py-16 lg:py-20 bg-[#FAFCFF] w-full">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-start gap-12 px-4">
+        {/* Left: Title */}
+        <div className="flex flex-col gap-4 md:gap-6 max-w-xl text-center lg:text-left mx-auto lg:mx-0">
+          <p className="text-base md:text-lg lg:text-xl leading-7 font-normal text-[#2B2F38]">
+            FAQ
+          </p>
+          <h1 className="text-[#101828] text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-snug font-semibold">
+            Got questions? We’re here with the answers.
+          </h1>
         </div>
-        <div className="w-4/8">
+
+        {/* Right: FAQ Accordion */}
+        <div className="w-full max-w-2xl mx-auto lg:mx-0">
           <HomeFAQ />
         </div>
       </div>

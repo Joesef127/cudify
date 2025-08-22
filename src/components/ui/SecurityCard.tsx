@@ -2,15 +2,22 @@ import type { SecurityCardProps } from "../../Types";
 
 const SecurityCard = ({ icon, heading, desc }: SecurityCardProps) => {
   return (
-    <div className="flex items-start justify-start gap-4 w-max transition-colors rounded-2xl py-3 max-w-96">
-      <div className=" rounded-full bg-[#E7ECFC] w-10 h-10 flex justify-center items-center">
-        <img src={icon} alt={icon} className="w-5 h-5" />
+    <div
+      className="
+        flex items-start gap-3 sm:gap-4
+        transition-colors rounded-2xl 
+        py-3 px-2 sm:px-3 md:px-4 
+        w-full max-w-full sm:max-w-md
+      "
+    >
+      <div className="rounded-full bg-[#E7ECFC] w-9 h-9 sm:w-10 sm:h-10 flex justify-center items-center flex-shrink-0">
+        <img src={icon} alt={heading} className="w-4 h-4 sm:w-5 sm:h-5" />
       </div>
-      <div className="max-w-80 flex flex-col gap-4">
-        <h3 className="text-lg leading-7 text-[#101828] font-semibold">
+      <div className="flex flex-col gap-2 sm:gap-3 text-left">
+        <h3 className="text-base sm:text-lg font-semibold text-[#101828] leading-snug">
           {heading}
         </h3>
-        <p className="text-base leading-6 text-[#667085] font-normal text-wrap max-w-64">
+        <p className="text-xs sm:text-sm md:text-base leading-relaxed text-[#667085] font-normal break-words">
           {desc}
         </p>
       </div>

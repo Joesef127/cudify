@@ -3,16 +3,18 @@ import CTASection from "../components/CTASection";
 
 const TermsConditions = () => {
   return (
-    <section className="pt-44 pb-24 w-full relative overflow-hidden">
-      <div className="container mx-auto px-4 relative z-10 text-[#101828] ">
-        <h1 className="text-6xl leading-[72px] font-bold mb-2 text-black">
+    <section className="pt-28 md:pt-36 lg:pt-44 w-full relative overflow-hidden">
+      <div className="container mx-auto px-4 relative z-10 text-[#101828]">
+        {/* Heading */}
+        <h1 className="text-3xl md:text-4xl lg:text-6xl leading-snug md:leading-[52px] lg:leading-[72px] font-bold mb-2 text-black">
           Terms & Conditions
         </h1>
-        <p className="text-muted-foreground mb-8 text-[#48505E]">
+        <p className="text-sm md:text-base lg:text-lg text-muted-foreground mb-8 text-[#48505E]">
           Last updated: January 2024
         </p>
 
-        <div className="prose prose-gray max-w-none text-lg leading-7">
+        {/* Content */}
+        <div className="prose prose-gray max-w-none text-base md:text-lg leading-7">
           <p className="mb-6 text-foreground">
             Welcome to Cudify. These Terms and Conditions ("Terms") govern your
             use of our financial services platform and mobile application. By
@@ -20,7 +22,7 @@ const TermsConditions = () => {
             Terms.
           </p>
 
-          <h2 className="text-xl leading-7 font-semibold mb-4 text-foreground">
+          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
             1. Acceptance of Terms
           </h2>
           <p className="mb-6 text-foreground">
@@ -30,7 +32,7 @@ const TermsConditions = () => {
             agree to these Terms, you must not use our services.
           </p>
 
-          <h2 className="text-xl leading-7 font-semibold mb-4 text-foreground">
+          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
             2. Eligibility
           </h2>
           <ul className="mb-6 space-y-2 text-foreground">
@@ -58,7 +60,7 @@ const TermsConditions = () => {
             </li>
           </ul>
 
-          <h2 className="text-xl leading-7 font-semibold mb-4 text-foreground">
+          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
             3. Account Registration and Security
           </h2>
           <ul className="mb-6 space-y-2 text-foreground">
@@ -87,10 +89,10 @@ const TermsConditions = () => {
             </li>
           </ul>
 
-          <h2 className="text-xl leading-7 font-semibold mb-4 text-foreground">
+          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
             4. Financial Services
           </h2>
-          <h3 className="text-lg font-semibold mb-3 text-foreground">
+          <h3 className="text-base md:text-lg font-semibold mb-3 text-foreground">
             4.1 Payment Processing
           </h3>
           <ul className="mb-4 space-y-2 text-foreground">
@@ -114,7 +116,7 @@ const TermsConditions = () => {
             </li>
           </ul>
 
-          <h3 className="text-lg font-semibold mb-3 text-foreground">
+          <h3 className="text-base md:text-lg font-semibold mb-3 text-foreground">
             4.2 Lending Services
           </h3>
           <ul className="mb-6 space-y-2 text-foreground">
@@ -144,7 +146,7 @@ const TermsConditions = () => {
             </li>
           </ul>
 
-          <h2 className="text-xl leading-7 font-semibold mb-4 text-foreground">
+          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
             5. Fees and Charges
           </h2>
           <ul className="mb-6 space-y-2 text-foreground">
@@ -171,7 +173,7 @@ const TermsConditions = () => {
             </li>
           </ul>
 
-          <h2 className="text-xl leading-7 font-semibold mb-4 text-foreground">
+          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
             6. Prohibited Activities
           </h2>
           <p className="mb-4 text-foreground">You agree not to:</p>
@@ -206,7 +208,7 @@ const TermsConditions = () => {
             </li>
           </ul>
 
-          <h2 className="text-xl leading-7 font-semibold mb-4 text-foreground">
+          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
             7. Data Protection and Privacy
           </h2>
           <ul className="mb-6 space-y-2 text-foreground">
@@ -232,7 +234,7 @@ const TermsConditions = () => {
             </li>
           </ul>
 
-          <h2 className="text-xl leading-7 font-semibold mb-4 text-foreground">
+          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
             8. Intellectual Property
           </h2>
           <ul className="mb-6 space-y-2 text-foreground">
@@ -257,7 +259,7 @@ const TermsConditions = () => {
             </li>
           </ul>
 
-          <h2 className="text-xl leading-7 font-semibold mb-4 text-foreground">
+          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
             9. Limitation of Liability
           </h2>
           <ul className="mb-6 space-y-2 text-foreground">
@@ -281,7 +283,7 @@ const TermsConditions = () => {
             </li>
           </ul>
 
-          <h2 className="text-xl leading-7 font-semibold mb-4 text-foreground">
+          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
             10. Termination
           </h2>
           <ul className="mb-6 space-y-2 text-foreground">
@@ -303,7 +305,7 @@ const TermsConditions = () => {
             </li>
           </ul>
 
-          <h2 className="text-xl leading-7 font-semibold mb-4 text-foreground">
+          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
             11. Dispute Resolution
           </h2>
           <ul className="mb-6 space-y-2 text-foreground">
@@ -325,7 +327,7 @@ const TermsConditions = () => {
             </li>
           </ul>
 
-          <h2 className="text-xl leading-7 font-semibold mb-4 text-foreground">
+          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
             12. Changes to Terms
           </h2>
           <p className="mb-6 text-foreground">
@@ -335,7 +337,7 @@ const TermsConditions = () => {
             of the new Terms.
           </p>
 
-          <h2 className="text-xl leading-7 font-semibold mb-4 text-foreground">
+          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
             13. Governing Law
           </h2>
           <p className="mb-6 text-foreground">
@@ -344,7 +346,7 @@ const TermsConditions = () => {
             regard to conflict of law principles.
           </p>
 
-          <h2 className="text-xl leading-7 font-semibold mb-4 text-foreground">
+          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
             14. Contact Information
           </h2>
           <p className="text-foreground">

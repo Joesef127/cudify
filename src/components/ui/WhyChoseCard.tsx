@@ -1,16 +1,25 @@
+// WhyChoseCard.tsx
 import type { SecurityCardProps } from "../../Types";
 
 const WhyChoseCard = ({ icon, heading, desc }: SecurityCardProps) => {
   return (
-    <div className="flex items-start justify-start gap-4 transition-colors rounded-2xl py-3 w-full">
-      <div className=" rounded-full bg-[#E7ECFC] p-3 flex justify-center items-center">
-        <img src={icon} alt={icon} className="w-6 h-6" />
+    <div
+      className="
+        flex items-start gap-3 sm:gap-4 
+        rounded-2xl p-4 sm:p-5 
+        w-full h-full
+        transition-colors
+      "
+    >
+      <div className="rounded-full bg-[#E7ECFC] p-2 sm:p-3 flex justify-center items-center shrink-0">
+        <img src={icon} alt={heading} className="w-5 h-5 sm:w-6 sm:h-6" />
       </div>
-      <div className="flex flex-col gap-4">
-        <h3 className="text-lg leading-7 text-[#101828] font-semibold">
+
+      <div className="flex flex-col gap-2 sm:gap-3">
+        <h3 className="text-base sm:text-lg md:text-xl leading-6 sm:leading-7 text-[#101828] font-semibold">
           {heading}
         </h3>
-        <p className="text-base leading-6 text-[#667085] font-normal text-wrap">
+        <p className="text-sm sm:text-base leading-5 sm:leading-6 text-[#667085] font-normal">
           {desc}
         </p>
       </div>

@@ -1,10 +1,11 @@
+// HomeFeatureSection.tsx
 import { featuresData } from "../DataArrays";
 import Herofeature from "./HeroFeature";
 
 export default function HomeFeatureSection() {
   return (
-    <section className="bg-[#E7ECFC] w-full py-24">
-      <div className="container mx-auto flex flex-col items-center justify-center gap-28">
+    <section className="bg-[#E7ECFC] w-full py-16 md:py-20 lg:py-24">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-16 md:gap-24 lg:gap-28 px-4">
         {featuresData &&
           featuresData.map((feature, index) => (
             <Herofeature

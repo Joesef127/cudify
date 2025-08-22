@@ -121,7 +121,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t">
+          <div className="md:hidden py-4 border-t overflow-y-scroll">
             <nav className="flex flex-col space-y-4">
               {/* Product with dropdown */}
               <div>
@@ -147,18 +147,18 @@ const Header = () => {
               </div>
 
               {/* Other links */}
-              <a
-                href="#about"
+              <Link
+                to={"/about"}
                 className="text-foreground hover:text-primary transition-colors"
               >
                 About us
-              </a>
-              <a
-                href="#faq"
+              </Link>
+              <Link
+                to={"/faq"}
                 className="text-foreground hover:text-primary transition-colors"
               >
                 FAQs
-              </a>
+              </Link>
               <Button className="bg-[#0D41E1] hover:bg-[#0D41E1]/90 rounded-4xl py-5 px-12 text-white">
                 Download App
               </Button>

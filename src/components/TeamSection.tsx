@@ -1,34 +1,39 @@
 import { teamMembers } from "../DataArrays";
-import linkedin from "../assets/icons/linkedin.png"
+import linkedin from "../assets/icons/linkedin.png";
 
 const TeamSection = () => {
   return (
-    <section className="pt-44 pb-24 w-full relative overflow-hidden">
-      <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center gap-12 text-[#101828]">
-        <h1 className="font-semibold text-5xl leading-15 text-[#101828] text-center">
+    <section className="pt-24 md:pt-36 pb-16 w-full relative overflow-hidden">
+      <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center gap-10 text-[#101828]">
+        <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl leading-snug text-[#101828]">
           Meet some of our team members
         </h1>
-        <div className="md:grid md:grid-cols-3 gap-6">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full place-items-center">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="relative overflow-hidden rounded-2xl w-96 h-[512px] group cursor-pointer p-4 place-content-end"
+              className="relative overflow-hidden rounded-2xl w-full max-w-sm aspect-[3/4] group cursor-pointer flex items-end"
               style={{
                 backgroundImage: `url(${member.image})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             >
-              <div className="w-full p-4 flex justify-between item-center bg-white rounded-2xl bottom-4">
-                <div className=" place-items-start">
-                  <h3 className="text-2xl leading-8 font-semibold text-[#101828] mb-3">
+              <div className="w-full p-4 flex justify-between items-center bg-white rounded-xl m-4 shadow-md">
+                <div className="text-left">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#101828] mb-1">
                     {member.name}
                   </h3>
-                  <p className="text-base opacity-90 leading-6 font-normal text-[#383E49]">
+                  <p className="text-sm sm:text-base opacity-90 font-normal text-[#383E49]">
                     {member.position}
                   </p>
                 </div>
-                <img src={linkedin} alt={linkedin} className="w-fit h-fit self-center" />
+                <img
+                  src={linkedin}
+                  alt="LinkedIn"
+                  className="w-6 h-6 sm:w-7 sm:h-7 object-contain"
+                />
               </div>
             </div>
           ))}
