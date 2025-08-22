@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-slate-900 text-slate-300">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Company */}
           <div className="space-y-4">
             <h3 className="text-white font-semibold text-lg">Company</h3>
@@ -51,51 +51,42 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-
-          {/* Social Media */}
-          <div className="space-y-4">
-            <h3 className="text-white font-semibold text-lg">Follow Us</h3>
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
-              >
-                <Facebook size={20} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
-              >
-                <Twitter size={20} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
-              >
-                <Instagram size={20} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
-              >
-                <Youtube size={20} />
-              </a>
-            </div>
-          </div>
         </div>
 
         <div className="border-t border-slate-800 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center">
-                <div className="w-4 h-4 bg-primary-foreground rounded-xs transform rotate-45"></div>
-              </div>
+          <div className="flex flex-row justify-between items-center">
+            <div className="flex items-center justify-start gap-2.5 w-full">
               <span className="text-xl font-bold text-white">Cudify</span>
             </div>
 
-            <p className="text-sm text-slate-400">
-              © Cudify2025. All Rights Reserved
-            </p>
+            <div className="space-y-4 w-full flex flex-col justify-end items-end">
+              <div className="flex gap-2">
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+                >
+                  <Facebook size={20} />
+                </a>
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+                >
+                  <Twitter size={20} />
+                </a>
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+                >
+                  <Instagram size={20} />
+                </a>
+                <a
+                  href="#"
+                  className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+                >
+                  <Youtube size={20} />
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="mt-8 text-xs text-slate-400 space-y-2">

@@ -121,8 +121,8 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t overflow-y-scroll">
-            <nav className="flex flex-col space-y-4">
+          <div className="md:hidden py-4 overflow-y-scroll">
+            <nav className="flex flex-col space-y-4 overflow-y-scroll">
               {/* Product with dropdown */}
               <div>
                 <button
@@ -132,7 +132,12 @@ const Header = () => {
                   Product <ChevronDown size={16} />
                 </button>
                 {isMobileDropdownOpen && (
-                  <div className="mt-2 flex flex-col space-y-2 pl-4">
+                  <div
+                    className="mt-2 flex flex-col space-y-2 pl-4"
+                    onClick={() =>
+                      setIsMobileDropdownOpen(!isMobileDropdownOpen)
+                    }
+                  >
                     {productDropdown.map((item) => (
                       <DropdownNav
                         key={item.heading}
@@ -159,7 +164,7 @@ const Header = () => {
               >
                 FAQs
               </Link>
-              <Button className="bg-[#0D41E1] hover:bg-[#0D41E1]/90 rounded-4xl py-5 px-12 text-white">
+              <Button className="bg-[#0D41E1] hover:bg-white/50 hover:text-[#0D41E1] border hover:border-[#0D41E1] rounded-4xl py-5 px-12 text-white">
                 Download App
               </Button>
             </nav>

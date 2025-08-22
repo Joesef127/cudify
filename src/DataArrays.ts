@@ -47,7 +47,7 @@ export const footerNav2 = [
 ];
 
 export const footerNav3 = [
-  { name: "+234801CUDIFY60" },
+  { name: "+2348140915605" },
   { name: "hello@cudify.com" },
 ];
 
