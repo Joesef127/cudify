@@ -26,7 +26,7 @@ const Header = () => {
   });
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 py-3 bg-white backdrop-blur-sm shadow-md">
+    <header className="fixed top-0 left-0 right-0 z-50 md:py-3 bg-[#FAFCFF] backdrop-blur-sm shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
@@ -99,7 +99,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 overflow-y-scroll">
+          <div className="md:hidden py-0 overflow-y-scroll">
             <nav className="flex flex-col space-y-4 overflow-y-scroll">
               {/* Product with dropdown */}
               <div>

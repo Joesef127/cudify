@@ -13,7 +13,7 @@ export default function HomeHero() {
         <HeroContentBox
           heading="Borderless Payments, Boundless Possibilities"
           desc="Send, receive, and manage money
-            across borders easily."
+            across borders"
         />
 
         {/* Phone Image */}
