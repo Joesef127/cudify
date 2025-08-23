@@ -9,7 +9,7 @@ const SecuritySection = () => {
         {/* Header Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 justify-between items-center gap-8 lg:gap-12">
           <div className="flex flex-col gap-6 sm:gap-8 lg:text-left">
-            <h1 className="text-[#101828] font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight max-w-xl mx-auto lg:mx-0">
+            <h1 className="text-[#101828] font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight max-w-xl">
               Your money is safe here, always.
             </h1>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed font-normal text-[#48505E] max-w-2xl mx-auto lg:mx-0">
