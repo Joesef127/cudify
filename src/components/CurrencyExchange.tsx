@@ -204,7 +204,7 @@ export default function CurrencyExchange() {
         </div>
       </Card>
 
-      <div className="space-y-2 text-sm flex flex-col gap-2.5 lg:gap-5 border border-black/10 p-2.5 sm:p-4 rounded-md">
+      <div className="space-y-2 text-sm flex flex-col gap-2.5 lg:gap-5 border-[0.5px] border-black/10 p-2.5 sm:p-4 rounded-md">
         <div className="flex justify-between">
           <span className="text-xs leading-auto font-normal">
             Bank Transfer Fee
