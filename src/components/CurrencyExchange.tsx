@@ -22,7 +22,7 @@ const Input = forwardRef<
 >(({ className, type, ...props }, ref) => (
   <input
     type={type}
-    className={`flex h-10 w-full border-input px-3 py-2 text-sm placeholder:text-muted-foreground 
+    className={`flex h-10 w-full border-input px-3 text-sm placeholder:text-muted-foreground 
         disabled:cursor-not-allowed disabled:opacity-50 ${className || ""}`}
     ref={ref}
     {...props}
@@ -178,8 +178,8 @@ export default function CurrencyExchange() {
       {/* Send Section */}
       <Card className="bg-exchange-send border-0">
         <div className="flex items-center justify-between gap-2 bg-[#F3F4F8] rounded-lg pr-2 sm:pr-4">
-          <div className="flex flex-col justify-start items-start gap-2">
-            <label htmlFor="sendAmount" className="text-xs pt-4 pl-1.5 sm:pl-3">
+          <div className="flex flex-col justify-start items-start">
+            <label htmlFor="sendAmount" className="text-xs pt-2 pl-1.5 sm:pl-3">
               You Send
             </label>
             <Input
