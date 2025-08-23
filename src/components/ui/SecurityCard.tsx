@@ -6,7 +6,7 @@ const SecurityCard = ({ icon, heading, desc }: SecurityCardProps) => {
       className="
         flex items-start gap-3 sm:gap-4
         transition-colors rounded-2xl 
-        py-3 px-2 sm:px-3 md:px-4 
+        py-3 
         w-full max-w-full sm:max-w-md
       "
     >
