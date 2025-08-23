@@ -8,7 +8,7 @@ const Card = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
   ({ className, ...props }, ref) => (
     <div
       ref={ref}
-      className={`rounded-lg border bg-card text-card-foreground shadow-sm ${
+      className={`rounded-lg border bg-card text-card-foreground ${
         className || ""
       }`}
       {...props}
@@ -82,7 +82,7 @@ const CurrencySelector = ({
   return (
     <div className="absolute inset-0 z-50 flex items-center justify-end">
       <div className="absolute inset-0 bg-black/50" onClick={onClose} />
-      <div className="relative bg-white rounded-lg shadow-lg mx-4 max-h-96 overflow-hidden w-4/6">
+      <div className="relative bg-white rounded-lg mx-4 max-h-96 overflow-hidden w-4/6">
         <div>
           <div className="relative p-4">
             <Search className="absolute left-5 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
