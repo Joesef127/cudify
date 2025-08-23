@@ -157,7 +157,7 @@ export default function CurrencyExchange() {
   //   };
 
   return (
-    <div className="relative z-10 min-w-4/9 bg-white overflow-hidden text-[#667085] rounded-2xl p-4 shadow-lg flex flex-col gap-4 mx-2.5">
+    <div className="relative z-10 min-w-4/9 bg-white overflow-hidden text-[#667085] rounded-2xl p-4 flex flex-col gap-4 mx-2.5">
       <CurrencySelector
         isOpen={showSendSelector}
         onClose={() => setShowSendSelector(false)}
@@ -204,7 +204,7 @@ export default function CurrencyExchange() {
         </div>
       </Card>
 
-      <div className="space-y-2 text-sm flex flex-col gap-2.5 lg:gap-5 border-y border-black/10 sm:py-2">
+      <div className="space-y-2 text-sm flex flex-col gap-2.5 lg:gap-5 border border-black/10 p-2.5 sm:p-4 rounded-md">
         <div className="flex justify-between">
           <span className="text-xs leading-auto font-normal">
             Bank Transfer Fee
