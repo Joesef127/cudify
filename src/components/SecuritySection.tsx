@@ -22,7 +22,7 @@ const SecuritySection = () => {
             <img
               src={locked}
               alt="Locked Security"
-              className="w-64 md:w-96 h-auto object-contain"
+              className="w-72 md:w-96 h-auto object-contain"
             />
           </div>
         </div>
