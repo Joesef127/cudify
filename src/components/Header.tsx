@@ -42,17 +42,6 @@ const Header = () => {
                   <button
                     onClick={() => setIsProductOpen(!isProductOpen)}
                     className="flex items-center gap-1 text-base relative
-                      before:content-[''] before:absolute before:w-full before:h-[2px] 
-                      before:bg-[#0D41E1] 
-                      before:top-[-5px] before:left-0 before:scale-x-0 before:origin-left 
-                      before:transition-transform before:duration-400 before:ease-out 
-                      hover:before:scale-x-100 focus:before:scale-x-100 active:before:scale-x-100
-
-                      after:content-[''] after:absolute after:w-full after:h-[2px] 
-                      after:bg-[#0D41E1] 
-                      after:bottom-[-5px] after:left-0 after:scale-x-0 after:origin-right 
-                      after:transition-transform after:duration-400 after:ease-out 
-                      hover:after:scale-x-100 focus:after:scale-x-100 active:after:scale-x-100
                     "
                   >
                     {link.label}
@@ -84,17 +73,6 @@ const Header = () => {
                   to={link.href}
                   key={link.href}
                   className="text-base relative inline-block 
-                    before:content-[''] before:absolute before:w-full before:h-[2px] 
-                    before:bg-[#0D41E1] 
-                    before:top-[-5px] before:left-0 before:scale-x-0 before:origin-left 
-                    before:transition-transform before:duration-400 before:ease-out 
-                    hover:before:scale-x-100 focus:before:scale-x-100 active:before:scale-x-100
-
-                    after:content-[''] after:absolute after:w-full after:h-[2px] 
-                    after:bg-[#0D41E1] 
-                    after:bottom-[-5px] after:left-0 after:scale-x-0 after:origin-right 
-                    after:transition-transform after:duration-400 after:ease-out 
-                    hover:after:scale-x-100 focus:after:scale-x-100 active:after:scale-x-100
                   "
                 >
                   {link.label}
