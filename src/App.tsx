@@ -30,7 +30,6 @@ function App() {
           <Route path="/terms_conditions" element={<TermsConditions />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/*" element={<NotFound />} />
-          {/* Add other routes here as needed */}
         </Routes>
         <Footer />
       </Router>

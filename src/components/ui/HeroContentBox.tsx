@@ -8,7 +8,7 @@ const HeroContentBox = ({
 }: HeroContentBoxProps) => {
   return (
     <div
-      className={`flex flex-col items-center justify-start gap-4 sm:gap-6 max-w-3xl lg:text-left ${contentClass}`}
+      className={`flex flex-col items-center justify-start gap-4 sm:gap-6 max-w-3xl ${contentClass}`}
     >
       {/* Heading */}
       <h1

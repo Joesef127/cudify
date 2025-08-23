@@ -26,7 +26,7 @@ const Header = () => {
   });
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm shadow-md">
+    <header className="fixed top-0 left-0 right-0 z-50 py-3 bg-white backdrop-blur-sm shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
@@ -66,7 +66,7 @@ const Header = () => {
 
                   {/* Dropdown */}
                   {isProductOpen && (
-                    <div className="absolute left-0 top-full mt-10 w-max rounded-2xl p-10 grid grid-cols-2 gap-2 bg-white shadow-lg border border-gray-100 animate-fadeIn z-50">
+                    <div className="absolute left-0 top-full mt-10 w-max rounded-2xl p-2 xl:p-10 grid grid-cols-2 gap-2 bg-white shadow-lg border border-gray-100 animate-fadeIn z-50">
                       {productDropdown.map((item) => (
                         <DropdownNav
                           key={item.heading}
@@ -105,7 +105,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-[#0D41E1] hover:bg-[#0D41E1]/90 rounded-4xl py-5 px-12 text-white">
+            <Button className="bg-[#0D41E1] hover:bg-white border border-[#0D41E1] rounded-4xl py-4 px-12 text-white hover:text-[#0D41E1]">
               Download App
             </Button>
           </div>

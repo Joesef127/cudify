@@ -20,6 +20,7 @@ export default function HomeFeatureSection() {
               tag={feature.tag}
               col_span={feature.col_span}
               has_tag={feature.has_tag}
+              route={feature.route}
             />
           ))}
       </div>

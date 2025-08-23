@@ -13,12 +13,13 @@ const Herofeature = ({
   currency,
   col_span,
   has_tag,
+  route,
 }: HeroFeatureProps) => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 w-full items-center">
       {/* Text Content */}
       <div className="my-auto flex flex-col gap-6 md:gap-8 lg:text-left">
-        <div className="relative flex lg:grid lg:grid-cols-4 items-center lg:items-start gap-2">
+        <div className="relative flex items-center gap-2">
           <h1
             className={`w-fit text-2xl sm:text-3xl lg:text-4xl leading-snug font-semibold text-[#101828] ${
               col_span ? `col-span-${col_span}` : "col-span-3"
@@ -37,10 +38,11 @@ const Herofeature = ({
         </p>
         <div className="flex justify-start w-full">
           <Button
-            className="text-[#0D41E1] hover:text-white text-sm md:text-base leading-5 flex flex-row-reverse gap-2.5 py-2.5 px-6 border rounded-3xl hover:bg-[#0D41E1] transition-colors duration-300"
+            className="text-[#0D41E1] hover:text-white text-sm md:text-base leading-5 flex flex-row-reverse gap-2.5 py-3 md:py-3 px-10 lg:px-12 border rounded-3xl hover:bg-[#0D41E1] transition-colors duration-300"
             children={"Learn More "}
             icon="&rarr;"
             isImage={false}
+            route={route}
           />
         </div>
       </div>

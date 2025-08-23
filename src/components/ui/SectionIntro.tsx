@@ -6,7 +6,7 @@ const SectionIntro = ({ header, subHeader }: SectionIntroProps) => {
     <div className="flex flex-col gap-4 sm:gap-5 max-w-2xl">
       <h1
         className="
-          font-semibold 
+          font-semibold text-center
           text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
           leading-snug sm:leading-[42px] md:leading-[48px] lg:leading-[56px]
           text-[#101828]
@@ -16,7 +16,7 @@ const SectionIntro = ({ header, subHeader }: SectionIntroProps) => {
       </h1>
       <p
         className="
-          text-[#48505E] 
+          text-[#48505E] text-center
           text-sm sm:text-base md:text-lg 
           leading-6 sm:leading-7 
           font-normal

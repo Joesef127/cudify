@@ -108,12 +108,12 @@ const CurrencySelector = ({
                   onClose();
                   setSearchTerm("");
                 }}
-                className="w-full flex items-center gap-3 rounded-lg hover:bg-muted/50 transition-colors text-left"
+                className="w-full flex items-center gap-1.5 sm:gap-3 rounded-lg hover:bg-muted/50 transition-colors text-left"
               >
                 <span className="text-2xl">{currency.flag}</span>
                 <div>
-                  <div className="font-medium">{currency.name}</div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="font-medium text-xs sm:text-sm">{currency.name}</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">
                     {currency.code}
                   </div>
                 </div>
@@ -157,7 +157,7 @@ export default function CurrencyExchange() {
   //   };
 
   return (
-    <div className="relative z-10 min-w-4/9 bg-white overflow-hidden text-[#667085] rounded-2xl p-2 sm:p-4 shadow-lg flex flex-col gap-4 sm:mx-2.5">
+    <div className="relative z-10 min-w-4/9 bg-white overflow-hidden text-[#667085] rounded-2xl p-4 shadow-lg flex flex-col gap-4 mx-2.5">
       <CurrencySelector
         isOpen={showSendSelector}
         onClose={() => setShowSendSelector(false)}
@@ -187,7 +187,7 @@ export default function CurrencyExchange() {
               id="sendAmount"
               value={sendAmount}
               onChange={(e) => setSendAmount(e.target.value)}
-              className="text-sm sm:text-base lg:text-2xl leading-auto text-[#101828] font-bold border border-transparent focus:border-[#0D41E1] p-0 outline-none"
+              className="text-sm sm:text-base lg:text-2xl leading-auto text-[#101828] font-bold border border-transparent focus:border-[#0D41E1] p-0 outline-none rounded-xl"
               placeholder="0"
             />
           </div>

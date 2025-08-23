@@ -27,9 +27,9 @@ const PowerSection = () => {
         </p>
 
         {/* Exchange Component */}
-        <div className="z-10 w-full max-w-sm sm:max-w-md md:max-w-lg">
+        {/* <div className="z-10 w-full max-w-sm sm:max-w-md md:max-w-lg"> */}
           <CurrencyExchange />
-        </div>
+        {/* </div> */}
       </div>
     </section>
   );

@@ -278,6 +278,7 @@ export const navLinks = [
       price: "201,900",
       has_tag: false,
       col_span: "3",
+      route: "/send_money_home"
     },
     {
       heading: "Receive Money from Anywhere in the world",
@@ -289,6 +290,7 @@ export const navLinks = [
       price: "201,900",
       has_tag: false,
       col_span: "3",
+      route: "/recieve_money"
     },
     {
       heading: "Shop/ Spend Globally",
@@ -300,6 +302,7 @@ export const navLinks = [
       price: "16,000",
       has_tag: false,
       col_span: "3",
+      route: "/virtual_card",
     },
     {
       heading: "Send to an Icon (“CudifyMe”)",
@@ -311,6 +314,7 @@ export const navLinks = [
       price: "201,900",
       has_tag: false,
       col_span: "3",
+      route: "/cudify_me",
     },
     {
       heading: "Investments",

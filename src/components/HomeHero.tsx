@@ -17,7 +17,7 @@ export default function HomeHero() {
         />
 
         {/* Phone Image */}
-        <div className="relative flex justify-center items-center -mr-24 sm:-mr-36 mt-8 sm:mt-12 md:mt-16">
+        <div className="relative flex justify-center items-center -mr-36 sm:-mr-48 lg:-mr-52 mt-8 sm:mt-12 md:mt-16">
           <img
             src={holding_phone}
             alt="Holding phone"

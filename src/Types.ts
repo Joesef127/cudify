@@ -9,6 +9,7 @@ export interface HeroFeatureProps {
   currency?: string;
   col_span: string;
   has_tag?: boolean;
+  route?: string;
 }
 
 export interface Currency {
