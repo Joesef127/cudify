@@ -12,7 +12,7 @@ export default function HomeHero() {
       <div className="container mx-auto px-2 relative gap-6 z-10 flex flex-col justify-center items-center text-center text-white overflow-hidden">
         <HeroContentBox
           heading="Borderless Payments, Boundless Possibilities"
-          desc="Built for the African diaspora. Send, receive, and manage money
+          desc="Send, receive, and manage money
             across borders easily."
         />
 
