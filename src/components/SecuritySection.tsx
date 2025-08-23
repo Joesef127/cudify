@@ -7,8 +7,8 @@ const SecuritySection = () => {
     <section className="py-12 sm:py-16 bg-[#FAFCFF] w-full">
       <div className="container mx-auto px-4 flex flex-col gap-12">
         {/* Header Section */}
-        <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-8 lg:gap-12">
-          <div className="flex flex-col gap-6 sm:gap-8 text-center lg:text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-2 justify-between items-center gap-8 lg:gap-12">
+          <div className="flex flex-col gap-6 sm:gap-8 lg:text-left">
             <h1 className="text-[#101828] font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight max-w-xl mx-auto lg:mx-0">
               Your money is safe here, always.
             </h1>
@@ -18,11 +18,11 @@ const SecuritySection = () => {
             </p>
           </div>
 
-          <div className="flex justify-center lg:justify-end w-full lg:w-auto">
+          <div className="flex justify-center w-full lg:w-auto">
             <img
               src={locked}
               alt="Locked Security"
-              className="w-40 sm:w-52 md:w-64 lg:w-72 h-auto object-contain"
+              className="w-64 md:w-96 h-auto object-contain"
             />
           </div>
         </div>

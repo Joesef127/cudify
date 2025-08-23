@@ -18,7 +18,7 @@ const HomeFAQ = () => {
             className="border-b border-gray-200 last:border-b-0"
           >
             <button
-              className="w-full py-4 flex items-center justify-between text-left focus:outline-none"
+              className="w-full pt-12 pb-5 flex items-center justify-between text-left focus:outline-none"
               onClick={() => toggleFAQ(index)}
             >
               <span className="text-gray-900 font-medium text-sm sm:text-base md:text-lg pr-4">
