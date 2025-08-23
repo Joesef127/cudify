@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <Link to={route ? route : "#"} className={className}>
       <span>
-        {isImage ? <img src={icon} alt={icon} /> : <span>{icon}</span>}
+        {isImage ? <img src={icon} alt={icon} className="w-4 md:w-6" /> : <span>{icon}</span>}
       </span>
       <span>{children}</span>
     </Link>
