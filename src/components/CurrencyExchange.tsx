@@ -157,7 +157,7 @@ export default function CurrencyExchange() {
   //   };
 
   return (
-    <div className="relative z-10 min-w-4/9 bg-white overflow-hidden text-[#667085] rounded-2xl p-4 flex flex-col gap-4 mx-2.5">
+    <div className="relative z-10 min-w-4/9 lg:min-w-4/10 max-w-[532px] bg-white overflow-hidden text-[#667085] rounded-2xl p-4 flex flex-col gap-4 mx-2.5">
       <CurrencySelector
         isOpen={showSendSelector}
         onClose={() => setShowSendSelector(false)}
