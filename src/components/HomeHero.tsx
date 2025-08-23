@@ -22,6 +22,8 @@ export default function HomeHero() {
             src={holding_phone}
             alt="Holding phone"
             className="w-3/4 sm:w-5/6 md:w-full max-w-xl"
+            data-aos="fade-up"
+            data-aos-delay="500"
           />
 
           <HeroStickyCard

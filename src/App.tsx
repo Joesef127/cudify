@@ -12,8 +12,10 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import FAQ from "./pages/FAQ";
 import TermsConditions from "./pages/Terms&Conditions";
 import ScrollToTop from "./ScrollToTop";
+import useAOS from "./hooks/useAOS";
 
 function App() {
+  useAOS()
   return (
     <div className="flex flex-col justify-between min-h-screen sora">
       <Router>

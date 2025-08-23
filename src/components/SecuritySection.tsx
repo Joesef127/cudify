@@ -8,7 +8,7 @@ const SecuritySection = () => {
       <div className="container mx-auto px-4 flex flex-col gap-12">
         {/* Header Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 justify-between items-center gap-8 lg:gap-12">
-          <div className="flex flex-col gap-6 sm:gap-8 lg:text-left">
+          <div className="flex flex-col gap-6 sm:gap-8 lg:text-left" data-aos='fade-right'>
             <h1 className="text-[#101828] font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight max-w-xl">
               Your money is safe here, always.
             </h1>
@@ -18,7 +18,7 @@ const SecuritySection = () => {
             </p>
           </div>
 
-          <div className="flex justify-center w-full lg:w-auto">
+          <div className="flex justify-center w-full lg:w-auto" data-aos='fade-left'>
             <img
               src={locked}
               alt="Locked Security"
@@ -28,14 +28,20 @@ const SecuritySection = () => {
         </div>
 
         {/* Security Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full" data-aos='fade-up'>
           {securityCardData?.map((card, index) => (
-            <SecurityCard
-              key={index}
-              icon={card.icon}
-              heading={card.heading}
-              desc={card.desc}
-            />
+            <div
+              data-aos="zoom-out-up"
+              data-aos-delay={index * 300}
+              data-aos-duration="800"
+            >
+              <SecurityCard
+                key={index}
+                icon={card.icon}
+                heading={card.heading}
+                desc={card.desc}
+              />
+            </div>
           ))}
         </div>
       </div>

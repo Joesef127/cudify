@@ -18,7 +18,7 @@ const Herofeature = ({
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 w-full items-center">
       {/* Text Content */}
-      <div className="my-auto flex flex-col gap-6 md:gap-8 lg:text-left">
+      <div className="my-auto flex flex-col gap-6 md:gap-8 lg:text-left" data-aos='fade-right'>
         <div className="relative flex items-center gap-2">
           <h1
             className={`w-fit text-2xl sm:text-3xl lg:text-4xl leading-snug font-semibold text-[#101828] ${
@@ -55,6 +55,7 @@ const Herofeature = ({
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
+         data-aos='fade-left'
       >
         <div className="w-full py-3 px-4 md:py-4 md:px-5 bg-white rounded-full flex justify-between items-center">
           <div className="flex items-center gap-2">

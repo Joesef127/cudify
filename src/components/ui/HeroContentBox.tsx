@@ -17,12 +17,17 @@ const HeroContentBox = ({
           text-[28px] sm:text-4xl md:text-5xl lg:text-6xl 
           leading-auto relative
         "
+        data-aos="fade-left"
       >
         {heading}
       </h1>
 
       {/* Description */}
-      <p className="text-sm sm:text-base xl:text-xl max-w-md sm:max-w-lg">
+      <p
+        className="text-sm sm:text-base xl:text-xl max-w-md sm:max-w-lg"
+        data-aos="fade-left"
+        data-aos-delay="300"
+      >
         {desc}
       </p>
 

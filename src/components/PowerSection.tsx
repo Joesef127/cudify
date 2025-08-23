@@ -17,12 +17,12 @@ const PowerSection = () => {
         <div className="absolute top-0 left-0 bg-black/50 w-full h-full"></div>
         <div className="z-10 flex flex-col items-center justify-center  gap-4 sm:gap-6 md:gap-8 min-w-4/9 lg:min-w-4/10 max-w-[532px]">
           {/* Heading */}
-          <h1 className="font-semibold text-3xl sm:text-3xl md:text-4xl lg:text-5xl z-10 max-w-md sm:max-w-xl lg:max-w-2xl leading-auto mx-2.5">
+          <h1 className="font-semibold text-3xl sm:text-3xl md:text-4xl lg:text-5xl z-10 max-w-md sm:max-w-xl lg:max-w-2xl leading-auto mx-2.5" data-aos='fade-left'>
             The platform built to power global remittances
           </h1>
 
           {/* Paragraph */}
-          <p className="mx-2.5 font-normal text-sm sm:text-base md:text-xl z-10 max-w-sm sm:max-w-md md:max-w-lg">
+          <p className="mx-2.5 font-normal text-sm sm:text-base md:text-xl z-10 max-w-sm sm:max-w-md md:max-w-lg"  data-aos='fade-right'>
             Connecting you globally with instant money transfers, anytime.
           </p>
         </div>

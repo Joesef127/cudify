@@ -80,7 +80,7 @@ const CurrencySelector = ({
   if (!isOpen) return null;
 
   return (
-    <div className="absolute inset-0 z-50 flex items-center justify-end">
+    <div className="absolute inset-0 z-50 flex items-center justify-end" data-aos='fade-right'>
       <div className="absolute inset-0 bg-black/50" onClick={onClose} />
       <div className="relative bg-white rounded-lg mx-4 max-h-96 overflow-hidden w-4/6">
         <div>
@@ -157,7 +157,7 @@ export default function CurrencyExchange() {
   //   };
 
   return (
-    <div className="relative z-10 min-w-4/9 lg:min-w-4/10 max-w-[532px] bg-white overflow-hidden text-[#667085] rounded-2xl p-4 flex flex-col gap-4 mx-2.5">
+    <div className="relative z-10 min-w-4/9 lg:min-w-4/10 max-w-[532px] bg-white overflow-hidden text-[#667085] rounded-2xl p-4 flex flex-col gap-4 mx-2.5"  data-aos='fade-left'>
       <CurrencySelector
         isOpen={showSendSelector}
         onClose={() => setShowSendSelector(false)}
@@ -176,7 +176,7 @@ export default function CurrencyExchange() {
 
       {/* <div className="w-full max-w-md mx-auto space-y-4"> */}
       {/* Send Section */}
-      <Card className="bg-exchange-send border-0">
+      <Card className="bg-exchange-send border-0" data-aos='fade-right' data-aos-delay='200'>
         <div className="flex items-center justify-between gap-2 bg-[#F3F4F8] rounded-lg pr-2 sm:pr-4">
           <div className="flex flex-col justify-start items-start">
             <label htmlFor="sendAmount" className="text-xs pt-2 pl-1.5 sm:pl-3">
@@ -204,7 +204,7 @@ export default function CurrencyExchange() {
         </div>
       </Card>
 
-      <div className="space-y-2 text-sm flex flex-col gap-2.5 lg:gap-5 border-[0.5px] border-black/10 p-2.5 sm:p-4 rounded-md">
+      <div className="space-y-2 text-sm flex flex-col gap-2.5 lg:gap-5 border-[0.5px] border-black/10 p-2.5 sm:p-4 rounded-md" data-aos='fade-left' data-aos-delay='200'>
         <div className="flex justify-between">
           <span className="text-xs leading-auto font-normal">
             Bank Transfer Fee
@@ -228,7 +228,7 @@ export default function CurrencyExchange() {
       </div>
 
       {/* Receive Section */}
-      <Card className="bg-exchange-receive-light border-0">
+      <Card className="bg-exchange-receive-light border-0" data-aos='fade-right' data-aos-delay='200'>
         <div className="flex items-center justify-between bg-[#F3F4F8] rounded-lg p-2 lg:p-4">
           <div className="flex flex-col justify-start items-start gap-2">
             <label htmlFor="sendAmount" className="text-xs">

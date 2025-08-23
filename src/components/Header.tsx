@@ -1,32 +1,50 @@
+import React, { useRef, useState } from "react";
 import Button from "./ui/Button";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { useState } from "react";
 import cudify_logo from "../assets/cudify_logo.png";
 import DropdownNav from "./ui/DropdownNav";
 import { Link } from "react-router-dom";
 import { navLinks, productDropdown } from "../DataArrays";
 
 const Header = () => {
+  // helper to close all menus
+  const closeMenus = () => {
+    setIsProductOpen(false);
+    setIsMenuOpen(false);
+    setIsMobileDropdownOpen(false);
+  };
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProductOpen, setIsProductOpen] = useState(false); // desktop dropdown
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
 
-  // close dropdown if user clicks outside
+  // refs for header and hamburger button
+  const headerRef = useRef<HTMLHeadingElement>(null);
+  const menuBtnRef = useRef<HTMLButtonElement>(null);
+
+  // close dropdowns if user clicks outside header and hamburger button
   const handleClickOutside = (e: MouseEvent) => {
     const target = e.target as HTMLElement;
-    if (!target.closest(".product-dropdown")) {
+    const header = headerRef.current;
+    const menuBtn = menuBtnRef.current;
+    if (
+      header &&
+      !header.contains(target) &&
+      (!menuBtn || !menuBtn.contains(target))
+    ) {
       setIsProductOpen(false);
+      setIsMenuOpen(false);
+      setIsMobileDropdownOpen(false);
     }
   };
 
   // add/remove listener
-  useState(() => {
-    document.addEventListener("click", handleClickOutside);
-    return () => document.removeEventListener("click", handleClickOutside);
+  React.useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   });
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 md:py-3 bg-[#FAFCFF] backdrop-blur-sm shadow-md">
+  <header ref={headerRef} className="fixed top-0 left-0 right-0 z-50 md:py-3 bg-[#FAFCFF] backdrop-blur-sm shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
@@ -41,8 +59,7 @@ const Header = () => {
                 <div key={link.href} className="relative product-dropdown">
                   <button
                     onClick={() => setIsProductOpen(!isProductOpen)}
-                    className="flex items-center gap-1 text-base relative
-                    "
+                    className="flex items-center gap-1 text-base relative"
                   >
                     {link.label}
                     <ChevronDown
@@ -63,6 +80,7 @@ const Header = () => {
                           heading={item.heading}
                           desc={item.desc}
                           route={item.route}
+                          closeMenus={closeMenus}
                         />
                       ))}
                     </div>
@@ -72,8 +90,8 @@ const Header = () => {
                 <Link
                   to={link.href}
                   key={link.href}
-                  className="text-base relative inline-block 
-                  "
+                  className="text-base relative inline-block"
+                  onClick={closeMenus}
                 >
                   {link.label}
                 </Link>
@@ -90,6 +108,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
+            ref={menuBtnRef}
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -99,7 +118,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-0 overflow-y-scroll">
+          <div className="header md:hidden pb-5 overflow-y-scroll">
             <nav className="flex flex-col space-y-4 overflow-y-scroll">
               {/* Product with dropdown */}
               <div>
@@ -112,9 +131,6 @@ const Header = () => {
                 {isMobileDropdownOpen && (
                   <div
                     className="mt-2 flex flex-col space-y-2 pl-4"
-                    onClick={() =>
-                      setIsMobileDropdownOpen(!isMobileDropdownOpen)
-                    }
                   >
                     {productDropdown.map((item) => (
                       <DropdownNav
@@ -123,6 +139,7 @@ const Header = () => {
                         heading={item.heading}
                         desc={item.desc}
                         route={item.route}
+                        closeMenus={closeMenus}
                       />
                     ))}
                   </div>
@@ -133,12 +150,14 @@ const Header = () => {
               <Link
                 to={"/about"}
                 className="text-foreground hover:text-primary transition-colors"
+                onClick={closeMenus}
               >
                 About us
               </Link>
               <Link
                 to={"/faq"}
                 className="text-foreground hover:text-primary transition-colors"
+                onClick={closeMenus}
               >
                 FAQs
               </Link>

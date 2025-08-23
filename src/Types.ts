@@ -44,6 +44,7 @@ export interface DropdownNavProps {
   heading: string;
   desc: string;
   route: string;
+  closeMenus: () => void;
 }
 
 export interface SecurityCardProps {
