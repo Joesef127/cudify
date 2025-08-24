@@ -3,7 +3,7 @@ import type { SectionIntroProps } from "../../Types";
 
 const SectionIntro = ({ header, subHeader }: SectionIntroProps) => {
   return (
-    <div className="flex flex-col gap-4 sm:gap-5 max-w-2xl">
+    <div className="flex flex-col gap-4 sm:gap-5 max-w-3xl lg: justify-center items-center">
       <h1
         className="
           font-semibold text-center
@@ -11,6 +11,7 @@ const SectionIntro = ({ header, subHeader }: SectionIntroProps) => {
           leading-snug sm:leading-[42px] md:leading-[48px] lg:leading-[56px]
           text-[#101828]
         "
+         data-aos="fade-left"
       >
         {header}
       </h1>
@@ -21,6 +22,7 @@ const SectionIntro = ({ header, subHeader }: SectionIntroProps) => {
           leading-6 sm:leading-7 
           font-normal
         "
+         data-aos="fade-right"
       >
         {subHeader}
       </p>

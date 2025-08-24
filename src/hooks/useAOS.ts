@@ -7,7 +7,7 @@ const useAOS = (options?: AOS.AosOptions) => {
     AOS.init({
       duration: 600,
       easing: "ease-in-out",
-      once: false,
+      once: true,
       ...options,
     });
 

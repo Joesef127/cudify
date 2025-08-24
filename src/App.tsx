@@ -17,7 +17,7 @@ import useAOS from "./hooks/useAOS";
 function App() {
   useAOS()
   return (
-    <div className="flex flex-col justify-between min-h-screen sora">
+    <div className="flex flex-col justify-between min-h-screen sora overflow-hidden">
       <Router>
         <ScrollToTop />
         <Header />

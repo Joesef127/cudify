@@ -3,7 +3,7 @@ import type { HowItWorksCardType } from "../../Types";
 
 const HowItWorksCard = ({ icon, heading, desc, isImage }: HowItWorksCardType) => {
   return (
-    <div className="flex items-start gap-4 w-full transition-colors rounded-2xl py-3">
+    <div className="flex items-start gap-4 w-full transition-colors rounded-2xl py-3" data-aos="fade-up" data-aos-delay="100">
       {/* Icon */}
       <div className="rounded-full bg-[#E7ECFC] w-10 h-10 sm:w-12 sm:h-12 flex justify-center items-center">
         {isImage ? (

@@ -30,7 +30,11 @@ const TeamSection = () => {
                 className="w-full p-4 flex justify-between items-center bg-white rounded-xl m-4 shadow-md"
                 data-aos="fade-up"
               >
-                <div className="text-left" data-aos="fade-right" data-aos-delay="100">
+                <div
+                  className="text-left"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                >
                   <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#101828] mb-1">
                     {member.name}
                   </h3>
@@ -43,7 +47,7 @@ const TeamSection = () => {
                   alt="LinkedIn"
                   className="w-6 h-6 sm:w-7 sm:h-7 object-contain"
                   data-aos="fade-left"
-                   data-aos-delay="100"
+                  data-aos-delay="100"
                 />
               </div>
             </div>

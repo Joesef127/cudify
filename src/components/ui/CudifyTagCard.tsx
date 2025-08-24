@@ -9,6 +9,7 @@ const CudifyTagCard = () => {
         w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg 
         lg:-mb-12
       "
+      data-aos="fade-left"
     >
       <div className="flex flex-col gap-4 justify-center items-center mb-6 sm:mb-8">
         <div
@@ -18,13 +19,14 @@ const CudifyTagCard = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
+           data-aos="fade-down"
         ></div>
 
-        <div className="text-xs sm:text-sm leading-5 font-normal text-[#101828]">
+        <div className="text-xs sm:text-sm leading-5 font-normal text-[#101828]"  data-aos="fade-left">
           Send Money to
         </div>
 
-        <div className="flex items-center justify-between gap-2.5 py-1 px-3 bg-[#F3F4F8] rounded-full">
+        <div className="flex items-center justify-between gap-2.5 py-1 px-3 bg-[#F3F4F8] rounded-full" data-aos="fade-right">
           <div className="flex justify-start items-center gap-1">
             <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full overflow-hidden flex items-center justify-center">
               <span className="text-xs sm:text-sm">🇬🇧</span>
@@ -37,7 +39,7 @@ const CudifyTagCard = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-between rounded-lg bg-[#F3F4F8] p-3 sm:p-4">
+      <div className="flex items-center justify-between rounded-lg bg-[#F3F4F8] p-3 sm:p-4" data-aos="fade-up">
         <span className="text-[#12B76A] text-xs sm:text-sm">Stephen</span>
         <span className="text-[#101828] text-xs sm:text-sm">Cudify Wallet</span>
       </div>

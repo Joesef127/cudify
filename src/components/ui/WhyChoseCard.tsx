@@ -10,6 +10,7 @@ const WhyChoseCard = ({ icon, heading, desc }: SecurityCardProps) => {
         w-full h-full
         transition-colors
       "
+       data-aos="fade-up"
     >
       <div className="rounded-full bg-[#E7ECFC] p-2 sm:p-3 flex justify-center items-center shrink-0">
         <img src={icon} alt={heading} className="w-5 h-5 sm:w-6 sm:h-6" />

@@ -24,10 +24,10 @@ const FAQ = () => {
     tab: string
   ) => (
     <div key={categoryIndex} className="mb-6 sm:mb-8">
-      <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-3 sm:mb-4">
+      <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-3 sm:mb-4" data-aos="fade-up">
         {category.title}
       </h3>
-      <div className="space-y-0">
+      <div className="space-y-0" data-aos="fade-up">
         {category.items.map((item, itemIndex) => {
           const key = `${tab}-${categoryIndex}-${itemIndex}`;
           const isOpen = openItems[key] === itemIndex;
@@ -71,13 +71,13 @@ const FAQ = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-6 sm:mb-8">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2" data-aos="fade-right">
             Frequently asked questions
           </h1>
         </div>
 
         {/* Tabs */}
-        <div className="w-full max-w-md mx-auto mb-6 sm:mb-8">
+        <div className="w-full max-w-md mx-auto mb-6 sm:mb-8" data-aos="fade-left">
           <div className="inline-flex h-9 sm:h-10 items-center justify-center rounded-full bg-gray-100 p-1 text-gray-500 w-full">
             <button
               onClick={() => setActiveTab("payment")}

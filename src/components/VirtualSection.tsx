@@ -54,6 +54,7 @@ const VirtualSection = () => {
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
+            data-aos="fade-left"
           ></div>
         </div>
       </div>

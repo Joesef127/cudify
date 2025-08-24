@@ -27,6 +27,7 @@ const GetPaidSection = () => {
           leading-snug sm:leading-[42px] md:leading-[48px] lg:leading-[56px]
           text-[#101828] mb-2.5
         "
+            data-aos="fade-left"
           >
             Get Paid for Anything, Anytime
           </h2>
@@ -37,6 +38,7 @@ const GetPaidSection = () => {
           leading-auto 
           font-normal
         "
+            data-aos="fade-right"
           >
             Wherever the money is coming from and whatever it's for, you'll get
             it quickly and securely — straight to your wallet or bank.
@@ -54,12 +56,26 @@ const GetPaidSection = () => {
                 backgroundSize: "cover",
                 backgroundPosition: feature.bgPosition,
               }}
+              data-aos="zoom-out-left"
+              data-aos-delay={index * 300}
+              data-aos-duration="500"
             >
-              <div className="absolute inset-0 p-4 flex flex-col justify-end text-white">
-                <h3 className="text-xl lg:text-2xl leading-slug font-semibold text-white mb-3">
+              <div
+                className="absolute inset-0 p-4 flex flex-col justify-end text-white"
+                data-aos="fade-up"
+              >
+                <h3
+                  className="text-xl lg:text-2xl leading-slug font-semibold text-white mb-3"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                >
                   {feature.title}
                 </h3>
-                <p className="text-sm lg:text-base opacity-90 leading-auto font-normal text-[#F0F1F3]">
+                <p
+                  className="text-sm lg:text-base opacity-90 leading-auto font-normal text-[#F0F1F3]"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                >
                   {feature.description}
                 </p>
               </div>
@@ -74,6 +90,7 @@ const GetPaidSection = () => {
             <div
               className="flex transition-transform duration-300 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+              data-aos="fade-up"
             >
               {features.map((feature, index) => (
                 <div
@@ -85,8 +102,14 @@ const GetPaidSection = () => {
                     backgroundPosition: "center",
                   }}
                 >
-                  <div className="absolute inset-0 p-2 sm:p-4 flex flex-col justify-end text-white">
-                    <h3 className="text-xl leading-auto font-bold mb-3">{feature.title}</h3>
+                  <div
+                    className="absolute inset-0 p-2 sm:p-4 flex flex-col justify-end text-white"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <h3 className="text-xl leading-auto font-bold mb-3">
+                      {feature.title}
+                    </h3>
                     <p className="text-sm opacity-90 leading-relaxed">
                       {feature.description}
                     </p>
@@ -100,6 +123,8 @@ const GetPaidSection = () => {
           <button
             onClick={prevSlide}
             className="absolute left-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full bg-white/80 hover:bg-white border-none text-gray-800 flex items-center justify-center transition-colors"
+            data-aos="fade-right"
+            data-aos-delay="100"
           >
             <ChevronLeft className="h-4 w-4" />
             <span className="sr-only">Previous slide</span>
@@ -108,6 +133,8 @@ const GetPaidSection = () => {
           <button
             onClick={nextSlide}
             className="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full bg-white/80 hover:bg-white border-none text-gray-800 flex items-center justify-center transition-colors"
+            data-aos="fade-left"
+            data-aos-delay="100"
           >
             <ChevronRight className="h-4 w-4" />
             <span className="sr-only">Next slide</span>
@@ -123,6 +150,8 @@ const GetPaidSection = () => {
                   index === currentSlide ? "bg-gray-800" : "bg-gray-400"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
+                data-aos="fade-up"
+                data-aos-delay="100"
               />
             ))}
           </div>

@@ -11,20 +11,25 @@ const ProcessSection = ({ header, subHeader, steps }: ProcessSectionProps) => {
           {/* --- First Step (highlight) --- */}
           {steps.length > 0 && (
             <div
-              className="w-full
+              className="w-full overflow-hidden
                 flex flex-col lg:flex-row 
                 justify-between items-center 
                 gap-6 lg:gap-10 
-                rounded-2xl p-3 sm:p-6 lg:p-8 
-                overflow-hidden
+                rounded-2xl px-4 pt-10 sm:px-6 lg:px-8 
               "
               style={{ backgroundColor: steps[0].bgColor }}
             >
-              <div className="flex flex-col gap-3 sm:gap-4 text-center lg:text-left">
-                <h1 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#101828] leading-snug">
+              <div className="flex flex-col gap-3 sm:gap-4">
+                <h1
+                  className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#101828] leading-snug"
+                  data-aos="fade-left"
+                >
                   {steps[0].title}
                 </h1>
-                <p className="font-normal text-base sm:text-lg leading-6 sm:leading-7 max-w-lg mx-auto lg:mx-0">
+                <p
+                  className="font-normal text-base sm:text-lg leading-6 sm:leading-7 max-w-lg mx-auto lg:mx-0"
+                  data-aos="fade-right"
+                >
                   {steps[0].description}
                 </p>
               </div>
@@ -45,21 +50,25 @@ const ProcessSection = ({ header, subHeader, steps }: ProcessSectionProps) => {
               {steps.slice(1).map((step, idx) => (
                 <div
                   key={idx}
-                  className={`w-full
+                  className={`w-full h-[408px]
                     rounded-2xl overflow-hidden 
                     p-6 sm:p-8 lg:pt-10 
-                    flex flex-col gap-8 
-                    justify-center items-center 
-                    text-center lg:text-left
+                    flex flex-col gap-8 justify-between
                     ${step.colSpan ? `col-span-${step.colSpan}` : ""}
                   `}
                   style={{ backgroundColor: step.bgColor }}
                 >
                   <div className="flex flex-col gap-3 sm:gap-4">
-                    <h1 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#101828] leading-snug">
+                    <h1
+                      className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#101828] leading-snug"
+                      data-aos="fade-left"
+                    >
                       {step.title}
                     </h1>
-                    <p className="font-normal text-sm sm:text-base lg:text-lg leading-6 sm:leading-7 max-w-md mx-auto lg:mx-0">
+                    <p
+                      className="font-normal text-sm sm:text-base lg:text-lg leading-6 sm:leading-7 max-w-md mx-auto lg:mx-0"
+                      data-aos="fade-right"
+                    >
                       {step.description}
                     </p>
                   </div>
