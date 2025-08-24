@@ -71,10 +71,10 @@ const FAQ = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-6 sm:mb-8">
-          <p className="mb-3 md:mb-5 text-base md:text-lg lg:text-xl leading-7 font-normal text-[#2B2F38]" data-aos='fade-right'>
+          <p className="mb-4 md:mb-8 text-base md:text-lg lg:text-xl leading-7 font-normal text-[#2B2F38]" data-aos='fade-right'>
             FAQ
           </p>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2" data-aos="fade-right">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-2" data-aos="fade-right">
             Frequently asked questions
           </h1>
         </div>
