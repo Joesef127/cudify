@@ -3,7 +3,7 @@ import CurrencyExchange from "./CurrencyExchange";
 
 const PowerSection = () => {
   return (
-    <section className="bg-[#FAFCFF] px-2.5 py-16 md:py-20 lg:py-24 w-full">
+    <section className="bg-[#FAFCFF] px-2.5 pb-16 w-full">
       <div
         className="container overflow-hidden rounded-2xl mx-auto py-12 md:py-16 lg:py-20 relative flex flex-col items-center justify-center text-center text-white gap-4 sm:gap-6 md:gap-8"
         style={{

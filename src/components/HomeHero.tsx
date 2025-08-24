@@ -8,7 +8,7 @@ import HeroContentBox from "./ui/HeroContentBox";
 
 export default function HomeHero() {
   return (
-    <section className="pt-[136px] md:pt-48 bg-[#0D41E1] w-full relative overflow-hidden sora">
+    <section className="pt-[136px] md:pt-48 mb-24 bg-[#0D41E1] w-full relative overflow-hidden sora">
       <div className="container mx-auto px-2 relative gap-6 z-10 flex flex-col justify-center items-center text-center text-white overflow-hidden">
         <HeroContentBox
           heading="Borderless Payments, Boundless Possibilities"
