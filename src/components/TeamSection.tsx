@@ -4,7 +4,7 @@ import linkedin from "../assets/icons/linkedin.png";
 const TeamSection = () => {
   return (
     <section className="pt-16 pb-32 w-full relative overflow-hidden bg-[#FAFCFF]">
-      <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center gap-10 text-[#101828]">
+      <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center gap-16 text-[#101828]">
         <h1
           className="font-semibold text-3xl sm:text-4xl md:text-5xl leading-snug text-[#101828]"
           data-aos="fade-left"
