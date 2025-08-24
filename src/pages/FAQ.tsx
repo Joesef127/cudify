@@ -24,7 +24,7 @@ const FAQ = () => {
     tab: string
   ) => (
     <div key={categoryIndex} className="mb-6 sm:mb-8">
-      <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-3 sm:mb-4" data-aos="fade-up">
+      <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900" data-aos="fade-up">
         {category.title}
       </h3>
       <div className="space-y-0" data-aos="fade-up">
@@ -78,10 +78,10 @@ const FAQ = () => {
 
         {/* Tabs */}
         <div className="w-full max-w-md mx-auto mb-6 sm:mb-8" data-aos="fade-left">
-          <div className="inline-flex h-9 sm:h-10 items-center justify-center rounded-full bg-gray-100 py-3 text-gray-500 w-full">
+          <div className="inline-flex h-9 sm:h-10 items-center justify-center rounded-full bg-gray-100 py-6 text-gray-500 w-full">
             <button
               onClick={() => setActiveTab("payment")}
-              className={`inline-flex items-center justify-center whitespace-nowrap rounded-full px-2 sm:px-3 py-2 text-sm sm:text-base font-medium transition-all w-1/2 ${
+              className={`inline-flex items-center justify-center whitespace-nowrap rounded-full px-2 sm:px-3 py-2.5 text-sm sm:text-base font-medium transition-all w-1/2 ${
                 activeTab === "payment"
                   ? "bg-white text-gray-900 shadow-sm"
                   : "text-gray-500 hover:text-gray-900"
@@ -91,7 +91,7 @@ const FAQ = () => {
             </button>
             <button
               onClick={() => setActiveTab("loan")}
-              className={`inline-flex items-center justify-center whitespace-nowrap rounded-full px-2 sm:px-3 py-2 text-sm sm:text-base font-medium transition-all w-1/2 ${
+              className={`inline-flex items-center justify-center whitespace-nowrap rounded-full px-2 sm:px-3 py-2.5 text-sm sm:text-base font-medium transition-all w-1/2 ${
                 activeTab === "loan"
                   ? "bg-white text-gray-900 shadow-sm"
                   : "text-gray-500 hover:text-gray-900"
