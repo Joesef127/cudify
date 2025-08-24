@@ -38,10 +38,10 @@ const FAQ = () => {
               className="border-b border-gray-200 last:border-b-0"
             >
               <button
-                className="w-full pt-12 pb-5 flex items-center justify-between text-left focus:outline-none hover:bg-gray-50 px-2 -mx-2 rounded"
+                className={`w-full ${itemIndex === 0 ? "pt-5" : "pt-10"} pb-5 flex items-center justify-between text-left focus:outline-none hover:bg-gray-50 -mx-2 rounded`}
                 onClick={() => toggleFAQ(tab, categoryIndex, itemIndex)}
               >
-                <span className="text-gray-900 font-medium text-sm sm:text-base pr-4">
+                <span className="text-gray-900 font-medium text-sm sm:text-base pl-2">
                   {item.question}
                 </span>
                 <div className="flex-shrink-0">
@@ -53,7 +53,7 @@ const FAQ = () => {
                 </div>
               </button>
               {isOpen && item.answer && (
-                <div className="pb-3 sm:pb-4 px-2">
+                <div className="pb-3 sm:pb-4">
                   <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
                     {item.answer}
                   </p>
@@ -81,7 +81,7 @@ const FAQ = () => {
           <div className="inline-flex h-9 sm:h-10 items-center justify-center rounded-full bg-gray-100 py-6 text-gray-500 w-full">
             <button
               onClick={() => setActiveTab("payment")}
-              className={`inline-flex items-center justify-center whitespace-nowrap rounded-full px-2 sm:px-3 py-2.5 text-sm sm:text-base font-medium transition-all w-1/2 ${
+              className={`inline-flex items-center justify-center whitespace-nowrap rounded-full px-3 py-2.5 text-sm sm:text-base font-medium transition-all w-1/2 ${
                 activeTab === "payment"
                   ? "bg-white text-gray-900 shadow-sm"
                   : "text-gray-500 hover:text-gray-900"
@@ -91,7 +91,7 @@ const FAQ = () => {
             </button>
             <button
               onClick={() => setActiveTab("loan")}
-              className={`inline-flex items-center justify-center whitespace-nowrap rounded-full px-2 sm:px-3 py-2.5 text-sm sm:text-base font-medium transition-all w-1/2 ${
+              className={`inline-flex items-center justify-center whitespace-nowrap rounded-full px-5 py-2.5 text-sm sm:text-base font-medium transition-all w-1/2 ${
                 activeTab === "loan"
                   ? "bg-white text-gray-900 shadow-sm"
                   : "text-gray-500 hover:text-gray-900"
