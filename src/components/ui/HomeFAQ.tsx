@@ -15,7 +15,7 @@ const HomeFAQ = () => {
         {faqData.map((item, index) => (
           <div
             key={index}
-            className="border-b border-gray-200 last:border-b-0"
+            className="border-b-[0.5px] border-gray-200 last:border-b-0"
              data-aos='fade-up'
           >
             <button
