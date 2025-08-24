@@ -9,7 +9,7 @@ const SectionIntro = ({ header, subHeader }: SectionIntroProps) => {
           font-semibold text-center
           text-2xl sm:text-4xl
           leading-snug
-          text-[#101828] max-w-[479px]
+          text-[#101828] 
         "
          data-aos="fade-left"
       >
