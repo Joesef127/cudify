@@ -28,7 +28,7 @@ export default function CTASection() {
         </div>
 
         {/* Phones Image (make sure ThreePhones is responsive inside) */}
-        <div className="mt-12 w-full flex justify-center" data-aos='fade-up'>
+        <div className="w-full flex justify-center z-10" data-aos='fade-up'>
           <ThreePhones />
         </div>
 
