@@ -3,13 +3,13 @@ import type { SectionIntroProps } from "../../Types";
 
 const SectionIntro = ({ header, subHeader }: SectionIntroProps) => {
   return (
-    <div className="flex flex-col gap-4 sm:gap-5 max-w-3xl lg: justify-center items-center">
+    <div className="flex flex-col gap-4 sm:gap-5 max-w-2xl justify-center items-center">
       <h1
         className="
           font-semibold text-center
-          text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
-          leading-snug sm:leading-[42px] md:leading-[48px] lg:leading-[56px]
-          text-[#101828]
+          text-2xl sm:text-3xl
+          leading-snug
+          text-[#101828] max-w-[479px]
         "
          data-aos="fade-left"
       >
