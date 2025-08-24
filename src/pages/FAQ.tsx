@@ -70,18 +70,18 @@ const FAQ = () => {
     <div className="min-h-screen bg-[#FAFCFF] pt-28 sm:pt-36 md:pt-44">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-6 sm:mb-8">
+        <div className="text-center mb-6 sm:mb-8 flex flex-col justify-center items-center">
           <p className="mb-4 md:mb-8 text-base md:text-lg lg:text-xl leading-7 font-normal text-[#2B2F38]" data-aos='fade-right'>
             FAQ
           </p>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-2" data-aos="fade-right">
+          <h1 className="text-4xl md:text-6xl  max-w-[536px] font-bold text-gray-900 mb-2" data-aos="fade-right">
             Frequently asked questions
           </h1>
         </div>
 
         {/* Tabs */}
-        <div className="w-full max-w-md mx-auto mb-6 sm:mb-8" data-aos="fade-left">
-          <div className="inline-flex h-9 sm:h-10 items-center justify-center rounded-full bg-gray-100 py-6 text-gray-500 w-full">
+        <div className="w-full max-w-md mx-auto mb-10" data-aos="fade-left">
+          <div className="inline-flex h-9 sm:h-10 items-center justify-center rounded-full bg-gray-100 py-6 px-1 text-gray-500 w-full">
             <button
               onClick={() => setActiveTab("payment")}
               className={`inline-flex items-center justify-center whitespace-nowrap rounded-full px-3 py-2.5 text-sm sm:text-base font-medium transition-all w-1/2 ${
