@@ -3,7 +3,7 @@ import SectionIntro from "./ui/SectionIntro";
 
 const ProcessSection = ({ header, subHeader, steps }: ProcessSectionProps) => {
   return (
-    <section className="py-12 sm:py-16 lg:py-24 bg-[#FAFCFF] w-full flex justify-center items-center">
+    <section className="py-12 sm:py-16 bg-[#FAFCFF] w-full flex justify-center items-center">
       <div className="container w-[90%] md:w-[80%] mx-auto flex flex-col justify-center items-center gap-10 overflow-hidden">
         <SectionIntro header={header} subHeader={subHeader} />
 

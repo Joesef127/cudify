@@ -6,7 +6,7 @@ const WhyChoseCard = ({ icon, heading, desc }: SecurityCardProps) => {
     <div
       className="
         flex items-start gap-3 sm:gap-4 
-        rounded-2xl p-4 sm:p-5 
+        rounded-2xl p-4 
         w-full h-full
         transition-colors
       "
