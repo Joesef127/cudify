@@ -3,7 +3,7 @@ import HomeFAQ from "./ui/HomeFAQ";
 
 const FaqSection = () => {
   return (
-    <section className="py-12 md:py-16 bg-[#FAFCFF] w-full">
+    <section className="pb-16 bg-[#FAFCFF] w-full">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-start gap-4 lg:gap-12 px-4">
         {/* Left: Title */}
         <div className="flex flex-col gap-4 md:gap-6 max-w-xl mx-auto lg:mx-0" data-aos='fade-right'>
