@@ -7,7 +7,7 @@ const SectionIntro = ({ header, subHeader }: SectionIntroProps) => {
       <h1
         className="
           font-semibold text-center
-          text-2xl sm:text-3xl
+          text-2xl sm:text-4xl
           leading-snug
           text-[#101828] max-w-[479px]
         "
