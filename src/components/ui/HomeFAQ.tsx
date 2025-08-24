@@ -10,7 +10,7 @@ const HomeFAQ = () => {
   };
 
   return (
-    <div className="p-4 sm:p-6 w-full max-w-2xl rounded-lg">
+    <div className="sm:p-6 w-full max-w-2xl rounded-lg">
       <div className="space-y-0">
         {faqData.map((item, index) => (
           <div
