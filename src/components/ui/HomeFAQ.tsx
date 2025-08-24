@@ -19,7 +19,7 @@ const HomeFAQ = () => {
              data-aos='fade-up'
           >
             <button
-              className="w-full pt-12 pb-5 flex items-center justify-between text-left focus:outline-none"
+              className={`w-full ${index === 0 ? "pt-0  " : "pt-10"} pb-5 flex items-center justify-between text-left focus:outline-none`}
               onClick={() => toggleFAQ(index)}
             >
               <span className="text-gray-900 font-medium text-sm sm:text-base md:text-lg pr-4">

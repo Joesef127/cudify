@@ -44,7 +44,7 @@ const Header = () => {
   });
 
   return (
-  <header ref={headerRef} className="fixed top-0 left-0 right-0 z-50 md:py-3 bg-[#FAFCFF] backdrop-blur-sm shadow-sm">
+  <header ref={headerRef} className="fixed top-0 left-0 right-0 z-50 md:py-3 bg-[#FAFCFF] backdrop-blur-sm shadow-xs">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
