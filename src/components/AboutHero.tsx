@@ -2,7 +2,7 @@ import triple_ladies from "../assets/images/triple_ladies.png";
 
 const AboutHero = () => {
   return (
-    <section className="pt-32 md:pt-44 pb-16 md:pb-24 bg-[#FAFCFF] w-full relative overflow-hidden">
+    <section className="pt-32 md:pt-44 pb-16 bg-[#FAFCFF] w-full relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center gap-12 text-[#101828]">
         {/* Intro text */}
         <div className="flex flex-col gap-3 md:gap-5 max-w-xl text-center">
@@ -33,7 +33,7 @@ const AboutHero = () => {
         ></div>
 
         {/* Story grid */}
-        <div className="grid grid-cols-1 md:grid-cols-5 justify-between items-start gap-6 md:gap-8 text-start">
+        <div className="grid grid-cols-1 md:grid-cols-5 justify-between items-start gap-6 md:gap-8 text-start pt-12 lg:pt-16">
           <h1
             className="md:col-span-2 text-2xl sm:text-3xl md:text-5xl text-[#101828] font-semibold leading-snug md:leading-[56px]"
             data-aos="fade-right"
