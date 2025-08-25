@@ -79,13 +79,6 @@ export const countries: CountriesType[] = [
   },
 ];
 
-export const currencies: Currency[] = [
-  { code: "GBP", name: "United Kingdom", flag: "🇬🇧", rate: 1 },
-  { code: "NGN", name: "Nigerian Naira", flag: "🇳🇬", rate: 2100 },
-  { code: "USD", name: "US Dollar", flag: "🇺🇸", rate: 0.79 },
-  { code: "EUR", name: "Euro", flag: "🇪🇺", rate: 0.86 },
-];
-
 export const features: FeatureType[] = [
   {
     title: "Global Transfers",
