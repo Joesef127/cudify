@@ -13,7 +13,7 @@ export interface HeroFeatureProps {
 }
 
 export interface Currency {
-  base: string;
+  code: string;
   name: string;
   flag: string;
   rate: number;

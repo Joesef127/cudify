@@ -1,13 +1,13 @@
-import { useState, useEffect, forwardRef } from "react";
+import { useState, forwardRef } from "react";
 import { ChevronDown, Search } from "lucide-react";
 import type { ButtonProps, Currency, CurrencySeletorType } from "../Types";
+// import { currencies } from "../DataArrays";
 
-// Base currencies array
-const currenciesData: Currency[] = [
-  { base: "EUR", name: "Euro", flag: "🇪🇺", rate: 1 },
-  { base: "GBP", name: "United Kingdom", flag: "🇬🇧", rate: 1 },
-  { base: "NGN", name: "Nigerian Naira", flag: "🇳🇬", rate: 1 },
-  { base: "USD", name: "US Dollar", flag: "🇺🇸", rate: 1 },
+const currencies: Currency[] = [
+  { code: "GBP", name: "United Kingdom", flag: "🇬🇧", rate: 1 },
+  { code: "NGN", name: "Nigerian Naira", flag: "🇳🇬", rate: 2100 },
+  { code: "USD", name: "US Dollar", flag: "🇺🇸", rate: 0.79 },
+  { code: "EUR", name: "Euro", flag: "🇪🇺", rate: 0.86 },
 ];
 
 // Inline UI Components
@@ -49,6 +49,13 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       link: "text-primary underline-offset-4 hover:underline",
     };
 
+    // const sizes = {
+    //   default: "h-10 ",
+    //   sm: "h-9 rounded-md",
+    //   lg: "h-11 rounded-md",
+    //   icon: "h-10 w-10",
+    // };
+
     return (
       <button
         className={`inline-flex items-center justify-center whitespace-nowrap rounded-full py-2 px-3 text-sm font-medium 
@@ -74,16 +81,13 @@ const CurrencySelector = ({
   const filteredCurrencies = currencies.filter(
     (currency) =>
       currency.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      currency.base.toLowerCase().includes(searchTerm.toLowerCase())
+      currency.code.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   if (!isOpen) return null;
 
   return (
-    <div
-      className="absolute inset-0 z-50 flex items-center justify-end"
-      data-aos="fade-right"
-    >
+    <div className="absolute inset-0 z-50 flex items-center justify-end" data-aos='fade-right'>
       <div className="absolute inset-0 bg-black/50" onClick={onClose} />
       <div className="relative bg-white rounded-lg mx-4 max-h-96 overflow-hidden w-4/6">
         <div>
@@ -105,7 +109,7 @@ const CurrencySelector = ({
           <div className="flex flex-col gap-2 max-h-24 overflow-y-scroll">
             {filteredCurrencies.map((currency) => (
               <button
-                key={currency.base}
+                key={currency.code}
                 onClick={() => {
                   onSelect(currency);
                   onClose();
@@ -115,11 +119,9 @@ const CurrencySelector = ({
               >
                 <span className="text-2xl">{currency.flag}</span>
                 <div>
-                  <div className="font-medium text-xs sm:text-sm">
-                    {currency.name}
-                  </div>
+                  <div className="font-medium text-xs sm:text-sm">{currency.name}</div>
                   <div className="text-xs sm:text-sm text-muted-foreground">
-                    {currency.base}
+                    {currency.code}
                   </div>
                 </div>
               </button>
@@ -132,43 +134,11 @@ const CurrencySelector = ({
 };
 
 export default function CurrencyExchange() {
-  const [currencies, setCurrencies] = useState<Currency[]>(currenciesData);
   const [sendAmount, setSendAmount] = useState("100");
-  const [sendCurrency, setSendCurrency] = useState(currenciesData[0]);
-  const [receiveCurrency, setReceiveCurrency] = useState(currenciesData[1]);
+  const [sendCurrency, setSendCurrency] = useState(currencies[0]);
+  const [receiveCurrency, setReceiveCurrency] = useState(currencies[1]);
   const [showSendSelector, setShowSendSelector] = useState(false);
   const [showReceiveSelector, setShowReceiveSelector] = useState(false);
-
-  useEffect(() => {
-    async function fetchRates() {
-      const url = "http://api.exchangeratesapi.io/v1/latest?access_key=1f74ab757da2169aeccb24af34fc2991";
-      try {
-        const res = await fetch(url);
-        const data = await res.json();
-        if (
-          data &&
-          data.rates &&
-          ["EUR", "GBP", "USD", "NGN"].every((k) => typeof data.rates[k] === "number")
-        ) {
-          setCurrencies((prev) => {
-            const updated = prev.map((c) => ({
-              ...c,
-              rate: data.rates[c.base],
-            }));
-            setSendCurrency((prevSend) => updated.find((c) => c.base === prevSend.base) || updated[0]);
-            setReceiveCurrency((prevReceive) => updated.find((c) => c.base === prevReceive.base) || updated[1]);
-            return updated;
-          });
-        }
-      } catch (err) {
-        console.error("Error fetching exchange rates:", err);
-      }
-    }
-
-    fetchRates(); // initial load
-    const interval = setInterval(fetchRates, 60000); // update every 60s
-    return () => clearInterval(interval);
-  }, []);
 
   const calculateReceiveAmount = () => {
     const amount = parseFloat(sendAmount) || 0;
@@ -181,17 +151,20 @@ export default function CurrencyExchange() {
 
   const getExchangeRate = () => {
     const rate = receiveCurrency.rate / sendCurrency.rate;
-    return `1 ${sendCurrency.base} = ${rate.toLocaleString("en-US", {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    })} ${receiveCurrency.base}`;
+    return `1 ${sendCurrency.code} = ${rate.toLocaleString("en-US", {
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
+    })} ${receiveCurrency.code}`;
   };
 
+  //   const swapCurrencies = () => {
+  //     const temp = sendCurrency;
+  //     setSendCurrency(receiveCurrency);
+  //     setReceiveCurrency(temp);
+  //   };
+
   return (
-    <div
-      className="relative z-10 min-w-4/9 lg:min-w-4/10 max-w-[532px] bg-white overflow-hidden text-[#667085] rounded-2xl p-4 flex flex-col gap-4 mx-2.5 m"
-      data-aos="fade-left"
-    >
+    <div className="relative z-10 min-w-4/9 lg:min-w-4/10 max-w-[532px] bg-white overflow-hidden text-[#667085] rounded-2xl p-4 flex flex-col gap-4 mx-2.5 m"  data-aos='fade-left'>
       <CurrencySelector
         isOpen={showSendSelector}
         onClose={() => setShowSendSelector(false)}
@@ -208,12 +181,9 @@ export default function CurrencyExchange() {
         selectedCurrency={receiveCurrency}
       />
 
+      {/* <div className="w-full max-w-md mx-auto space-y-4"> */}
       {/* Send Section */}
-      <Card
-        className="bg-exchange-send border-0"
-        data-aos="fade-right"
-        data-aos-delay="200"
-      >
+      <Card className="bg-exchange-send border-0" data-aos='fade-right' data-aos-delay='200'>
         <div className="flex items-center justify-between gap-2 bg-[#F3F4F8] rounded-lg pr-2 sm:pr-4">
           <div className="flex flex-col justify-start items-start">
             <label htmlFor="sendAmount" className="text-xs pt-2 pl-1.5 sm:pl-3">
@@ -235,22 +205,18 @@ export default function CurrencyExchange() {
             className="flex items-center gap-2 text-sm font-semibold hover:bg-muted/50 bg-white rounded-3xl"
           >
             <span className="text-sm lg:text-2xl">{sendCurrency.flag}</span>
-            {sendCurrency.base}
+            {sendCurrency.code}
             <ChevronDown className="h-4 w-4" />
           </Button>
         </div>
       </Card>
 
-      <div
-        className="space-y-2 text-sm flex flex-col gap-2.5 lg:gap-5 border-[0.5px] border-black/10 p-2.5 sm:p-4 rounded-md"
-        data-aos="fade-left"
-        data-aos-delay="200"
-      >
+      <div className="space-y-2 text-sm flex flex-col gap-2.5 lg:gap-5 border-[0.5px] border-black/10 p-2.5 sm:p-4 rounded-md" data-aos='fade-left' data-aos-delay='200'>
         <div className="flex justify-between">
           <span className="text-xs leading-auto font-normal">
             Bank Transfer Fee
           </span>
-          <span className="text-[#101828] text-xs">0 {sendCurrency.base}</span>
+          <span className="text-[#101828] text-xs">0 {sendCurrency.code}</span>
         </div>
         <div className="flex justify-between">
           <span className="text-xs leading-auto font-normal">
@@ -269,28 +235,22 @@ export default function CurrencyExchange() {
       </div>
 
       {/* Receive Section */}
-      <Card
-        className="bg-exchange-receive-light border-0"
-        data-aos="fade-right"
-        data-aos-delay="200"
-      >
+      <Card className="bg-exchange-receive-light border-0" data-aos='fade-right' data-aos-delay='200'>
         <div className="flex items-center justify-between bg-[#F3F4F8] rounded-lg p-2 lg:p-4">
           <div className="flex flex-col justify-start items-start gap-2">
             <label htmlFor="sendAmount" className="text-xs">
               Reciever get
             </label>
-            <div className="text-base lg:text-xl font-bold text-[#101828]">
-              {calculateReceiveAmount()}
-            </div>
+            <div className="text-base lg:text-xl font-bold text-[#101828]">{calculateReceiveAmount()}</div>
           </div>
 
           <Button
             variant="ghost"
-            onClick={() => setShowReceiveSelector(true)}
+            onClick={() => setShowSendSelector(true)}
             className="flex items-center gap-2 text-sm font-semibold hover:bg-muted/50 bg-white rounded-3xl"
           >
             <span className="text-sm lg:text-2xl">{receiveCurrency.flag}</span>
-            {receiveCurrency.base}
+            {receiveCurrency.code}
             <ChevronDown className="h-4 w-4" />
           </Button>
         </div>
