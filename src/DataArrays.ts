@@ -1,6 +1,5 @@
 import type {
   CountriesType,
-  Currency,
   FAQCategory,
   FeatureType,
   HomeFAQProps,
