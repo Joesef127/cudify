@@ -66,7 +66,7 @@ const ProcessSection = ({ header, subHeader, steps }: ProcessSectionProps) => {
                       {step.title}
                     </h1>
                     <p
-                      className="font-normal text-sm sm:text-base lg:text-lg leading-6 sm:leading-7 max-w-md mx-auto lg:mx-0"
+                      className="font-normal text-lg leading-6 sm:leading-7 max-w-md"
                       data-aos="fade-right"
                     >
                       {step.description}

@@ -130,7 +130,7 @@ const Header = () => {
                 </button>
                 {isMobileDropdownOpen && (
                   <div
-                    className="mt-2 flex flex-col space-y-2 pl-4"
+                    className="mt-2 flex flex-col space-y-2"
                   >
                     {productDropdown.map((item) => (
                       <DropdownNav
