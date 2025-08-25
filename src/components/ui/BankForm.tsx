@@ -12,7 +12,7 @@ const BankForm = () => {
   };
 
   return (
-    <div className="bg-white p-6 max-w-md lg:mx-auto rounded-t-2xl lg:w-6/9" data-aos="fade-up">
+    <div className="bg-white pb-6 pt-8 sm:px-6 -mb-12 max-w-md lg:mx-auto rounded-t-2xl lg:w-6/9" data-aos="fade-up">
       <div className="space-y-4">
         {/* Select Bank */}
         <div className="space-y-2" data-aos="fade-left" data-aos-delay="100">

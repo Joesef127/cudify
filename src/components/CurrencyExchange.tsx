@@ -1,7 +1,14 @@
 import { useState, forwardRef } from "react";
 import { ChevronDown, Search } from "lucide-react";
-import type { ButtonProps, CurrencySeletorType } from "../Types";
-import { currencies } from "../DataArrays";
+import type { ButtonProps, Currency, CurrencySeletorType } from "../Types";
+// import { currencies } from "../DataArrays";
+
+const currencies: Currency[] = [
+  { code: "GBP", name: "United Kingdom", flag: "🇬🇧", rate: 1 },
+  { code: "NGN", name: "Nigerian Naira", flag: "🇳🇬", rate: 2100 },
+  { code: "USD", name: "US Dollar", flag: "🇺🇸", rate: 0.79 },
+  { code: "EUR", name: "Euro", flag: "🇪🇺", rate: 0.86 },
+];
 
 // Inline UI Components
 const Card = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
@@ -157,7 +164,7 @@ export default function CurrencyExchange() {
   //   };
 
   return (
-    <div className="relative z-10 min-w-4/9 lg:min-w-4/10 max-w-[532px] bg-white overflow-hidden text-[#667085] rounded-2xl p-4 flex flex-col gap-4 mx-2.5"  data-aos='fade-left'>
+    <div className="relative z-10 min-w-4/9 lg:min-w-4/10 max-w-[532px] bg-white overflow-hidden text-[#667085] rounded-2xl p-4 flex flex-col gap-4 mx-2.5 m"  data-aos='fade-left'>
       <CurrencySelector
         isOpen={showSendSelector}
         onClose={() => setShowSendSelector(false)}
@@ -234,7 +241,7 @@ export default function CurrencyExchange() {
             <label htmlFor="sendAmount" className="text-xs">
               Reciever get
             </label>
-            <div className="text-base lg:text-xl font-bold">{calculateReceiveAmount()}</div>
+            <div className="text-base lg:text-xl font-bold text-[#101828]">{calculateReceiveAmount()}</div>
           </div>
 
           <Button

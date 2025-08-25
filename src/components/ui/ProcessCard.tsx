@@ -5,10 +5,10 @@ const ProcessCard = () => {
   return (
     <div
       className="
-        flex flex-col gap-4 items-center justify-center 
+        flex flex-col gap-6 items-center justify-center 
         rounded-t-2xl bg-white 
         w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg 
-        p-4 sm:p-6
+        pb-6 pt-8 sm:px-6 -mb-12
       "
        data-aos="fade-left"
     >
@@ -25,7 +25,7 @@ const ProcessCard = () => {
         21,000.00 NGN
       </p>
 
-      <p className="text-xs sm:text-sm text-[#667085] font-normal text-center max-w-[90%]" data-aos="fade-right">
+      <p className="text-xs sm:text-sm text-[#667085] font-normal text-center max-w-[280px]" data-aos="fade-right">
         You’ve successfully sent 21,000 NGN to Joseph Stephen
       </p>
     </div>

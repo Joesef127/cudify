@@ -5,9 +5,9 @@ const CudifyTagCard = () => {
   return (
     <div
       className="
-        bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-200 
+        bg-white p-4 sm:py-9 rounded-2xl shadow-sm border border-gray-200 
         w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg 
-        lg:-mb-12
+        -mb-7 sm:-mb-14 lg:-mb-12
       "
       data-aos="fade-left"
     >

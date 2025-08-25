@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { features } from "../DataArrays";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import SectionIntro from "./ui/SectionIntro";
 
 const GetPaidSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -19,8 +20,13 @@ const GetPaidSection = () => {
     <section className="py-16 px-4 bg-gray-50">
       <div className="container mx-auto">
         {/* Header */}
-        <div className="mb-12">
-          <h2
+        <div className="mb-12 w-full flex flex-col items-center justify-center">
+          <SectionIntro
+            header="Get Paid for Anything, Anytime"
+            subHeader="Wherever the money is coming from and whatever it's for, you'll get
+            it quickly and securely — straight to your wallet or bank."
+          />
+          {/* <h2
             className="
           font-semibold 
           text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
@@ -42,7 +48,7 @@ const GetPaidSection = () => {
           >
             Wherever the money is coming from and whatever it's for, you'll get
             it quickly and securely — straight to your wallet or bank.
-          </p>
+          </p> */}
         </div>
 
         {/* Desktop View - Grid */}
