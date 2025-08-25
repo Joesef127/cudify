@@ -141,7 +141,7 @@ export default function CurrencyExchange() {
 
   useEffect(() => {
     async function fetchRates() {
-      const url = "http://api.exchangeratesapi.io/v1/latest?access_key=1f74ab757da2169aeccb24af34fc2991";
+      const url = "https://api.exchangeratesapi.io/v1/latest?access_key=1f74ab757da2169aeccb24af34fc2991";
       try {
         const res = await fetch(url);
         const data = await res.json();
