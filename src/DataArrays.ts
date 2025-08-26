@@ -8,6 +8,9 @@ import type {
   WhyChoseDataProps,
 } from "./Types";
 import moneys from "./assets/icons/moneys.png";
+import empty_wallet from "./assets/icons/empty-wallet.png";
+import people from "./assets/icons/people.png";
+import shield_tick from "./assets/icons/shield-tick.png";
 import flash from "./assets/icons/flash.png";
 import convert from "./assets/icons/convert.png";
 import refresh_circle from "./assets/icons/refresh_circle.png";
@@ -203,24 +206,24 @@ export const virtualWhyChoseData: WhyChoseDataProps[] = [
 
 export const cudifyWhyChoseData: WhyChoseDataProps[] = [
   {
-    icon: moneys,
-    heading: "Cheap transfers abroad",
+    icon: people,
+    heading: "Easy for Supporters",
     desc: "Make local-to-local payments through various channels like bank transfer, card, mobile money (MoMo), USSD, and more.",
   },
   {
-    icon: convert,
-    heading: "Best exchange rates",
-    desc: "Get access to real-time currency exchange services to stay ahead of rate changes.",
+    icon: global,
+    heading: "Global Reach",
+    desc: "Receive support from fans anywhere in the world, in any currency.",
   },
   {
-    icon: refresh_circle,
-    heading: "Competitive FX Rates",
-    desc: "Benefit from great exchange rates, quick settlements, and smooth transactions via our dashboard, APIs, or OTC desk.",
+    icon: empty_wallet,
+    heading: "Multiple Payment Options",
+    desc: "Supporters can pay however they prefer - cards, mobile money, bank transfers.",
   },
   {
-    icon: flash,
-    heading: "Fast Tansfer notifications",
-    desc: "Need help? Our support team is available 24/7 — real people, ready to assist anytime.",
+    icon: shield_tick,
+    heading: "Privacy & Safety",
+    desc: "No need to share your bank account number with fans. Keep your financial details private.",
   },
 ];
 

@@ -3,11 +3,11 @@ import type { WhyChoseProps } from "../Types";
 import WhyChoseCard from "./ui/WhyChoseCard";
 import SectionIntro from "./ui/SectionIntro";
 
-const WhyChose = ({ header, subHeader, whyChoseData }: WhyChoseProps) => {
+const WhyChose = ({ header, subHeader, whyChoseData, headerClass }: WhyChoseProps) => {
   return (
     <section className="py-12 sm:py-16 lg:py-24 bg-[#FAFCFF] w-full">
       <div className="container mx-auto px-4 flex flex-col justify-center items-center gap-10 sm:gap-12">
-        <SectionIntro header={header} subHeader={subHeader} />
+        <SectionIntro header={header} subHeader={subHeader ?? ""} customClass={headerClass} />
 
         <div
           className="

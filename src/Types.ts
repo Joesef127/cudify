@@ -13,6 +13,13 @@ export interface HeroFeatureProps {
   bgColor?: string;
 }
 
+export interface CreatorType {
+  heading: string;
+  desc: string;
+  image: string;
+  col_span: string;
+}
+
 export interface Currency {
   base: string;
   name: string;
@@ -90,13 +97,15 @@ export interface WhyChoseDataProps {
 
 export interface WhyChoseProps {
   header: string;
-  subHeader: string;
+  subHeader?: string;
   whyChoseData: WhyChoseDataProps[];
+  headerClass?: string; 
 }
 
 export interface SectionIntroProps {
   header: string;
   subHeader: string;
+  customClass?: string;
 }
 
 export interface HomeFAQProps {

@@ -24,7 +24,7 @@ const HeroContentBox = ({
 
       {/* Description */}
       <p
-        className="text-sm sm:text-base xl:text-xl max-w-md sm:max-w-lg"
+        className="text-sm sm:text-base xl:text-xl max-w-md sm:max-w-[557px]"
         data-aos="fade-left"
         data-aos-delay="300"
       >

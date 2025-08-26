@@ -1,9 +1,9 @@
 // SectionIntro.tsx
 import type { SectionIntroProps } from "../../Types";
 
-const SectionIntro = ({ header, subHeader }: SectionIntroProps) => {
+const SectionIntro = ({ header, subHeader, customClass }: SectionIntroProps) => {
   return (
-    <div className="flex flex-col gap-4 sm:gap-5 max-w-2xl justify-center items-center">
+    <div className={`flex flex-col gap-4 sm:gap-5 max-w-2xl justify-center items-center ${customClass}`}>
       <h1
         className="
           font-semibold lg:text-center
