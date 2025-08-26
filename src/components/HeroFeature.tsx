@@ -44,7 +44,7 @@ const Herofeature = ({
         </p>
         <div className="flex justify-start w-full">
           <Button
-            className="text-[#0D41E1] hover:text-white text-sm md:text-base leading-5 flex flex-row-reverse gap-2.5 py-3 md:py-3 px-10 lg:px-12 border rounded-3xl hover:bg-[#0D41E1] transition-colors duration-300"
+            className="text-[#101828] text-sm md:text-base leading-5 flex flex-row-reverse gap-2.5 py-3 md:py-3 px-10 lg:px-12 border border-transparent hover:border-[#101828] rounded-3xl bg-[#F3F4F8] transition-colors duration-300"
             children={"Learn More "}
             icon="&rarr;"
             isImage={false}

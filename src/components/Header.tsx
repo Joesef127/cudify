@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import Button from "./ui/Button";
 import { Menu, X, ChevronDown } from "lucide-react";
-import cudify_logo from "../assets/cudify_logo.png";
+import cudify_full_logo from "../assets/cudify_full_logo.png";
 import DropdownNav from "./ui/DropdownNav";
 import { Link } from "react-router-dom";
 import { navLinks, productDropdown } from "../DataArrays";
@@ -49,7 +49,7 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link to={"/#"} className="flex items-center">
-            {cudify_logo && <img src={cudify_logo} alt="Cudify Logo" />}
+            {cudify_full_logo && <img src={cudify_full_logo} alt="Cudify Logo" className="w-[148.245px]" />}
           </Link>
 
           {/* Desktop Navigation */}
