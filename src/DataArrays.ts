@@ -261,7 +261,7 @@ export const navLinks = [
 
   export const featuresData: HeroFeatureProps[] = [
     {
-      heading: "Send Money Home",
+      heading: "Send Money",
       desc: "Send money to individuals in your home country directly to the recipient’s bank account or  mobile wallet (multi-currencies available)s.",
       image: old_couple,
       icon: nigeria,
@@ -270,11 +270,12 @@ export const navLinks = [
       price: "201,900",
       has_tag: false,
       col_span: "3",
-      route: "/send_money_home"
+      route: "/send_money_home",
+      bgColor: "#E7ECFC",
     },
     {
       heading: "Receive Money from Anywhere in the world",
-      desc: "Send money to family, individuals, or businesses—direct to bank accounts or mobile wallets.",
+      desc: "Receive money from international employers, business partners, family etc.",
       image: cute_lady_selfie,
       icon: nigeria,
       currency: "NGN",
@@ -282,7 +283,8 @@ export const navLinks = [
       price: "201,900",
       has_tag: false,
       col_span: "3",
-      route: "/recieve_money"
+      route: "/recieve_money",
+      bgColor: "#E6FAFE",
     },
     {
       heading: "Shop/ Spend Globally",
@@ -295,6 +297,7 @@ export const navLinks = [
       has_tag: false,
       col_span: "3",
       route: "/virtual_card",
+      bgColor: "#F9E7FF",
     },
     {
       heading: "Send to an Icon (“CudifyMe”)",
@@ -307,6 +310,7 @@ export const navLinks = [
       has_tag: false,
       col_span: "3",
       route: "/cudify_me",
+      bgColor: "#E7F8F0",
     },
     {
       heading: "Investments",
@@ -319,6 +323,7 @@ export const navLinks = [
       tag: "Coming Soon",
       has_tag: true,
       col_span: "2",
+      bgColor: "#FEF4E6",
     },
   ];
 

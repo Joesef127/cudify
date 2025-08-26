@@ -10,6 +10,7 @@ export interface HeroFeatureProps {
   col_span: string;
   has_tag?: boolean;
   route?: string;
+  bgColor?: string;
 }
 
 export interface Currency {
