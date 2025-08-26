@@ -23,14 +23,15 @@ import type { HeroFeatureProps } from "./Types";
 import nigeria from "./assets/icons/nigeria.png";
 import spotify from "./assets/icons/spotify.png";
 import cute_lady_selfie from "./assets/images/cute_lady_selfie.jpg";
-import guitar_girl from "./assets/images/guitar_girl.jpg";
+import studio_girl from "./assets/images/studio_girl.jpg";
 import old_couple from "./assets/images/old_couple.png";
-import silver_globe from "./assets/images/silver_globe.jpg";
+import investment_chart from "./assets/images/investment_chart.jpg";
 import guy_cudify_card from "./assets/images/guy_cudify_card.png";
 import calling from "./assets/icons/calling.png";
+import serious_man from "./assets/images/serious_man.jpg";
 import leslie_alexander from "./assets/images/leslie_alexander.jpg";
-import brooklyn_simmons from "./assets/images/brooklyn_simmons.jpg";
 import cameron_williamson from "./assets/images/Cameron_williamson.jpg";
+
 
 export const footerNav = [
   { name: "About us", route: "/about" },
@@ -102,9 +103,12 @@ export const features: FeatureType[] = [
 ];
 
 export const teamMembers: TeamMembersType[] = [
-    {image: leslie_alexander, name: "Leslie Alexander", position: "Founder/CEO", linkedin: "https://linkedin.com/in/lesliealexander"},
-    {image: brooklyn_simmons, name: "Brooklyn Simmons", position: "Founder/CEO", linkedin: "https://linkedin.com/in/lesliealexander"},
-    {image: cameron_williamson, name: "Cameron Williamson", position: "Founder/CEO", linkedin: "https://linkedin.com/in/lesliealexander"}
+    {image: serious_man, name: "Jenny Wilson", position: "Co-Founder", linkedin: "https://linkedin.com/in/lesliealexander"},
+    {image: leslie_alexander, name: "Anie", position: "Co-Founder", linkedin: "https://linkedin.com/in/lesliealexander"},
+    {image: cameron_williamson, name: "Chuks Ejechi", position: "Head Of Product", linkedin: "https://linkedin.com/in/lesliealexander"},
+    {image: serious_man, name: "Adetounkunbo Ige", position: "Software Engineer", linkedin: "https://linkedin.com/in/lesliealexander"},
+    {image: serious_man, name: "Emmmanuel Chika", position: "Mobile Engineer", linkedin: "https://linkedin.com/in/lesliealexander"},
+    {image: cameron_williamson, name: "Mohammmed Jesus", position: "Backend Engineer", linkedin: "https://linkedin.com/in/lesliealexander"}
 ]
 
 export const howItWorksData: HowItWorksCardType[] = [
@@ -302,7 +306,7 @@ export const navLinks = [
     {
       heading: "Send to an Icon (“CudifyMe”)",
       desc: "Who has inspired you, brought a smile to your face or warmed your heart…show them some love or support.",
-      image: guitar_girl,
+      image: studio_girl,
       icon: nigeria,
       currency: "NGN",
       picture_tag: "Celebrity",
@@ -315,7 +319,7 @@ export const navLinks = [
     {
       heading: "Investments",
       desc: "Invest in vetted opportunities back home from Mutual Funds to Properties, Stocks, Businesses.., we are here to ensure your money works for you so you work less.",
-      image: silver_globe,
+      image: investment_chart,
       icon: nigeria,
       currency: "NGN",
       picture_tag: "Shares",
