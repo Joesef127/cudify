@@ -189,7 +189,7 @@ export default function CurrencyExchange() {
 
   return (
     <div
-      className="relative z-10 min-w-4/9 lg:min-w-4/10 max-w-[532px] bg-white overflow-hidden text-[#667085] rounded-2xl p-4 flex flex-col gap-4 mx-2.5 mb-10 sm:mb-0"
+      className="relative z-10 min-w-4/9 lg:min-w-4/10 max-w-[532px] bg-white overflow-hidden text-[#667085] rounded-2xl p-4 flex flex-col gap-4 mx-2.5 mb-10"
       data-aos="fade-left"
     >
       <CurrencySelector
