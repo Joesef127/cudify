@@ -27,7 +27,7 @@ const ProcessSection = ({ header, subHeader, steps }: ProcessSectionProps) => {
                   {steps[0].title}
                 </h1>
                 <p
-                  className="font-normal text-base sm:text-lg leading-6 sm:leading-7 max-w-lg mx-auto lg:mx-0"
+                  className="font-normal text-base text-[#48505E] sm:text-lg leading-6 sm:leading-7 max-w-lg mx-auto lg:mx-0"
                   data-aos="fade-right"
                 >
                   {steps[0].description}
@@ -66,7 +66,7 @@ const ProcessSection = ({ header, subHeader, steps }: ProcessSectionProps) => {
                       {step.title}
                     </h1>
                     <p
-                      className="font-normal text-lg leading-6 sm:leading-7 max-w-md"
+                      className="font-normal text-lg text-[#48505E] leading-6 sm:leading-7 max-w-md"
                       data-aos="fade-right"
                     >
                       {step.description}

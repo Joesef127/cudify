@@ -137,24 +137,24 @@ export const howItWorksData: HowItWorksCardType[] = [
 
 export const sendWhyChoseData: WhyChoseDataProps[] = [
   {
-    icon: moneys,
-    heading: "Local Transactions",
-    desc: "Make local-to-local payments through various channels like bank transfer, card, mobile money (MoMo), USSD, and more.",
-  },
-  {
     icon: convert,
-    heading: " Real-Time Exchange",
+    heading: "Competitive Fx rates",
     desc: "Get access to real-time currency exchange services to stay ahead of rate changes.",
   },
   {
-    icon: refresh_circle,
-    heading: "Flexible payment methods",
-    desc: "Card payment, bank transfer or with your digital wallet.",
+    icon: flash,
+    heading: "Quick & Fast Tansfer notifications",
+    desc: "Quick, secure transfers, see your money move in real time. You don’t have to wait for business hours to get things done.",
   },
   {
-    icon: flash,
-    heading: "Fast Tansfer notifications",
-    desc: "Quick, secure transfers—see your money move in real time.",
+    icon: clock,
+    heading: "24/7 Human Support",
+    desc: "Need help? Our support team is available 24/7, real people, ready to assist anytime.",
+  },
+  {
+    icon: convert,
+    heading: "Real-Time Exchange",
+    desc: "Get access to real-time currency exchange services to stay ahead of rate changes.",
   },
 ];
 
@@ -175,7 +175,7 @@ export const recieveWhyChoseData: WhyChoseDataProps[] = [
     desc: "Need help? Our support team is available 24/7 — real people, ready to assist anytime.",
   },
   {
-    icon: convert,
+    icon: clock,
     heading: "Real-Time Exchange",
     desc: "Get access to real-time currency exchange services to stay ahead of rate changes.",
   },
@@ -198,7 +198,7 @@ export const virtualWhyChoseData: WhyChoseDataProps[] = [
     desc: "Each card has unique details. Freeze, unfreeze, or delete cards instantly if needed.",
   },
   {
-    icon: flash,
+    icon: clock,
     heading: "24/7 Access",
     desc: " Create and manage your card anytime. No banking hours restrictions.",
   },

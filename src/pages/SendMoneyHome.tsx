@@ -1,19 +1,19 @@
 import CTASection from "../components/CTASection";
 import FeatureHeroSection from "../components/FeatureHeroSection";
 import SecuritySection from "../components/SecuritySection";
-import grey_old_couple from "../assets/images/grey_old_couple.png";
 import WhyChose from "../components/WhyChose";
 import { sendWhyChoseData } from "../DataArrays";
 import ProcessSection from "../components/ProcessSection";
 import CurrencyExchange from "../components/CurrencyExchange";
 import BankForm from "../components/ui/BankForm";
 import ProcessCard from "../components/ui/ProcessCard";
+import old_man_chatting from "../assets/images/old_man_chatting.jpg";
 
 export default function SendMoneyHome() {
   return (
     <div>
       <FeatureHeroSection
-        backgroundImage={grey_old_couple}
+        backgroundImage={old_man_chatting}
         heading="Support friends and family"
         desc="Fast, secure transfers from the UK to Africa — no hidden fees."
         contentClass="max-w-lg"
@@ -25,7 +25,6 @@ export default function SendMoneyHome() {
       />
       <ProcessSection
         header="How to Send Money Home from Anywhere in the World"
-        subHeader="It only takes a few taps to move your money home. Here's how."
         steps={[
           {
             title: "Enter Amount",
