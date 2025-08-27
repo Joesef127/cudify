@@ -4,8 +4,8 @@ import Herofeature from "./HeroFeature";
 
 export default function HomeFeatureSection() {
   return (
-    <section className="bg-[#FAFCFF] w-full py-16 mb-16">
-      <div className="container mx-auto flex flex-col items-center justify-center gap-16 md:gap-24 lg:gap-28 px-4">
+    <section className="bg-[#FAFCFF] flex justify-center w-full py-16 mb-16">
+      <div className="max-w-[1232px] w-full flex flex-col items-center justify-center gap-16 md:gap-24 lg:gap-28 px-4">
         {featuresData &&
           featuresData.map((feature, index) => (
             <Herofeature

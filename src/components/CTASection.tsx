@@ -5,7 +5,7 @@ import DownloadApp from "./ui/DownloadApp";
 export default function CTASection() {
   return (
     <section className="pb-16 px-3 md:px-5 w-full flex justify-center items-center relative overflow-hidden">
-      <div className="container bg-[#0D41E1] mx-2.5 sm:mx-5 md:mx-auto relative z-10 flex flex-col items-center text-center text-white overflow-hidden rounded-2xl">
+      <div className="max-w-[1200px] w-full bg-[#0D41E1] mx-2.5 sm:mx-5 relative z-10 flex flex-col items-center text-center text-white overflow-hidden rounded-2xl">
         {/* Text Section */}
         <div className="flex flex-col items-center justify-center gap-6 mt-12 md:mt-16 max-w-3xl mx-auto px-3 z-10">
           <div className="flex flex-col gap-4 md:gap-6">

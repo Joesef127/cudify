@@ -368,7 +368,9 @@ const TermsConditions = () => {
             </li>
           </ul>
         </div>
-        <CTASection />
+        <div className="mt-12">
+          <CTASection />
+        </div>
       </div>
     </section>
   );

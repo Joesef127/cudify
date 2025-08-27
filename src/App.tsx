@@ -15,26 +15,28 @@ import ScrollToTop from "./ScrollToTop";
 import useAOS from "./hooks/useAOS";
 
 function App() {
-  useAOS()
+  useAOS();
   return (
-    <div className="flex flex-col justify-between min-h-screen sora overflow-hidden">
-      <Router>
-        <ScrollToTop />
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/send_money_home" element={<SendMoneyHome />} />
-          <Route path="/recieve_money" element={<RecieveMoney />} />
-          <Route path="/virtual_card" element={<VirtualCard />} />
-          <Route path="/cudify_me" element={<CudifyMe />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/privacy_policy" element={<PrivacyPolicy />} />
-          <Route path="/terms_conditions" element={<TermsConditions />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/*" element={<NotFound />} />
-        </Routes>
-        <Footer />
-      </Router>
+    <div className="flex flex-col justify-center items-center bg-[#FAFCFF] min-h-screen sora overflow-hidden">
+      {/* <div className="max-w-[1200px]"> */}
+        <Router>
+          <ScrollToTop />
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/send_money_home" element={<SendMoneyHome />} />
+            <Route path="/recieve_money" element={<RecieveMoney />} />
+            <Route path="/virtual_card" element={<VirtualCard />} />
+            <Route path="/cudify_me" element={<CudifyMe />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/privacy_policy" element={<PrivacyPolicy />} />
+            <Route path="/terms_conditions" element={<TermsConditions />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/*" element={<NotFound />} />
+          </Routes>
+          <Footer />
+        </Router>
+      {/* </div> */}
     </div>
   );
 }

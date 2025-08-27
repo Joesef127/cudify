@@ -5,8 +5,8 @@ import { footerNav, footerNav2, footerNav3 } from "../DataArrays";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-slate-300">
-      <div className="container mx-auto px-4 py-16">
+    <footer className="bg-slate-900 flex flex-col justify-center items-center w-screen text-slate-300">
+      <div className="max-w-[1200px] w-full px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Company */}
           <div className="space-y-4">

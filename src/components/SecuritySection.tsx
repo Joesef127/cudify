@@ -4,8 +4,8 @@ import { securityCardData } from "../DataArrays";
 
 const SecuritySection = () => {
   return (
-    <section className="pb-12 sm:py-16 bg-[#FAFCFF] w-full">
-      <div className="container mx-auto px-4 flex flex-col gap-12">
+    <section className="pb-12 flex justify-center sm:py-16 bg-[#FAFCFF] w-full">
+      <div className="max-w-[1200px] w-full px-4 flex flex-col gap-12">
         {/* Header Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 justify-between items-center gap-8 lg:gap-12">
           <div className="flex flex-col gap-6 sm:gap-8 lg:text-left" data-aos='fade-right'>

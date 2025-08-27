@@ -44,12 +44,21 @@ const Header = () => {
   });
 
   return (
-  <header ref={headerRef} className="fixed top-0 left-0 right-0 z-50 md:py-3 bg-[#FAFCFF] backdrop-blur-sm shadow-xs">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between py-4">
+    <header
+      ref={headerRef}
+      className="fixed flex justify-center top-0 left-0 right-0 z-50 md:py-3 bg-[#FAFCFF] backdrop-blur-sm shadow-xs"
+    >
+      <div className="container max-w-[1232px] flex justify-center px-4 w-full">
+        <div className="flex items-center justify-between py-4 w-full">
           {/* Logo */}
           <Link to={"/#"} className="flex items-center">
-            {cudify_full_logo && <img src={cudify_full_logo} alt="Cudify Logo" className="w-[148.245px]" />}
+            {cudify_full_logo && (
+              <img
+                src={cudify_full_logo}
+                alt="Cudify Logo"
+                className="w-[148.245px]"
+              />
+            )}
           </Link>
 
           {/* Desktop Navigation */}
@@ -129,9 +138,7 @@ const Header = () => {
                   Product <ChevronDown size={16} />
                 </button>
                 {isMobileDropdownOpen && (
-                  <div
-                    className="mt-2 flex flex-col space-y-2"
-                  >
+                  <div className="mt-2 flex flex-col space-y-2">
                     {productDropdown.map((item) => (
                       <DropdownNav
                         key={item.heading}

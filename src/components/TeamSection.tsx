@@ -12,7 +12,7 @@ const TeamSection = () => {
           Meet some of our team members
         </h1>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 w-full place-items-center">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 w-full justify-center items-center place-items-center">
           {teamMembers.map((member, index) => (
             <div className={`p-2 sm:p-4 w-fit bg-white border-[0.4px] border-[#E5E5E5] rounded-2xl cursor-pointer flex flex-col ${index % 2 ? "justify-self-start" : "justify-self-end"} sm:justify-self-center items-center`}>
               <img

@@ -3,9 +3,9 @@ import CurrencyExchange from "./CurrencyExchange";
 
 const PowerSection = () => {
   return (
-    <section className="bg-[#FAFCFF] px-2.5 pb-16 w-full">
+    <section className="bg-[#FAFCFF] px-2.5 pb-16 w-full flex justify-center">
       <div
-        className="container overflow-hidden rounded-2xl mx-auto pt-12 md:pt-16 relative flex flex-col items-center justify-center text-center text-white gap-4 sm:gap-6 md:gap-8"
+        className="max-w-[1200px] w-full overflow-hidden rounded-2xl pt-12 md:pt-16 relative flex flex-col items-center justify-center text-center text-white gap-4 sm:gap-6 md:gap-8"
         style={{
           backgroundImage: `url(${phone_exchange})`,
           backgroundSize: "cover",
