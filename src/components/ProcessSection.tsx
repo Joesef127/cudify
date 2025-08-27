@@ -4,11 +4,10 @@ import SectionIntro from "./ui/SectionIntro";
 const ProcessSection = ({ header, subHeader, steps }: ProcessSectionProps) => {
   return (
     <section className="py-12 sm:py-16 bg-[#FAFCFF] w-full flex justify-center items-center">
-      <div className="container w-[90%] md:w-[80%] mx-auto flex flex-col justify-center items-center gap-10 overflow-hidden">
+      <div className="w-full max-w-[1200px] px-4 md:px-0 flex flex-col justify-center items-center gap-10 overflow-hidden">
         <SectionIntro header={header} subHeader={subHeader} />
 
         <div className="w-full flex flex-col gap-6 justify-center items-center">
-          {/* --- First Step (highlight) --- */}
           {steps.length > 0 && (
             <div
               className="w-full overflow-hidden
@@ -39,7 +38,6 @@ const ProcessSection = ({ header, subHeader, steps }: ProcessSectionProps) => {
             </div>
           )}
 
-          {/* --- Remaining Steps --- */}
           {steps.length > 1 && (
             <div
               className="

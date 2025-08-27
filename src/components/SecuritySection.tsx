@@ -12,7 +12,7 @@ const SecuritySection = () => {
             <h1 className="text-[#101828] font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight max-w-xl">
               Your money is safe here, always.
             </h1>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed font-normal text-[#48505E] max-w-2xl mx-auto lg:mx-0">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed font-normal text-[#48505E] max-w-2xl">
               Cudify puts your safety first with round-the-clock monitoring and
               smart security built to protect your transactions every time.
             </p>

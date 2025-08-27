@@ -12,7 +12,7 @@ const FeatureHeroSection = ({
     <section className="bg-[#FAFCFF] flex justify-center items-center pt-[130px] pb-10 md:px-10 w-full mx-auto">
       <div
         className="
-          container mx-2.5 sm:mx-5 md:mx-auto w-full h-full 
+          max-w-[1200px] mx-2.5 sm:mx-5 md:mx-auto w-full h-full 
           py-12 sm:py-16 lg:py-20 
           px-4 sm:px-8 lg:px-16 
           relative flex flex-col items-start justify-center 
