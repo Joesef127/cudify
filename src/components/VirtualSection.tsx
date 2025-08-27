@@ -6,8 +6,8 @@ import { howItWorksData } from "../DataArrays";
 
 const VirtualSection = () => {
   return (
-    <section className="py-16 bg-[#FAFCFF] w-full">
-      <div className="container mx-auto px-4 flex flex-col justify-center items-center gap-12">
+    <section className="py-16 bg-[#FAFCFF] w-full flex justify-center">
+      <div className="w-full max-w-[1200px] px-4 flex flex-col justify-center items-center gap-12">
         <SectionIntro
           header="Get Your Virtual Dollar Card in 5 Minutes"
         />

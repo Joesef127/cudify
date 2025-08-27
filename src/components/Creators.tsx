@@ -4,7 +4,7 @@ const Creator = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 w-full items-center rounded-3xl py-8 px-4 lg:px-10 xl:px-16 lg:py-16 bg-[#FAFCFF]">
       <div
-        className="my-auto flex flex-col gap-6 md:gap-8 lg:text-left"
+        className="flex flex-col gap-6 md:gap-8"
         data-aos="fade-right"
       >
         <div className="relative flex items-center gap-2">

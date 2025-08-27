@@ -27,7 +27,6 @@ export default function CudifyMe() {
       />
       <ProcessSection
       header="How to Send Money Home from Anywhere in the World"
-      subHeader="It only takes a few taps to move your money home. Here's how."
       steps={[
         {
           title: "Find Their Cudify Tag",

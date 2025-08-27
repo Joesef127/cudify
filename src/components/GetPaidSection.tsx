@@ -17,13 +17,12 @@ const GetPaidSection = () => {
   };
 
   return (
-    <section className="py-16 px-4 bg-gray-50">
-      <div className="container mx-auto">
+    <section className="py-16 px-4 flex justify-center">
+      <div className="w-full max-w-[1200px]">
         {/* Header */}
         <div className="mb-12 w-full flex flex-col items-center justify-center">
           <SectionIntro
             header="Get Paid for Anything, Anytime"
-            subHeader="Wherever the money is coming from and whatever it’s for, you’ll get it quickly and securely, straight to your wallet or bank."
             customClass="max-w-[666px]"
           />
           {/* <h2

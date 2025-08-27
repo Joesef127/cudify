@@ -20,7 +20,6 @@ export default function SendMoneyHome() {
       />
       <WhyChose
         header="Why choose Cudify for sending money home?"
-        subHeader="It only takes a few taps to move your money home. Here's how."
         whyChoseData={sendWhyChoseData}
       />
       <ProcessSection
