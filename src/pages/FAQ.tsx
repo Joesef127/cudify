@@ -67,8 +67,8 @@ const FAQ = () => {
   );
 
   return (
-    <div className="min-h-screen bg-[#FAFCFF] pt-28 sm:pt-36 md:pt-44">
-      <div className="container mx-auto px-4">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-[#FAFCFF] pt-28 sm:pt-36 md:pt-44">
+      <div className="w-full max-w-[1200px] px-4">
         {/* Header */}
         <div className="text-center mb-6 sm:mb-8 flex flex-col justify-center items-center">
           <p className="mb-4 md:mb-8 text-base md:text-lg lg:text-xl leading-7 font-normal text-[#2B2F38]" data-aos='fade-right'>
@@ -107,7 +107,7 @@ const FAQ = () => {
 
         {/* Tab Content */}
         {activeTab === "payment" && (
-          <div className="max-w-3xl mx-auto px-2 sm:px-4">
+          <div className="w-full px-2 sm:px-4">
             {paymentFAQs.map((category, index) =>
               renderCategory(category, index, "payment")
             )}
@@ -115,7 +115,7 @@ const FAQ = () => {
         )}
 
         {activeTab === "loan" && (
-          <div className="max-w-3xl mx-auto px-2 sm:px-4">
+          <div className="w-full px-2 sm:px-4">
             {loanFAQs.map((category, index) =>
               renderCategory(category, index, "loan")
             )}

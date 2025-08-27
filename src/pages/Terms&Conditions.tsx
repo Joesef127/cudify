@@ -1,373 +1,115 @@
-import { ArrowRight } from "lucide-react";
 import CTASection from "../components/CTASection";
 
 const TermsConditions = () => {
   return (
-    <section className="pt-28 md:pt-36 lg:pt-44 w-full relative overflow-hidden">
-      <div className="container mx-auto px-4 relative z-10 text-[#101828]">
-        {/* Heading */}
-        <h1 className="text-3xl md:text-4xl lg:text-6xl leading-snug md:leading-[52px] lg:leading-[72px] font-bold mb-2 text-black">
-          Terms & Conditions
+    <section className="pt-32 md:pt-40 lg:pt-44 w-full flex justify-center relative overflow-hidden">
+      <div className="w-full max-w-[1000px] px-4 sm:px-6 lg:px-8 relative z-10 gap-12 text-[#101828]">
+        {/* Header */}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight md:leading-[56px] lg:leading-[72px] font-bold mb-2 text-black">
+          Terms of Service
         </h1>
-        <p className="text-sm md:text-base lg:text-lg text-muted-foreground mb-8 text-[#48505E]">
-          Last updated: January 2024
+        <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-8 text-[#48505E]">
+          Last updated on June 10, 2025
         </p>
 
         {/* Content */}
-        <div className="prose prose-gray max-w-none text-base md:text-lg leading-7">
+        <div className="prose prose-gray max-w-none text-base sm:text-lg leading-6 sm:leading-7">
           <p className="mb-6 text-foreground">
-            Welcome to Cudify. These Terms and Conditions ("Terms") govern your
-            use of our financial services platform and mobile application. By
-            accessing or using our services, you agree to be bound by these
-            Terms.
+            At Cudify, we are committed to protecting your privacy and
+            safeguarding your personal data. This Privacy Policy explains how we
+            collect, use, disclose, and protect your information when you use
+            our services.
           </p>
 
-          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
-            1. Acceptance of Terms
+          {/* Information You Provide */}
+          <h2 className="text-lg sm:text-xl md:text-2xl leading-6 sm:leading-7 font-semibold mb-4 text-foreground">
+            Information You Provide to Us
           </h2>
-          <p className="mb-6 text-foreground">
-            By accessing, downloading, or using the Cudify application and
-            services, you acknowledge that you have read, understood, and agree
-            to be bound by these Terms and our Privacy Policy. If you do not
-            agree to these Terms, you must not use our services.
+          <p>
+            When you download, register with or use the App, we may ask you to
+            provide information:
           </p>
+          <ol className="mb-6 space-y-2 text-foreground list-disc">
+            {[
+              {
+                text: "By which you may be personally identified, such as your name, address, email, telephone number, bank verification number, birth date, financial information or any combination of information that could be used to identify you ('personal information')",
+              },
+              {
+                text: "We use ARKit to capture face 3D spatial orientation and facial expressions.",
+              },
+              {
+                text: "That is about you but individually does not identify you, such as: information you provide by filling in forms on the App. This includes information provided at the time of registering to use the App. We may also ask you for information when you report a problem with the App.",
+              },
+              {
+                text: "Records and copies of your correspondence (including email addresses and phone numbers) if you contact us.",
+              },
+              {
+                text: "Your responses to surveys or questions that we might ask you to complete details of transactions you carry out through the App.",
+              },
+              {
+                text: "Details of transactions you carry out through the App",
+              },
+            ].map((item, idx) => (
+              <li key={idx} className="list-inside">
+                {item.text}
+              </li>
+            ))}
+          </ol>
 
-          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
-            2. Eligibility
+          {/* How We Use Your Info */}
+          <h2 className="text-lg sm:text-xl md:text-2xl leading-6 sm:leading-7 font-semibold mb-4 text-foreground">
+            How We Use Your Information
           </h2>
-          <ul className="mb-6 space-y-2 text-foreground">
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              You must be at least 18 years old to use our services
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              You must be legally capable of entering into binding contracts
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              You must provide accurate and complete information during
-              registration
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              You must comply with all applicable laws and regulations in your
-              jurisdiction
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              You must not be prohibited from using financial services
-            </li>
-          </ul>
-
-          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
-            3. Account Registration and Security
-          </h2>
-          <ul className="mb-6 space-y-2 text-foreground">
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              You are responsible for maintaining the confidentiality of your
-              account credentials
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              You must notify us immediately of any unauthorized access to your
-              account
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              You are liable for all activities that occur under your account
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              We reserve the right to suspend or terminate accounts that violate
-              these Terms
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              You may only create one account unless expressly authorized by us
-            </li>
-          </ul>
-
-          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
-            4. Financial Services
-          </h2>
-          <h3 className="text-base md:text-lg font-semibold mb-3 text-foreground">
-            4.1 Payment Processing
-          </h3>
-          <ul className="mb-4 space-y-2 text-foreground">
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              We facilitate secure payment transactions between users and
-              service providers
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              All payments are processed through secure, encrypted channels
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              We may charge fees for certain payment processing services
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Payment processing times may vary depending on the method and
-              financial institutions involved
-            </li>
-          </ul>
-
-          <h3 className="text-base md:text-lg font-semibold mb-3 text-foreground">
-            4.2 Lending Services
-          </h3>
-          <ul className="mb-6 space-y-2 text-foreground">
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Loan applications are subject to credit checks and approval
-              processes
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Interest rates and terms are determined based on individual credit
-              profiles
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Borrowers are responsible for timely repayment according to agreed
-              terms
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Failure to repay loans may result in additional fees and credit
-              reporting
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              We reserve the right to refuse loan applications at our discretion
-            </li>
-          </ul>
-
-          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
-            5. Fees and Charges
-          </h2>
-          <ul className="mb-6 space-y-2 text-foreground">
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Service fees will be clearly disclosed before any transaction
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Fees may vary based on transaction type, amount, and payment
-              method
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Late payment fees may apply to overdue loan payments
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Currency conversion fees may apply to international transactions
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              We reserve the right to modify fees with appropriate notice
-            </li>
-          </ul>
-
-          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
-            6. Prohibited Activities
-          </h2>
-          <p className="mb-4 text-foreground">You agree not to:</p>
-          <ul className="mb-6 space-y-2 text-foreground">
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Use our services for any illegal or fraudulent activities
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Provide false or misleading information
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Attempt to circumvent security measures
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Use our services to launder money or finance terrorism
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Share your account credentials with others
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Reverse engineer or attempt to access our systems unauthorized
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Use our services for gambling or other restricted activities
-            </li>
-          </ul>
-
-          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
-            7. Data Protection and Privacy
-          </h2>
-          <ul className="mb-6 space-y-2 text-foreground">
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              We collect and process personal data in accordance with our
-              Privacy Policy
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              We implement industry-standard security measures to protect your
-              data
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              We may share data with third parties as described in our Privacy
-              Policy
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              You have rights regarding your personal data as outlined in
-              applicable laws
-            </li>
-          </ul>
-
-          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
-            8. Intellectual Property
-          </h2>
-          <ul className="mb-6 space-y-2 text-foreground">
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              All content, trademarks, and intellectual property on our platform
-              belong to Cudify
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              You may not reproduce, distribute, or create derivative works
-              without permission
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              You grant us a license to use content you submit to our platform
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              We respect intellectual property rights and expect users to do the
-              same
-            </li>
-          </ul>
-
-          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
-            9. Limitation of Liability
-          </h2>
-          <ul className="mb-6 space-y-2 text-foreground">
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Our liability is limited to the maximum extent permitted by law
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              We are not liable for indirect, incidental, or consequential
-              damages
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Our total liability shall not exceed the fees paid by you in the
-              preceding 12 months
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              We are not responsible for third-party services or content
-            </li>
-          </ul>
-
-          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
-            10. Termination
-          </h2>
-          <ul className="mb-6 space-y-2 text-foreground">
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              You may terminate your account at any time by contacting us
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              We may suspend or terminate accounts for violation of these Terms
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Termination does not affect existing obligations or liabilities
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Certain provisions of these Terms survive termination
-            </li>
-          </ul>
-
-          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
-            11. Dispute Resolution
-          </h2>
-          <ul className="mb-6 space-y-2 text-foreground">
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Disputes will be resolved through binding arbitration
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              You waive the right to participate in class action lawsuits
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Arbitration will be conducted under established arbitration rules
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Some disputes may be resolved through small claims court
-            </li>
-          </ul>
-
-          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
-            12. Changes to Terms
-          </h2>
-          <p className="mb-6 text-foreground">
-            We reserve the right to modify these Terms at any time. Material
-            changes will be communicated through our platform or via email.
-            Continued use of our services after changes constitutes acceptance
-            of the new Terms.
+          <p>
+            We use information that we collect about you or that you provide to us,
+            including any personal information, to:
           </p>
-
-          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
-            13. Governing Law
-          </h2>
-          <p className="mb-6 text-foreground">
-            These Terms are governed by and construed in accordance with the
-            laws of the jurisdiction where Cudify is incorporated, without
-            regard to conflict of law principles.
+          <ol className="mb-6 space-y-2 text-foreground list-disc">
+            {[ 
+              "Provide you with the App and its contents and any other information that you request from us.",
+              "Facilitate your activities with respect to the App.",
+              "We use the data from Truedepth APIs when verifying our users to ensure the selfie being taken is of a live user for authentication and fraud reduction purposes. The Truedepth API information is processed entirely locally and the spatial orientation/facial expression data is not submitted to any third (or first) parties.",
+              "Contact you regarding administrative issues, such as questions about a specific request or otherwise respond to your comments or requests.",
+              "Prevent, detect, mitigate and investigate fraud, security breaches and potentially prohibited or illegal activities.",
+              "Prevent, detect, mitigate and investigate fraud, security breaches, and potentially prohibited or illegal activities.",
+              "Help us operate the App.",
+              "Deliver notices regarding your account.",
+              "Comply with IRS and local tax requirements and for tax reporting purposes.",
+              "Provide you with information, such as notices of investment opportunities via the App, or updates concerning investments that you have participated in.",
+              "Send you information we believe is relevant to you, such as news, bulletins, marketing materials or other information.",
+              "Enforce this Policy and the Terms and Conditions.",
+              "Conduct user surveys and questionnaires.",
+              "Comply with applicable law."
+            ].map((item, idx) => (
+              <li key={idx} className="list-inside">
+                {item}
+              </li>
+            ))}
+          </ol>
+          <p className="mb-4">
+            We use aggregated information to analyze the effectiveness of the
+            App, to improve the App, and for other similar purposes. In
+            addition, from time to time, we may undertake or commission
+            statistical and other summary analyses of the general behavior and
+            characteristics of users participating in the App, and may share
+            aggregated information with third parties. We may collect aggregated
+            information through the features of the software that supports the
+            App, through cookies, and through other means described in this
+            Policy.
           </p>
-
-          <h2 className="text-lg md:text-xl leading-7 font-semibold mb-4 text-foreground">
-            14. Contact Information
-          </h2>
-          <p className="text-foreground">
-            If you have any questions about these Terms and Conditions, please
-            contact us at:
+          <p>
+            To enable us to better understand the characteristics of our users
+            and/or to provide services tailored to your needs, we may combine
+            your personal information with certain automatically-collected
+            information that would not otherwise be personally identifiable. If
+            we combine or link any automatically-collected, non-individually
+            identifiable information with your personal information, the
+            resulting combination will be treated as personal information under
+            this Policy.
           </p>
-          <ul className="mt-4 space-y-1 text-foreground">
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Email: legal@cudify.com
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Phone: +1 (555) 123-4567
-            </li>
-            <li>
-              <ArrowRight className="inline-block mr-2 text-blue-500 w-4 h-4" />
-              Address: 123 Financial District, Suite 456, New York, NY 10001
-            </li>
-          </ul>
         </div>
+
+        {/* CTA */}
         <div className="mt-12">
           <CTASection />
         </div>
