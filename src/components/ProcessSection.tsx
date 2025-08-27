@@ -19,7 +19,7 @@ const ProcessSection = ({ header, subHeader, steps }: ProcessSectionProps) => {
               "
               style={{ backgroundColor: steps[0].bgColor }}
             >
-              <div className="flex flex-col gap-3 sm:gap-4">
+              <div className="flex flex-col w-full gap-3 sm:gap-4">
                 <h1
                   className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#101828] leading-snug"
                   data-aos="fade-left"

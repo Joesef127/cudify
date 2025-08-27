@@ -3,7 +3,7 @@ import type { SectionIntroProps } from "../../Types";
 
 const SectionIntro = ({ header, subHeader, customClass }: SectionIntroProps) => {
   return (
-    <div className={`flex flex-col gap-4 sm:gap-5 max-w-2xl justify-center items-center ${customClass}`}>
+    <div className={`flex flex-col gap-4 sm:gap-5 justify-center items-center max-w-[540px] w-full ${customClass}`}>
       <h1
         className="
           font-semibold lg:text-center

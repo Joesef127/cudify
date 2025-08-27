@@ -23,7 +23,7 @@ const FeatureHeroSection = ({
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
-          backgroundPosition: "top",
+          backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       >

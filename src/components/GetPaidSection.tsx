@@ -23,8 +23,8 @@ const GetPaidSection = () => {
         <div className="mb-12 w-full flex flex-col items-center justify-center">
           <SectionIntro
             header="Get Paid for Anything, Anytime"
-            subHeader="Wherever the money is coming from and whatever it's for, you'll get
-            it quickly and securely — straight to your wallet or bank."
+            subHeader="Wherever the money is coming from and whatever it’s for, you’ll get it quickly and securely, straight to your wallet or bank."
+            customClass="max-w-[666px]"
           />
           {/* <h2
             className="
@@ -52,7 +52,7 @@ const GetPaidSection = () => {
         </div>
 
         {/* Desktop View - Grid */}
-        <div className="hidden md:grid md:grid-cols-3 gap-6">
+        <div className="hidden md:grid md:grid-cols-2 gap-6">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -67,7 +67,7 @@ const GetPaidSection = () => {
               data-aos-duration="500"
             >
               <div
-                className="absolute inset-0 p-4 flex flex-col justify-end text-white"
+                className="absolute inset-0 p-10 flex flex-col justify-end text-white"
                 data-aos="fade-up"
               >
                 <h3
@@ -109,7 +109,7 @@ const GetPaidSection = () => {
                   }}
                 >
                   <div
-                    className="absolute inset-0 p-2 sm:p-4 flex flex-col justify-end text-white"
+                    className="absolute inset-0 px-4 py-5 sm:px-6 sm:py-7 flex flex-col justify-end text-white"
                     data-aos="fade-up"
                     data-aos-delay="100"
                   >

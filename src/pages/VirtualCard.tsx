@@ -12,12 +12,12 @@ export default function VirtualCard() {
       <FeatureHeroSection
         backgroundImage={bunny_girl}
         heading="The Card That Moves With You"
-        desc="Spend directly from your Cudify Wallet — online, in-store, or anywhere your journey takes you."
+        desc="Spend directly from your Cudify Wallet online, in-store, or anywhere your journey takes you."
         contentClass="max-w-xl"
       />
       <WhyChose
-        header="Why choose Cudify for virtual dollar card?"
-        subHeader="It only takes a few taps to move your money home. Here's how."
+        header="Why choose Cudify for your virtual dollar card?"
+        headerClass="max-w-[540px] w-full"
         whyChoseData={virtualWhyChoseData}
       />
       <VirtualSection />

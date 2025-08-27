@@ -8,6 +8,7 @@ import type {
   WhyChoseDataProps,
 } from "./Types";
 import moneys from "./assets/icons/moneys.png";
+import clock from "./assets/icons/clock.png"
 import empty_wallet from "./assets/icons/empty-wallet.png";
 import people from "./assets/icons/people.png";
 import shield_tick from "./assets/icons/shield-tick.png";
@@ -16,7 +17,6 @@ import convert from "./assets/icons/convert.png";
 import refresh_circle from "./assets/icons/refresh_circle.png";
 import dark_dude_chatting from "./assets/images/dark_dude_chatting.jpg";
 import globe from "./assets/images/globe.jpg";
-import woman_pressing_laptop from "./assets/images/woman_pressing_laptop.jpg";
 import bank from "./assets/icons/bank.png";
 import global from "./assets/icons/global.png";
 import card from "./assets/icons/card.png";
@@ -86,20 +86,20 @@ export const features: FeatureType[] = [
   {
     title: "Global Transfers",
     description:
-      "Send money home and abroad. Whether you're sending to Africa.",
+      "Send money home and abroad. Whether you’re sending to Africa.",
     image: globe,
     bgPosition: "left",
   },
+  // {
+  //   title: "Receive Salary",
+  //   description:
+  //     "Get paid from clients or marketplaces abroad, without delays.",
+  //   image: woman_pressing_laptop,
+  //   bgPosition: "center",
+  // },
   {
-    title: "Receive Salary",
-    description:
-      "Get paid from clients or marketplaces abroad, without delays.",
-    image: woman_pressing_laptop,
-    bgPosition: "center",
-  },
-  {
-    title: "Get Paid Early",
-    description: "Receive refunds, paybacks, or shared expenses easily.",
+    title: "Speed Transfer",
+    description: "Get paid from clients or marketplaces abroad, without delays.",
     image: dark_dude_chatting,
     bgPosition: "right",
   },
@@ -160,24 +160,24 @@ export const sendWhyChoseData: WhyChoseDataProps[] = [
 
 export const recieveWhyChoseData: WhyChoseDataProps[] = [
   {
-    icon: moneys,
-    heading: "Cheap transfers abroad",
-    desc: "Make local-to-local payments through various channels like bank transfer, card, mobile money (MoMo), USSD, and more.",
-  },
-  {
     icon: convert,
-    heading: "Best exchange rates",
+    heading: "Competitive Fx rates",
     desc: "Get access to real-time currency exchange services to stay ahead of rate changes.",
   },
   {
-    icon: refresh_circle,
-    heading: "Competitive FX Rates",
-    desc: "Benefit from great exchange rates, quick settlements, and smooth transactions via our dashboard, APIs, or OTC desk.",
+    icon: flash,
+    heading: "Quick & Fast Tansfer notifications",
+    desc: "Quick, secure transfers, see your money move in real time. You don’t have to wait for business hours to get things done.",
   },
   {
-    icon: moneys,
-    heading: "Fast Tansfer notifications",
+    icon: clock,
+    heading: "24/7 Human Support",
     desc: "Need help? Our support team is available 24/7 — real people, ready to assist anytime.",
+  },
+  {
+    icon: convert,
+    heading: "Real-Time Exchange",
+    desc: "Get access to real-time currency exchange services to stay ahead of rate changes.",
   },
 ];
 
@@ -185,22 +185,22 @@ export const virtualWhyChoseData: WhyChoseDataProps[] = [
   {
     icon: flash,
     heading: "Instant Issuance",
-    desc: "Get your card in minutes and start using it right away—no long forms or physical delivery needed",
+    desc: "Get your virtual dollar card in seconds, not days. Start spending immediately.",
   },
   {
     icon: moneys,
-    heading: "Online Purchases on Global Platforms",
+    heading: "Make Online Purchases ",
     desc: "Shop on international websites like Amazon, eBay, AliExpress, App stores, Travel platforms etc",
   },
   {
     icon: refresh_circle,
-    heading: " Run Paid Ads on platforms",
-    desc: "Eg Facebook Ads, Google Ads, Twitter Ads, TikTok Ads, etc.",
+    heading: "Secure & Safe",
+    desc: "Each card has unique details. Freeze, unfreeze, or delete cards instantly if needed.",
   },
   {
     icon: flash,
-    heading: "Pay for International Subscriptions",
-    desc: "Eg Netflix, Spotify, Apple Music, YouTube Premium. Enroll in Online Courses or Exams",
+    heading: "24/7 Access",
+    desc: " Create and manage your card anytime. No banking hours restrictions.",
   },
 ];
 

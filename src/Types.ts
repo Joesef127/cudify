@@ -104,7 +104,7 @@ export interface WhyChoseProps {
 
 export interface SectionIntroProps {
   header: string;
-  subHeader: string;
+  subHeader?: string;
   customClass?: string;
 }
 
@@ -136,7 +136,7 @@ export interface Step {
 
 export interface ProcessSectionProps {
   header: string;
-  subHeader: string;
+  subHeader?: string;
   steps: Step[];
 }
 
