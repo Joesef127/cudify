@@ -3,8 +3,8 @@ import { teamMembers } from "../DataArrays";
 
 const TeamSection = () => {
   return (
-    <section className="pt-16 pb-32 w-full relative overflow-hidden bg-[#FAFCFF]">
-      <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center gap-16 text-[#101828]">
+    <section className="pt-16 pb-28 w-full flex justify-center relative overflow-hidden bg-[#FAFCFF]">
+      <div className="w-full max-w-[414px] sm:max-w-[1200px] px-4 relative z-10 flex flex-col items-center text-center gap-16 text-[#101828]">
         <h1
           className="font-semibold text-3xl sm:text-4xl md:text-5xl leading-snug text-[#101828]"
           data-aos="fade-left"
@@ -14,21 +14,34 @@ const TeamSection = () => {
 
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 w-full justify-center items-center place-items-center">
           {teamMembers.map((member, index) => (
-            <div className={`p-2 sm:p-4 w-fit bg-white border-[0.4px] border-[#E5E5E5] rounded-2xl cursor-pointer flex flex-col ${index % 2 ? "justify-self-start" : "justify-self-end"} sm:justify-self-center items-center`}>
-              <img
-                key={index}
-                className="relative overflow-hidden rounded-lg w-[150px] md:w-[355px] h-[150px] sm:h-[256px] md:h-[355px] object-cover object-top group flex items-end"
-                src={member.image}
-                data-aos="zoom-out-left"
-                data-aos-delay={index * 300}
-                data-aos-duration="500"
-              />
+            <div
+              className={`p-2 sm:p-4 w-full h-[224px] sm:h-[355px] md:h-[425px] bg-white border-[0.4px] border-[#E5E5E5] rounded-2xl cursor-pointer flex flex-col gap-2.5 ${
+                index % 2 ? "justify-self-start" : "justify-self-end"
+              } sm:justify-self-center items-center`}
+            >
+              <div
+                className="overflow-hidden rounded-lg w-full h-[150px] sm:h-[256px] md:h-[355px]"
+                style={{
+                  backgroundImage: `url(${member.image})`,
+                  backgroundPosition: "top",
+                  backgroundSize: "cover",
+                }}
+              >
+                {/* <img
+                  key={index}
+                  className="h-full w-full object-cover object-top group flex items-end"
+                  src={member.image}
+                  data-aos="zoom-out-left"
+                  data-aos-delay={index * 300}
+                  data-aos-duration="500"
+                /> */}
+              </div>
               <div
                 className="w-full flex justify-between items-center rounded-xl"
                 data-aos="fade-up"
               >
                 <div
-                  className="text-left flex flex-col pt-4"
+                  className="text-left flex flex-col"
                   data-aos="fade-right"
                   data-aos-delay="100"
                 >

@@ -2,8 +2,8 @@ import group_of_people from "../assets/images/group_of_people.jpg";
 
 const AboutHero = () => {
   return (
-    <section className="pt-32 md:pt-44 pb-16 bg-[#FAFCFF] w-full relative overflow-hidden">
-      <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center gap-12 text-[#101828]">
+    <section className="pt-32 flex justify-center md:pt-44 pb-16 bg-[#FAFCFF] w-full relative overflow-hidden">
+      <div className="w-full max-w-[1232px] px-4 relative z-10 flex flex-col items-center text-center gap-12 text-[#101828]">
         {/* Intro text */}
         <div className="flex flex-col gap-3 md:gap-5 max-w-xl text-center">
           <p
