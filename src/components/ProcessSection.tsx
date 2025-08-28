@@ -20,13 +20,13 @@ const ProcessSection = ({ header, subHeader, steps }: ProcessSectionProps) => {
             >
               <div className="flex flex-col w-full gap-3 sm:gap-4">
                 <h1
-                  className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#101828] leading-snug"
+                  className="text-xl lg:text-2xl lg:leading-8 leading-[30px] font-semibold text-[#101828]"
                   data-aos="fade-left"
                 >
                   {steps[0].title}
                 </h1>
                 <p
-                  className="font-normal text-base text-[#48505E] sm:text-lg leading-6 sm:leading-7 max-w-lg mx-auto lg:mx-0"
+                  className="font-normal text-sm lg:text-lg leading-5 lg:leading-7 text-[#48505E] max-w-lg mx-auto lg:mx-0"
                   data-aos="fade-right"
                 >
                   {steps[0].description}
@@ -58,13 +58,13 @@ const ProcessSection = ({ header, subHeader, steps }: ProcessSectionProps) => {
                 >
                   <div className="flex flex-col gap-3 sm:gap-4">
                     <h1
-                      className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#101828] leading-snug"
+                      className="text-xl lg:text-2xl lg:leading-8 leading-[30px] font-semibold text-[#101828]"
                       data-aos="fade-left"
                     >
                       {step.title}
                     </h1>
                     <p
-                      className="font-normal text-lg text-[#48505E] leading-6 sm:leading-7 max-w-md"
+                      className="font-normal text-sm lg:text-lg leading-5 lg:leading-7 text-[#48505E] max-w-md"
                       data-aos="fade-right"
                     >
                       {step.description}
