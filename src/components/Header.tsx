@@ -48,7 +48,7 @@ const Header = () => {
       ref={headerRef}
       className="fixed flex justify-center top-0 left-0 right-0 z-50 md:py-3 bg-[#FAFCFF] backdrop-blur-sm shadow-xs"
     >
-      <div className="container max-w-[1232px] flex justify-center px-4 w-full">
+      <div className="container max-w-[1232px] flex flex-col justify-center px-4 w-full">
         <div className="flex items-center justify-between py-4 w-full">
           {/* Logo */}
           <Link to={"/#"} className="flex items-center">
