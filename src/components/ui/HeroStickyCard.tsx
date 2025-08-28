@@ -9,7 +9,7 @@ const HeroStickyCard = ({
 }: HeroStickyCardProps) => {
   return (
     <div
-      className={`flex justify-between items-center gap-3 sm:gap-6 w-max cursor-pointer bg-white transition-colors rounded-lg sm:rounded-xl py-1 px-1 sm:py-2 sm:px-2 shadow-lg ${className}`}
+      className={`flex justify-between items-center gap-3 sm:gap-6 w-max cursor-pointer bg-white transition-colors rounded-lg sm:rounded-xl py-1 px-1 sm:py-2 sm:px-2 ${className}`}
       data-aos="fade-up"
       data-aos-delay="300"
     >

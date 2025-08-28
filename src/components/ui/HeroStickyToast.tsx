@@ -4,7 +4,7 @@ import uk from "../../assets/icons/uk.png";
 const HeroStickyToast = () => {
   return (
     <div
-      className="absolute top-5/7 left-2/10 -translate-x-1/2 sm:translate-x-0 sm:-left-1/9 z-10 flex flex-col gap-2 items-center justify-center bg-white rounded-lg shadow-lg py-1 sm:py-2 px-3 sm:px-5 scale-90 sm:scale-100"
+      className="absolute top-5/7 left-2/10 -translate-x-1/2 sm:translate-x-0 sm:-left-1/9 z-10 flex flex-col gap-2 items-center justify-center bg-white rounded-lg py-1 sm:py-2 px-3 sm:px-5 scale-90 sm:scale-100"
       data-aos="fade-up"
       data-aos-delay="300"
     >

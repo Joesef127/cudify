@@ -81,7 +81,7 @@ const Header = () => {
 
                   {/* Dropdown */}
                   {isProductOpen && (
-                    <div className="absolute left-0 top-full mt-10 w-max rounded-2xl p-2 xl:p-10 grid grid-cols-2 gap-2 bg-white shadow-lg border border-gray-100 animate-fadeIn z-50">
+                    <div className="absolute left-0 top-full mt-10 w-max rounded-2xl p-2 xl:p-10 grid grid-cols-2 gap-2 bg-white  border border-gray-100 animate-fadeIn z-50">
                       {productDropdown.map((item) => (
                         <DropdownNav
                           key={item.heading}

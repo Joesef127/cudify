@@ -5,7 +5,7 @@ const CudifyTagCard = () => {
   return (
     <div
       className="
-        bg-white p-4 sm:py-9 rounded-2xl shadow-sm border border-gray-200 
+        bg-white p-4 sm:py-9 rounded-2xl border border-gray-200 
         w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mb-10
         
       "

@@ -86,7 +86,7 @@ const FAQ = () => {
               onClick={() => setActiveTab("payment")}
               className={`inline-flex items-center justify-center whitespace-nowrap rounded-full px-3 py-2.5 text-sm sm:text-base font-medium transition-all w-1/2 ${
                 activeTab === "payment"
-                  ? "bg-white text-gray-900 shadow-sm"
+                  ? "bg-white text-gray-900"
                   : "text-gray-500 hover:text-gray-900"
               }`}
             >
@@ -96,7 +96,7 @@ const FAQ = () => {
               onClick={() => setActiveTab("loan")}
               className={`inline-flex items-center justify-center whitespace-nowrap rounded-full px-5 py-2.5 text-sm sm:text-base font-medium transition-all w-1/2 ${
                 activeTab === "loan"
-                  ? "bg-white text-gray-900 shadow-sm"
+                  ? "bg-white text-gray-900"
                   : "text-gray-500 hover:text-gray-900"
               }`}
             >

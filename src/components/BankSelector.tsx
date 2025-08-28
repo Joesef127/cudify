@@ -4,7 +4,7 @@ import { countries } from "../DataArrays";
 const BankSelector = () => {
   return (
     <div
-      className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 
+      className="bg-white p-6 rounded-lg border border-gray-200 
       w-full max-w-lg -mb-10"
       data-aos="fade-right"
     >

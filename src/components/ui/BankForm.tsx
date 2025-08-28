@@ -12,7 +12,7 @@ const BankForm = () => {
   };
 
   return (
-    <div className="bg-white pb-6 pt-8 px-6 -mb-12 max-w-md lg:mx-auto rounded-t-2xl lg:w-6/9" data-aos="fade-up">
+    <div className="bg-white pb-6 pt-8 px-6 -mb-12 w-full max-w-md lg:mx-auto rounded-t-2xl lg:w-6/9" data-aos="fade-up">
       <div className="space-y-4">
         {/* Select Bank */}
         <div className="space-y-2" data-aos="fade-left" data-aos-delay="100">
@@ -22,7 +22,7 @@ const BankForm = () => {
           <div className="relative">
             <button
               type="button"
-              className="w-full px-3 py-2 text-left bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
+              className="w-full px-3 py-2 text-left bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               <span className={selectedBank ? 'text-gray-900' : 'text-gray-500'}>
@@ -39,7 +39,7 @@ const BankForm = () => {
             </button>
             
             {isDropdownOpen && (
-              <div className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg max-h-60 overflow-auto">
+              <div className="z-10 w-full mt-1 bg-white border border-gray-300 rounded-md  max-h-60 overflow-auto">
                 {banks.map((bank, index) => (
                   <button
                     key={index}
@@ -65,7 +65,7 @@ const BankForm = () => {
             value={accountName}
             onChange={(e) => setAccountName(e.target.value)}
             placeholder="Enter account name"
-            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
           />
         </div>
       </div>

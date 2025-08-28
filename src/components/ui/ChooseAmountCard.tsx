@@ -4,7 +4,7 @@ const ChooseAmountCard = () => {
   return (
     <div
       className="
-        bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-gray-200 
+        bg-white p-4 sm:p-6 rounded-2xl border border-gray-200 
         w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl
        pb-6 pt-8 sm:px-6 -mb-12
       "
