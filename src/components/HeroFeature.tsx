@@ -22,12 +22,12 @@ const Herofeature = ({
       style={{ backgroundColor: bgColor }}
     >
       <div
-        className="my-auto flex flex-col gap-6 md:gap-8 lg:text-left"
+        className="my-auto flex flex-col gap-5 lg:gap-8"
         data-aos="fade-right"
       >
         <div className="relative flex items-center gap-2">
           <h1
-            className={`w-fit text-2xl sm:text-3xl lg:text-4xl leading-snug font-semibold text-[#101828] ${
+            className={`w-fit text-2xl leading-8 lg:text-[40px] lg:leading-[52px] font-semibold text-[#101828] ${
               col_span ? `col-span-${col_span}` : "col-span-3"
             }`}
           >
@@ -39,7 +39,7 @@ const Herofeature = ({
             </span>
           )}
         </div>
-        <p className="font-normal text-base sm:text-lg md:text-xl leading-relaxed max-w-lg lg:mx-0">
+        <p className="font-normal text-sm leading-5 lg:text-lg lg:leading-7 max-w-lg lg:mx-0">
           {desc}
         </p>
         <div className="flex justify-start w-full">
