@@ -54,7 +54,7 @@ const Herofeature = ({
       </div>
 
       <div
-        className="h-[400px] md:h-[500px] lg:h-[660px] w-full rounded-2xl relative flex items-end px-4 md:px-5 pb-6 md:pb-8"
+        className="h-[343px] md:h-[500px] lg:h-[530px] w-full rounded-2xl relative flex items-end px-4 md:px-5 pb-6 md:pb-8"
         style={{
           backgroundImage: `url(${image})`,
           backgroundSize: "cover",
