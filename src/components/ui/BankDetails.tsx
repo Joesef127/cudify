@@ -8,7 +8,7 @@ const BankDetails = () => {
   return (
     <div
       className="bg-white p-4 sm:p-6 md:p-8 rounded-2xl border border-gray-200 
-      w-4/6 mx-auto -mb-10"
+      w-full mx-auto -mb-10"
       data-aos="fade-left"
     >
       {/* Header */}

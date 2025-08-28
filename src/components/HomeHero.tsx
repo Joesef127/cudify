@@ -11,7 +11,7 @@ export default function HomeHero() {
     <section className="pt-[136px] md:pt-48 mb-24 bg-[#0D41E1] flex justify-center items-center w-screen relative overflow-hidden sora">
       <div className="max-w-[1200px] px-2 relative gap-6 z-10 flex flex-col justify-center items-center text-center text-white overflow-hidden">
         <HeroContentBox
-          heading="Borderless Payments, Boundless Possibilities"
+          heading="Making your money limitless"
           desc="Send, receive, and manage money
             across borders"
         />

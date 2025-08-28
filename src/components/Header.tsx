@@ -128,7 +128,7 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="header md:hidden pb-5 overflow-y-scroll">
-            <nav className="flex flex-col space-y-4 overflow-y-scroll">
+            <nav className="flex flex-col gap-2.5 space-y-4 overflow-y-scroll">
               {/* Product with dropdown */}
               <div>
                 <button

@@ -48,7 +48,7 @@ const ProcessSection = ({ header, subHeader, steps }: ProcessSectionProps) => {
               {steps.slice(1).map((step, idx) => (
                 <div
                   key={idx}
-                  className={`w-full h-[408px]
+                  className={`w-full h-fit lg:h-[408px]
                     rounded-2xl overflow-hidden 
                     p-6 sm:p-8 lg:pt-10 
                     flex flex-col gap-7 justify-between
