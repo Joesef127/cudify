@@ -5,6 +5,8 @@ const HeroContentBox = ({
   heading,
   desc,
   contentClass,
+  headingClass,
+  subHeaderClass
 }: HeroContentBoxProps) => {
   return (
     <div
@@ -12,11 +14,11 @@ const HeroContentBox = ({
     >
       {/* Heading */}
       <h1
-        className="
+        className={`
           font-bold 
-          text-[28px] sm:text-4xl md:text-5xl lg:text-6xl 
+          text-[36px] leading-[44px] lg:text-[60px]  lg:leading-[72px]
           leading-auto relative
-        "
+        ${headingClass}`}
         data-aos="fade-left"
       >
         {heading}
@@ -24,7 +26,7 @@ const HeroContentBox = ({
 
       {/* Description */}
       <p
-        className="text-sm sm:text-base xl:text-xl max-w-md sm:max-w-[557px]"
+        className={`text-sm sm:text-base xl:text-xl max-w-md sm:max-w-[557px] ${subHeaderClass}`}
         data-aos="fade-left"
         data-aos-delay="300"
       >

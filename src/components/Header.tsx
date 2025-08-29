@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Button from "./ui/Button";
 import { Menu, X, ChevronDown } from "lucide-react";
 import cudify_full_logo from "../assets/cudify_full_logo.png";
@@ -38,17 +38,28 @@ const Header = () => {
   };
 
   // add/remove listener
-  React.useEffect(() => {
+  useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   });
+
+  useEffect(() => {
+  if (isMenuOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
+  return () => {
+    document.body.style.overflow = "";
+  };
+}, [isMenuOpen]);
 
   return (
     <header
       ref={headerRef}
       className="fixed flex justify-center top-0 left-0 right-0 z-50 md:py-3 bg-[#FAFCFF] backdrop-blur-sm shadow-xs"
     >
-      <div className="container max-w-[1232px] flex flex-col justify-center px-4 w-full">
+      <div className="container max-w-[1232px] flex flex-col justify-center px-4 w-full max-h-screen overflow-y-scroll no-scrollbar">
         <div className="flex items-center justify-between py-4 w-full">
           {/* Logo */}
           <Link to={"/#"} className="flex items-center">
@@ -81,7 +92,7 @@ const Header = () => {
 
                   {/* Dropdown */}
                   {isProductOpen && (
-                    <div className="absolute left-0 top-full mt-10 w-max rounded-2xl p-6 grid grid-cols-2 gap-10 bg-white  border border-gray-100 animate-fadeIn z-50">
+                    <div className="absolute left-0 top-full mt-10 w-max rounded-2xl p-6 grid grid-cols-2 gap-5 bg-white border border-gray-100 animate-fadeIn z-50">
                       {productDropdown.map((item) => (
                         <DropdownNav
                           key={item.heading}
@@ -127,7 +138,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="header md:hidden pb-5">
+          <div className="header md:hidden pb-5 h-max max-h-screen overflow-y-scroll no-scrollbar">
             <nav className="flex flex-col gap-2.5 space-y-4">
               {/* Product with dropdown */}
               <div>
@@ -138,7 +149,7 @@ const Header = () => {
                   Product <ChevronDown size={16} />
                 </button>
                 {isMobileDropdownOpen && (
-                  <div className="mt-2 flex flex-col space-y-2">
+                  <div className="mt-8 flex flex-col gap-2 space-y-2">
                     {productDropdown.map((item) => (
                       <DropdownNav
                         key={item.heading}

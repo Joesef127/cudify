@@ -11,7 +11,7 @@ const DropdownNav = ({
   return (
     <Link
       to={route}
-      className="flex items-center justify-start gap-2 xl:gap-4 w-full cursor-pointer hover:bg-[#F2F4F7] transition-colors rounded-2xl col-span-1"
+      className="flex items-center justify-start gap-2 xl:gap-4 w-full cursor-pointer hover:bg-[#F2F4F7] transition-colors rounded-2xl pb-3 px-2 col-span-1"
       onClick={closeMenus}
     >
       <div className="p-2.5 lg:p-3.5 rounded-full bg-[#E7ECFC]">

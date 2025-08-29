@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 @import "tailwindcss";
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -11,8 +16,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 .sora {
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

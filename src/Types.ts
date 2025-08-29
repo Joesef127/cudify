@@ -80,6 +80,8 @@ export interface HeroContentBoxProps {
   heading?: string;
   desc?: string;
   contentClass?: string;
+  headingClass?: string;
+  subHeaderClass?: string;
 }
 
 export interface FeatureHeroSectionProps {
