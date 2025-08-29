@@ -15,10 +15,7 @@ const HeroContentBox = ({
       {/* Heading */}
       <h1
         className={`
-          font-bold 
-          text-[36px] leading-[44px] lg:text-[60px] lg:leading-[72px]
-          relative
-        ${headingClass}`}
+          font-bold relative ${headingClass}`}
         data-aos="fade-left"
       >
         {heading}

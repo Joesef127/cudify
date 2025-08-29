@@ -33,6 +33,7 @@ const FeatureHeroSection = ({
           heading={heading}
           desc={desc}
           contentClass={`z-10 items-start justify-center ${contentClass}`}
+          headingClass="text-[36px] leading-[44px] lg:text-[60px] lg:leading-[72px]"
         />
       </div>
     </section>

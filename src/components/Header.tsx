@@ -20,16 +20,19 @@ const Header = () => {
   // refs for header and hamburger button
   const headerRef = useRef<HTMLHeadingElement>(null);
   const menuBtnRef = useRef<HTMLButtonElement>(null);
+  const productDropdownRef = useRef<HTMLDivElement>(null);
 
   // close dropdowns if user clicks outside header and hamburger button
   const handleClickOutside = (e: MouseEvent) => {
     const target = e.target as HTMLElement;
     const header = headerRef.current;
     const menuBtn = menuBtnRef.current;
+    const productDropdownParent = productDropdownRef.current;
     if (
       header &&
       !header.contains(target) &&
-      (!menuBtn || !menuBtn.contains(target))
+      (!menuBtn || !menuBtn.contains(target)) &&
+      (!productDropdownParent || !productDropdownParent.contains(target))
     ) {
       setIsProductOpen(false);
       setIsMenuOpen(false);
@@ -44,22 +47,22 @@ const Header = () => {
   });
 
   useEffect(() => {
-  if (isMenuOpen) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "";
-  }
-  return () => {
-    document.body.style.overflow = "";
-  };
-}, [isMenuOpen]);
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
 
   return (
     <header
       ref={headerRef}
       className="fixed flex justify-center top-0 left-0 right-0 z-50 md:py-3 bg-[#FAFCFF] backdrop-blur-sm shadow-xs"
     >
-      <div className="container max-w-[1232px] flex flex-col justify-center px-4 w-full max-h-screen overflow-y-scroll no-scrollbar">
+      <div className="container max-w-[1232px] flex flex-col justify-center px-4 w-full max-h-screen overflow-y-scroll lg:overflow-visible no-scrollbar">
         <div className="flex items-center justify-between py-4 w-full">
           {/* Logo */}
           <Link to={"/#"} className="flex items-center">
@@ -76,7 +79,11 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) =>
               link.hasDropdown ? (
-                <div key={link.href} className="relative product-dropdown">
+                <div
+                  key={link.href}
+                  className="relative product-dropdown"
+                  ref={productDropdownRef}
+                >
                   <button
                     onClick={() => setIsProductOpen(!isProductOpen)}
                     className="flex items-center gap-1 text-base relative"
@@ -92,7 +99,7 @@ const Header = () => {
 
                   {/* Dropdown */}
                   {isProductOpen && (
-                    <div className="absolute left-0 top-full mt-10 w-max rounded-2xl p-6 grid grid-cols-2 gap-5 bg-white border border-gray-100 animate-fadeIn z-50">
+                    <div className="absolute left-0 top-full mt-10 w-max rounded-2xl p-6 grid grid-cols-2 gap-5 bg-white border border-gray-100 z-50">
                       {productDropdown.map((item) => (
                         <DropdownNav
                           key={item.heading}
