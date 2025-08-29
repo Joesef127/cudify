@@ -99,7 +99,7 @@ const Header = () => {
 
                   {/* Dropdown */}
                   {isProductOpen && (
-                    <div className="absolute left-0 top-full mt-10 w-max rounded-2xl p-6 grid grid-cols-2 gap-5 bg-white border border-gray-100 z-50">
+                    <div className="absolute left-0 top-full mt-8 w-max rounded-2xl p-6 grid grid-cols-2 gap-3 bg-white border border-gray-100 z-50">
                       {productDropdown.map((item) => (
                         <DropdownNav
                           key={item.heading}
