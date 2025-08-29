@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Button from "./ui/Button";
 import { Menu, X, ChevronDown } from "lucide-react";
 import cudify_full_logo from "../assets/cudify_full_logo.png";
