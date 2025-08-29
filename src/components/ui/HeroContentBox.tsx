@@ -6,7 +6,7 @@ const HeroContentBox = ({
   desc,
   contentClass,
   headingClass,
-  subHeaderClass
+  subHeaderClass,
 }: HeroContentBoxProps) => {
   return (
     <div
@@ -16,8 +16,8 @@ const HeroContentBox = ({
       <h1
         className={`
           font-bold 
-          text-[36px] leading-[44px] lg:text-[60px]  lg:leading-[72px]
-          leading-auto relative
+          text-[36px] leading-[44px] lg:text-[60px] lg:leading-[72px]
+          relative
         ${headingClass}`}
         data-aos="fade-left"
       >
