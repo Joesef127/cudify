@@ -237,7 +237,7 @@ export const navLinks = [
     {
       icon: bank,
       heading: "Send Money home",
-      desc: "Send Money home",
+      desc: "Send love home",
       route: "/send_money_home",
     },
     {

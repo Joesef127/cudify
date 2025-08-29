@@ -1,4 +1,3 @@
-// FeatureHeroSection.tsx
 import HeroContentBox from "./ui/HeroContentBox";
 import { type FeatureHeroSectionProps } from "../Types";
 
