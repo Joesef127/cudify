@@ -1,4 +1,4 @@
-import group_of_people from "../assets/images/group_of_people.jpg";
+import black_youths from "../assets/images/black_youths.jpg";
 
 const AboutHero = () => {
   return (
@@ -24,7 +24,7 @@ const AboutHero = () => {
         <div
           className="w-full h-[320px] sm:h-[480px] md:min-h-[720px] py-12 sm:py-16 md:py-20 px-6 sm:px-10 md:px-16 relative flex flex-col items-start justify-center text-white gap-6 sm:gap-8 rounded-2xl overflow-hidden"
           style={{
-            backgroundImage: `url(${group_of_people})`,
+            backgroundImage: `url(${black_youths})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
