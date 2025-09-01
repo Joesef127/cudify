@@ -1,7 +1,7 @@
 import CTASection from "../components/CTASection";
 import FeatureHeroSection from "../components/FeatureHeroSection";
 import SecuritySection from "../components/SecuritySection";
-import woman_pressing_laptop from "../assets/images/woman_pressing_laptop.jpg";
+import woman_using_smartphone from "../assets/images/woman_using_smartphone.jpg";
 import WhyChose from "../components/WhyChose";
 import { recieveWhyChoseData } from "../DataArrays";
 import GetPaidSection from "../components/GetPaidSection";
@@ -14,7 +14,7 @@ export default function RecieveMoney() {
   return (
     <div>
       <FeatureHeroSection
-        backgroundImage={woman_pressing_laptop}
+        backgroundImage={woman_using_smartphone}
         heading="Receive Money From Anywhere, Instantly"
         desc="Whether it’s from family, friends, or business partners, get your funds directly in your account or mobile wallet without any hassle."
         contentClass="max-w-3xl"
