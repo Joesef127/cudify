@@ -1,6 +1,6 @@
 import Button from "./Button";
-import apple_logo from "../../assets/icons/apple_logo.png";
-import playstore from "../../assets/icons/playstore.png";
+import apple_logo from "../../assets/icons/apple_logo.svg";
+import playstore from "../../assets/icons/playstore.svg";
 
 const DownloadApp = () => {
   return (

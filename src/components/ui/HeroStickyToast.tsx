@@ -1,5 +1,5 @@
-import nigeria from "../../assets/icons/nigeria.png";
-import uk from "../../assets/icons/uk.png";
+import nigeria from "../../assets/icons/nigeria.svg";
+import uk from "../../assets/icons/uk.svg";
 
 const HeroStickyToast = () => {
   return (

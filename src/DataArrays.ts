@@ -7,7 +7,7 @@ import type {
   TeamMembersType,
   WhyChoseDataProps,
 } from "./Types";
-import moneys from "./assets/icons/moneys.png";
+import moneys from "./assets/icons/moneys.svg";
 import clock from "./assets/icons/clock.png"
 import empty_wallet from "./assets/icons/empty-wallet.png";
 import people from "./assets/icons/people.png";
@@ -17,20 +17,20 @@ import convert from "./assets/icons/convert.png";
 import refresh_circle from "./assets/icons/refresh_circle.png";
 import dark_dude_chatting from "./assets/images/dark_dude_chatting.jpg";
 import globe from "./assets/images/globe.jpg";
-import bank from "./assets/icons/bank.png";
+import bank from "./assets/icons/bank.svg";
 import global from "./assets/icons/global.png";
 import card from "./assets/icons/card.png";
 import dollar_circle from "./assets/icons/dollar_circle.png";
 import double_user from "./assets/icons/double_user.png";
 import type { HeroFeatureProps } from "./Types";
 import nigeria from "./assets/icons/nigeria.png";
-import spotify from "./assets/icons/spotify.png";
+import spotify from "./assets/icons/spotify.svg";
 import cute_lady_selfie from "./assets/images/cute_lady_selfie.jpg";
 import studio_girl from "./assets/images/studio_girl.jpg";
 import old_couple from "./assets/images/old_couple.png";
 import investment_chart from "./assets/images/investment_chart.jpg";
 import guy_cudify_card from "./assets/images/guy_cudify_card.png";
-import calling from "./assets/icons/calling.png";
+import calling from "./assets/icons/calling.svg";
 import serious_man from "./assets/images/serious_man.jpg";
 import leslie_alexander from "./assets/images/leslie_alexander.jpg";
 import cameron_williamson from "./assets/images/Cameron_williamson.jpg";
