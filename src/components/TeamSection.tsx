@@ -1,5 +1,4 @@
 import { teamMembers } from "../DataArrays";
-// import linkedin from "../assets/icons/linkedin.png";
 
 const TeamSection = () => {
   return (
