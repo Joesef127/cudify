@@ -8,22 +8,22 @@ import type {
   WhyChoseDataProps,
 } from "./Types";
 import moneys from "./assets/icons/moneys.svg";
-import clock from "./assets/icons/clock.png"
-import empty_wallet from "./assets/icons/empty-wallet.png";
-import people from "./assets/icons/people.png";
-import shield_tick from "./assets/icons/shield-tick.png";
-import flash from "./assets/icons/flash.png";
-import convert from "./assets/icons/convert.png";
-import refresh_circle from "./assets/icons/refresh_circle.png";
+import clock from "./assets/icons/clock.svg"
+import empty_wallet from "./assets/icons/empty_wallet.svg";
+import people from "./assets/icons/people.svg";
+import shield_tick from "./assets/icons/shield_tick.svg";
+import flash from "./assets/icons/flash.svg";
+import convert from "./assets/icons/convert.svg";
+import refresh_circle from "./assets/icons/refresh_circle.svg";
 import dark_dude_chatting from "./assets/images/dark_dude_chatting.jpg";
 import globe from "./assets/images/globe.jpg";
 import bank from "./assets/icons/bank.svg";
-import global from "./assets/icons/global.png";
-import card from "./assets/icons/card.png";
+import global from "./assets/icons/global.svg";
+import card from "./assets/icons/card.svg";
 import dollar_circle from "./assets/icons/dollar_circle.png";
 import double_user from "./assets/icons/double_user.png";
 import type { HeroFeatureProps } from "./Types";
-import nigeria from "./assets/icons/nigeria.png";
+import nigeria from "./assets/icons/nigeria.svg";
 import spotify from "./assets/icons/spotify.svg";
 import cute_lady_selfie from "./assets/images/cute_lady_selfie.jpg";
 import studio_girl from "./assets/images/studio_girl.jpg";
