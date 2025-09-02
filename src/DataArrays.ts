@@ -109,9 +109,9 @@ export const teamMembers: TeamMembersType[] = [
     {image: serious_man, name: "Jenny Wilson", position: "Co-Founder", linkedin: "https://linkedin.com/in/lesliealexander"},
     {image: leslie_alexander, name: "Anie", position: "Co-Founder", linkedin: "https://linkedin.com/in/lesliealexander"},
     {image: cameron_williamson, name: "Chuks Ejechi", position: "Head Of Product", linkedin: "https://linkedin.com/in/lesliealexander"},
-    {image: serious_man, name: "Adetounkunbo Ige", position: "Software Engineer", linkedin: "https://linkedin.com/in/lesliealexander"},
-    {image: serious_man, name: "Emmmanuel Chika", position: "Mobile Engineer", linkedin: "https://linkedin.com/in/lesliealexander"},
-    {image: cameron_williamson, name: "Mohammmed Jesus", position: "Backend Engineer", linkedin: "https://linkedin.com/in/lesliealexander"}
+    // {image: serious_man, name: "Adetounkunbo Ige", position: "Software Engineer", linkedin: "https://linkedin.com/in/lesliealexander"},
+    // {image: serious_man, name: "Emmmanuel Chika", position: "Mobile Engineer", linkedin: "https://linkedin.com/in/lesliealexander"},
+    // {image: cameron_williamson, name: "Mohammmed Jesus", position: "Backend Engineer", linkedin: "https://linkedin.com/in/lesliealexander"}
 ]
 
 export const howItWorksData: HowItWorksCardType[] = [

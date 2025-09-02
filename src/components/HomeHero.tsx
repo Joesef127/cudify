@@ -14,7 +14,7 @@ export default function HomeHero() {
           heading="Making your money limitless"
           desc="Send, receive, and manage money
             across borders"
-            headingClass="text-[48px] leading-[60px] lg:text-[72px] lg:leading-[90px]"
+            headingClass="text-[48px] leading-[60px] lg:text-[72px] lg:leading-[90px] uppercase"
         />
 
         {/* Phone Image */}
