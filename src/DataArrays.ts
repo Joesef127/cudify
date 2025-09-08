@@ -50,7 +50,7 @@ export const footerNav2 = [
 
 export const footerNav3 = [
   { name: "+2348140915605" },
-  { name: "hello@cudify.com" },
+  { name: "cuditech@cudify.com" },
 ];
 
 export const countries: CountriesType[] = [
