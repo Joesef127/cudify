@@ -10,14 +10,19 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Company */}
           <div className="space-y-4">
-            <h3 className="text-white font-semibold text-lg" data-aos='fade-right'>Company</h3>
+            <h3
+              className="text-white font-semibold text-lg"
+              data-aos="fade-right"
+            >
+              Company
+            </h3>
             <ul className="space-y-3">
               {footerNav.map((item) => (
                 <li key={item.name}>
                   <Link
                     to={item.route}
                     className="hover:text-white transition-colors"
-                     data-aos='fade-right'
+                    data-aos="fade-right"
                   >
                     {item.name}
                   </Link>
@@ -28,14 +33,16 @@ const Footer = () => {
 
           {/* Legal */}
           <div className="space-y-4">
-            <h3 className="text-white font-semibold text-lg" data-aos='fade-up'>Legal</h3>
+            <h3 className="text-white font-semibold text-lg" data-aos="fade-up">
+              Legal
+            </h3>
             <ul className="space-y-3">
               {footerNav2.map((item) => (
                 <li key={item.name}>
                   <Link
                     to={item.route}
                     className="hover:text-white transition-colors"
-                     data-aos='fade-up'
+                    data-aos="fade-up"
                   >
                     {item.name}
                   </Link>
@@ -46,10 +53,23 @@ const Footer = () => {
 
           {/* Contact Us */}
           <div className="space-y-4">
-            <h3 className="text-white font-semibold text-lg" data-aos='fade-left'>Contact Us</h3>
+            <h3
+              className="text-white font-semibold text-lg"
+              data-aos="fade-left"
+            >
+              Contact Us
+            </h3>
             <ul className="space-y-3">
-              {footerNav3.map((item) => (
-                <li key={item.name} data-aos='fade-left'>{item.name}</li>
+              {footerNav3.map((item, index) => (
+                <li key={index}>
+                  <a
+                    href={ index === 1 ?`mailto:${item.name}` :`tel:${item.name}`}
+                    key={item.name}
+                    data-aos="fade-left"
+                  >
+                    {item.name}
+                  </a>
+                </li>
               ))}
             </ul>
           </div>
@@ -58,10 +78,18 @@ const Footer = () => {
         <div className="border-t border-slate-800 mt-12 pt-8">
           <div className="flex flex-row justify-between items-center">
             <div className="flex items-center justify-start gap-2.5 w-full">
-              <span className="text-xl font-bold text-white" data-aos='fade-right'>Cudify</span>
+              <span
+                className="text-xl font-bold text-white"
+                data-aos="fade-right"
+              >
+                Cudify
+              </span>
             </div>
 
-            <div className="space-y-4 w-full flex flex-col justify-end items-end" data-aos='fade-left'>
+            <div
+              className="space-y-4 w-full flex flex-col justify-end items-end"
+              data-aos="fade-left"
+            >
               <div className="flex gap-2">
                 <a
                   href="#"
@@ -91,7 +119,10 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-8 text-xs text-slate-400 space-y-2" data-aos='fade-down'>
+          <div
+            className="mt-8 text-xs text-slate-400 space-y-2"
+            data-aos="fade-down"
+          >
             <p>
               Cudify is registered in England and Wales (No. 08503014). It is
               authorised by the Financial Conduct Authority to offer e-money and
