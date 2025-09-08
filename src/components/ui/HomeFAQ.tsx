@@ -3,7 +3,7 @@ import { useState } from "react";
 import { faqData } from "../../DataArrays";
 
 const HomeFAQ = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(1); 
+  const [openIndex, setOpenIndex] = useState<number | null>(1);
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -16,10 +16,12 @@ const HomeFAQ = () => {
           <div
             key={index}
             className="border-b-[0.5px] border-gray-200 last:border-b-0"
-             data-aos='fade-up'
+            data-aos="fade-up"
           >
             <button
-              className={`w-full ${index === 0 ? "pt-4  " : "pt-10"} pb-5 flex items-center justify-between text-left focus:outline-none`}
+              className={`w-full ${
+                index === 0 ? "pt-4  " : "pt-10"
+              } pb-5 flex items-center justify-between text-left focus:outline-none`}
               onClick={() => toggleFAQ(index)}
             >
               <span className="text-gray-900 font-medium text-sm sm:text-base md:text-lg pr-4">

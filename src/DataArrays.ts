@@ -381,12 +381,7 @@ export const faqData: HomeFAQProps[] = [
     question: "How long does it take for the money to arrive?",
     answer:
       "Cudify exists to make sending money to loved ones across Africa easier, faster, and more human. We’re more than just a remittance platform—we’re a movement to empower families and fuel dreams.",
-  },
-  {
-    question: "Is Cudify safe to use?",
-    answer:
-      "Cudify exists to make sending money to loved ones across Africa easier, faster, and more human. We’re more than just a remittance platform—we’re a movement to empower families and fuel dreams.",
-  },
+  }
 ];
 
 export const paymentFAQs: FAQCategory[] = [
