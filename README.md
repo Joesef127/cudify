@@ -1,69 +1,118 @@
-# React + TypeScript + Vite
+# Cudify
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Cudify is a modern website built with React and TypeScript. It features a responsive navigation bar with dropdowns, mobile support, and a clean, accessible UI. This project demonstrates best practices in React component structure, state management, and responsive design.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Tech Stack](#tech-stack)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Responsive navigation bar with dropdown menus
+- Mobile-friendly hamburger menu
+- Smooth transitions and accessibility support
+- Modular component structure
+- TypeScript for type safety
+- Easy to extend and customize
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/joesef127/cudify.git
+   cd cudify
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development server:**
+   ```sh
+   npm start
+   # or
+   yarn start
+   ```
+
+4. **Open in your browser:**
+   Visit [http://localhost:5173](http://localhost:5173)
+
+## Available Scripts
+
+- `npm start` — Runs the app in development mode.
+- `npm run build` — Builds the app for production.
+- `npm test` — Runs the test suite.
+- `npm run lint` — Lints the codebase.
+
+## Project Structure
+
+```
+cudify/
+├── public/
+│   └── cudify_logo
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── ui/
+│   │   └── Header.tsx
+│   │   └── ....
+│   ├── hooks/
+│   ├── pages/
+│   ├── DataArrays.ts
+│   ├── Types.ts
+│   ├── App.tsx
+│   ├── index.tsx
+│   └── ...
+├── package.json
+├── tsconfig.json
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **components/**: Reusable React components (e.g., Header, DropdownNav, Button)
+- **assets/**: Images and static assets
+- **DataArrays.ts**: Navigation and dropdown data
+- **App.tsx**: Main application entry point
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Tech Stack
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/) (for styling)
+- [React Router](https://reactrouter.com/) (for routing)
+- [Lucide React](https://lucide.dev/) (for icons)
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a pull request
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+**Made with ❤️ using React and TypeScript.**
