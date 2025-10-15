@@ -25,32 +25,8 @@ const GetPaidSection = () => {
             header="Get Paid for Anything, Anytime"
             customClass="max-w-[666px]"
           />
-          {/* <h2
-            className="
-          font-semibold 
-          text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
-          leading-snug sm:leading-[42px] md:leading-[48px] lg:leading-[56px]
-          text-[#101828] mb-2.5
-        "
-            data-aos="fade-left"
-          >
-            Get Paid for Anything, Anytime
-          </h2>
-          <p
-            className="
-          text-[#48505E] 
-          text-sm sm:text-base md:text-lg 
-          leading-auto 
-          font-normal
-        "
-            data-aos="fade-right"
-          >
-            Wherever the money is coming from and whatever it's for, you'll get
-            it quickly and securely — straight to your wallet or bank.
-          </p> */}
         </div>
 
-        {/* Desktop View - Grid */}
         <div className="hidden md:grid md:grid-cols-2 gap-6">
           {features.map((feature, index) => (
             <div
