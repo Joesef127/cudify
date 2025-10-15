@@ -20,7 +20,7 @@ const Footer = () => {
               {footerNav.map((item) => (
                 <li key={item.name}>
                   <Link
-                    to={item.route}
+                    to={item.route ? item.route : "#"}
                     className="hover:text-white transition-colors"
                     data-aos="fade-right"
                   >
@@ -40,7 +40,7 @@ const Footer = () => {
               {footerNav2.map((item) => (
                 <li key={item.name}>
                   <Link
-                    to={item.route}
+                    to={item.route ? item.route : "#"}
                     className="hover:text-white transition-colors"
                     data-aos="fade-up"
                   >

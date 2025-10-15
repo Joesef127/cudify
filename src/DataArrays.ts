@@ -37,7 +37,7 @@ import cameron_williamson from "./assets/images/Cameron_williamson.jpg";
 
 export const footerNav = [
   { name: "About us", route: "/about" },
-  { name: "Careers", route: "/careers" },
+  { name: "Careers", route: "" },
   { name: "Contact", route: "/contact" },
   { name: "FAQs", route: "/faq" },
 ];
@@ -45,7 +45,7 @@ export const footerNav = [
 export const footerNav2 = [
   { name: "Terms & Conditions", route: "/terms_conditions" },
   { name: "Privacy Policy", route: "/privacy_policy" },
-  { name: "Cookie Policy", route: "/cookie_policy" },
+  { name: "Cookie Policy", route: "" },
 ];
 
 export const footerNav3 = [
