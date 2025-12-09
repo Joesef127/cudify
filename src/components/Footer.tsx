@@ -123,17 +123,6 @@ const Footer = () => {
             className="mt-8 text-xs text-slate-400 space-y-2"
             data-aos="fade-down"
           >
-            <p>
-              Cudify is registered in England and Wales (No. 08503014). It is
-              authorised by the Financial Conduct Authority to offer e-money and
-              payment services under the Electronic Money Regulations 2011 (FRN:
-              900293) and is registered with the Financial Conduct Authority to
-              offer cryptocurrency services under the Money Laundering,
-              Terrorist Financing and Transfer of Funds (Information on the
-              Payer) Regulations 2017 (CommonStore website are provided by
-              Cudify Decolat Limited regulated by the Financial Conduct
-              Authority.
-            </p>
           </div>
         </div>
       </div>
