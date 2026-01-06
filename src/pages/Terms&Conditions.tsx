@@ -2,11 +2,10 @@
 import ReactMarkdown from "react-markdown";
 import CTASection from "../components/CTASection";
 import { useMarkdownFile } from "../hooks/useMarkdownFile";
+import termsPath from "../assets/docs/Terms & Condittion - Cudify.md?url";
 
 const TermsConditions = () => {
-  const { content, loading, error } = useMarkdownFile(
-    "/src/assets/docs/Terms & Condittion - Cudify.md"
-  );
+  const { content, loading, error } = useMarkdownFile(termsPath);
 
   if (loading) {
     return (

@@ -2,11 +2,10 @@
 import ReactMarkdown from "react-markdown";
 import CTASection from "../components/CTASection";
 import { useMarkdownFile } from "../hooks/useMarkdownFile";
+import privacyPolicyPath from "../assets/docs/Privacy Policy - Cudify.md?url";
 
 const PrivacyPolicy = () => {
-  const { content, loading, error } = useMarkdownFile(
-    "/src/assets/docs/Privacy Policy - Cudify.md"
-  );
+  const { content, loading, error } = useMarkdownFile(privacyPolicyPath);
 
   if (loading) {
     return (
