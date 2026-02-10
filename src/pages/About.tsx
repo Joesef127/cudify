@@ -1,4 +1,5 @@
 import AboutHero from "../components/AboutHero";
+import CommunitySection from "../components/CommunitySection";
 import CTASection from "../components/CTASection";
 import TeamSection from "../components/TeamSection";
 
@@ -7,6 +8,7 @@ export default function About() {
         <div>
             <AboutHero />
             <TeamSection />
+            <CommunitySection />
             <CTASection />
         </div>
     )

@@ -1,4 +1,5 @@
 import CTASection from "../components/CTASection";
+import CommunitySection from "../components/CommunitySection";
 import FaqSection from "../components/FaqSection";
 import HomeFeatureSection from "../components/HomeFeatureSection";
 import HomeHero from "../components/HomeHero";
@@ -12,6 +13,7 @@ export default function Home() {
       <PowerSection />
       <HomeFeatureSection />
       <SecuritySection />
+      <CommunitySection />
       <FaqSection />
       <CTASection />
     </div>
