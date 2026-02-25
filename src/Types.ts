@@ -157,3 +157,9 @@ export interface FAQCategory {
   title: string;
   items: FAQItem[];
 }
+
+export interface footerNavItem {
+  name: string;
+  route?: string;
+  isAddress?: boolean;
+}

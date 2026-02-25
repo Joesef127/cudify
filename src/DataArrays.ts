@@ -2,6 +2,7 @@ import type {
   CountriesType,
   FAQCategory,
   FeatureType,
+  footerNavItem,
   HomeFAQProps,
   HowItWorksCardType,
   TeamMembersType,
@@ -35,22 +36,28 @@ import olaide_adepoju from "./assets/images/olaide_adepoju.jpg";
 import leslie_alexander from "./assets/images/leslie_alexander.jpg";
 import cameron_williamson from "./assets/images/Cameron_williamson.jpg";
 
-export const footerNav = [
+export const footerNav: footerNavItem[] = [
   { name: "About us", route: "/about" },
-  { name: "Careers", route: "" },
-  { name: "Contact", route: "/contact" },
+  // { name: "Careers", route: "" },
+  // { name: "Contact", route: "/contact" },
   { name: "FAQs", route: "/faq" },
 ];
 
-export const footerNav2 = [
+export const footerNav2: footerNavItem[] = [
   { name: "Terms & Conditions", route: "/terms_conditions" },
   { name: "Privacy Policy", route: "/privacy_policy" },
-  { name: "Cookie Policy", route: "" },
+  // { name: "Cookie Policy", route: "" },
 ];
 
-export const footerNav3 = [
-  { name: "+2348140915605" },
-  { name: "cuditech@cudify.com" },
+export const footerNav3: footerNavItem[] = [
+  { name: "+2348140915605", route: "tel:+2348140915605" },
+  { name: "cuditech@cudify.com", route: "mailto:cuditech@cudify.com" },
+];
+
+export const footerNav4: footerNavItem[] = [
+  { name: "72, Silver Streak Way, Strood ME2 2GY, UK", isAddress: true },
+  { name: "17328 60 Ave, Surrey, BC V3S 1T6, Canada", isAddress: true },
+  { name: "8, James Odimgbe Street, Greenfield Estate, Ago Palace Way, Lagos State, Nigeria", isAddress: true },
 ];
 
 export const countries: CountriesType[] = [
