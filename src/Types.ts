@@ -146,6 +146,7 @@ export interface TeamMembersType {
   image: string;
   name: string;
   position: string;
+  experience: string;
 }
 
 export interface FAQItem {

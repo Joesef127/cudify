@@ -11,46 +11,42 @@ const TeamSection = () => {
           Meet some of our team members
         </h1>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 w-full justify-center items-center place-items-center">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 w-full">
           {teamMembers.map((member, index) => (
             <div
-              className={`p-2 sm:p-4 w-full h-[224px] sm:h-[355px] md:h-[425px] bg-white border-[0.4px] border-[#E5E5E5] rounded-2xl cursor-pointer flex flex-col gap-2.5 ${
-                index % 2 ? "justify-self-start" : "justify-self-end"
-              } sm:justify-self-center items-center`}
+              key={index}
+              className="bg-white border border-[#E5E5E5] rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
+              {/* Image */}
               <div
-                className="overflow-hidden rounded-lg w-full h-[150px] sm:h-[256px] md:h-[355px]"
+                className="w-full h-[160px] sm:h-[240px] md:h-[280px]"
                 style={{
                   backgroundImage: `url(${member.image})`,
-                  backgroundPosition: "top",
+                  backgroundPosition: "top center",
                   backgroundSize: "cover",
                 }}
-              >
-                {/* <img
-                  key={index}
-                  className="h-full w-full object-cover object-top group flex items-end"
-                  src={member.image}
-                  data-aos="zoom-out-left"
-                  data-aos-delay={index * 300}
-                  data-aos-duration="500"
-                /> */}
-              </div>
-              <div
-                className="w-full flex justify-between items-center rounded-xl"
-                data-aos="fade-up"
-              >
-                <div
-                  className="text-left flex flex-col"
-                  data-aos="fade-right"
-                  data-aos-delay="100"
-                >
-                  <h3 className="text-sm leading-5 sm:text-xl sm:leading-7 font-semibold text-[#101828] mb-2 sm:mb-4">
+              />
+
+              {/* Info */}
+              <div className="flex flex-col gap-2 sm:gap-3 p-3 sm:p-5 text-left">
+                <div>
+                  <h3 className="text-sm sm:text-lg font-semibold text-[#101828] leading-snug">
                     {member.name}
                   </h3>
-                  <p className="text-xs leading-4 sm:text-base sm:leading-6 opacity-90 font-normal text-[#383E49]">
+                  <p className="text-xs sm:text-sm font-medium text-[#3D6EF5] mt-0.5">
                     {member.position}
                   </p>
                 </div>
+
+                {/* Divider */}
+                <div className="w-8 h-[2px] bg-[#3D6EF5] rounded-full" />
+
+                {/* Experience */}
+                <p className="text-xs sm:text-sm text-[#667085] leading-relaxed font-normal">
+                  {member.experience}
+                </p>
               </div>
             </div>
           ))}

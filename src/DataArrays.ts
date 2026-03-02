@@ -35,6 +35,7 @@ import calling from "./assets/icons/calling.svg";
 import olaide_adepoju from "./assets/images/olaide_adepoju.jpg";
 import leslie_alexander from "./assets/images/leslie_alexander.jpg";
 import cameron_williamson from "./assets/images/Cameron_williamson.jpg";
+import tokunbo_ige from "./assets/images/tokunbo_ige.png";
 
 export const footerNav: footerNavItem[] = [
   { name: "About us", route: "/about" },
@@ -113,12 +114,31 @@ export const features: FeatureType[] = [
 ];
 
 export const teamMembers: TeamMembersType[] = [
-  { image: olaide_adepoju, name: "Olaide Adepoju", position: "Co-Founder" },
-  { image: leslie_alexander, name: "Anie", position: "Co-Founder" },
+  {
+    image: olaide_adepoju,
+    name: "Olaide Adepoju",
+    position: "Co-founder CCO",
+    experience:
+      "10yrs+ experience in technology sales and partnerships, CMI, MSC Global Business Management, Roehampton University UK",
+  },
+  {
+    image: leslie_alexander,
+    name: "Anie Dinkpa",
+    position: "Co-founder COO",
+    experience:
+      "10+ years in Financial services industry, MSc Intl Finance, University of Leeds UK",
+  },
   {
     image: cameron_williamson,
     name: "Chuks Ejechi",
     position: "Head Of Product",
+    experience: "Experienced in Tech product and project management",
+  },
+  {
+    image: tokunbo_ige,
+    name: "Adetokunbo Ige",
+    position: "Head Of Engineering",
+    experience: "Technical execution, architecture, and team performance",
   },
 ];
 
